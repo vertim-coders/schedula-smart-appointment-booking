@@ -77,7 +77,6 @@ class SCHESAB_Frontend
         // Check if either shortcode is present in the post content
         $has_reservation_form = has_shortcode($post->post_content, 'schesab_reservation_form');
         $has_service_form = preg_match('/\\[schesab_service_form\\s+id=[\'"]?\d+[\'"]?\\]/', $post->post_content);
-        $has_stripe_return = has_shortcode($post->post_content, 'schesab-stripe-return');
 
 
 

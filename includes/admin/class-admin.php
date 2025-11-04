@@ -23,6 +23,92 @@ class SCHESAB_Admin
     {
         add_action('admin_menu', [$this, 'add_menu']);
         add_action('admin_enqueue_scripts', [$this, 'enqueue_assets']);
+        
+        // Hide system pages from admin pages list
+        add_action('admin_init', [$this, 'hide_system_pages_from_admin']);
+    }
+    
+    /**
+     * Hide system pages (Stripe return/cancel pages) from admin pages list
+     */
+    public function hide_system_pages_from_admin()
+    {
+        // Hide from pages list in admin
+        add_filter('parse_query', [$this, 'exclude_system_pages_from_query']);
+        
+        // Exclude from search results
+        add_filter('posts_search', [$this, 'exclude_system_pages_from_search'], 10, 2);
+        
+        // Exclude from sitemaps
+        add_filter('wp_sitemaps_posts_query_args', [$this, 'exclude_system_pages_from_sitemap']);
+    }
+    
+    /**
+     * Exclude system pages from admin pages query
+     */
+    public function exclude_system_pages_from_query($query)
+    {
+        if (!is_admin() || !$query->is_main_query()) {
+            return;
+        }
+        
+        $screen = get_current_screen();
+        if ($screen && $screen->id === 'edit-page') {
+            $stripe_return_id = get_option('schesab_stripe_return_page_id');
+            $stripe_cancel_id = get_option('schesab_stripe_cancel_page_id');
+            
+            $exclude_ids = array_filter([$stripe_return_id, $stripe_cancel_id]);
+            
+            if (!empty($exclude_ids)) {
+                $query->set('post__not_in', array_merge(
+                    (array) $query->get('post__not_in'),
+                    $exclude_ids
+                ));
+            }
+        }
+    }
+    
+    /**
+     * Exclude system pages from search results
+     */
+    public function exclude_system_pages_from_search($search, $wp_query)
+    {
+        if (!is_admin() && !is_search()) {
+            return $search;
+        }
+        
+        $stripe_return_id = get_option('schesab_stripe_return_page_id');
+        $stripe_cancel_id = get_option('schesab_stripe_cancel_page_id');
+        
+        $exclude_ids = array_filter([$stripe_return_id, $stripe_cancel_id]);
+        
+        if (!empty($exclude_ids) && !empty($search)) {
+            global $wpdb;
+            $ids = implode(',', array_map('intval', $exclude_ids));
+            $search .= " AND {$wpdb->posts}.ID NOT IN ($ids)";
+        }
+        
+        return $search;
+    }
+    
+    /**
+     * Exclude system pages from sitemaps
+     */
+    public function exclude_system_pages_from_sitemap($args)
+    {
+        $stripe_return_id = get_option('schesab_stripe_return_page_id');
+        $stripe_cancel_id = get_option('schesab_stripe_cancel_page_id');
+        
+        $exclude_ids = array_filter([$stripe_return_id, $stripe_cancel_id]);
+        
+        if (!empty($exclude_ids)) {
+            $args['post__not_in'] = array_merge(
+                (array) ($args['post__not_in'] ?? []),
+                $exclude_ids
+            );
+        }
+        
+        return $args;
     }
 
     public function add_menu()

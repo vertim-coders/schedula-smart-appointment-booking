@@ -42,68 +42,54 @@ class SCHESAB_ShortcodesStripe
                 // Check if this session has already been processed to prevent duplicate appointments
                 $processed_transient_key = 'schesab_processed_' . $checkout_session_id;
                 if (get_transient($processed_transient_key)) {
-                        return '<div class="schedula-stripe-message schedula-stripe-success">' . __('Your booking is confirmed. You should receive an email shortly.', 'schedula-smart-appointment-booking') . '</div>';
+                        $message = __('Payment successful! Your booking is confirmed. This tab will close automatically.', 'schedula-smart-appointment-booking');
+                        wp_add_inline_script('schedula-payment-status', 'document.addEventListener("DOMContentLoaded", function() { setSchedulaPaymentStatus("success"); });');
+                        return "<div id=\"schedula-payment-message\" class=\"schedula-stripe-message schedula-stripe-success\">{$message}</div>";
                 }
 
-                $settings = $this->get_stripe_settings();
-                if (is_wp_error($settings)) {
-                        return '<div class="schedula-stripe-message schedula-stripe-error">' . __('Could not retrieve payment settings.', 'schedula-smart-appointment-booking') . '</div>';
-                }
+                // Enqueue payment status script
+                wp_enqueue_script('schedula-payment-status', SCHESAB_PLUGIN_URL . 'assets/js/payment-status.js', [], SCHESAB_VERSION, true);
 
-                // Retrieve the session from Stripe
-                $api_url = 'https://api.stripe.com/v1/checkout/sessions/' . $checkout_session_id;
-                $headers = ['Authorization' => 'Bearer ' . $settings['secretKey']];
-                $response = wp_remote_get($api_url, ['headers' => $headers]);
+                // Display loading message immediately and verify in background
+                $loading_message = __('Verifying your payment...', 'schedula-smart-appointment-booking');
+                $success_message = __('Payment successful! Your booking is confirmed. This tab will close automatically.', 'schedula-smart-appointment-booking');
+                $error_message = __('Payment verification failed. Please contact support.', 'schedula-smart-appointment-booking');
 
-                if (is_wp_error($response)) {
-                        return '<div class="schedula-stripe-message schedula-stripe-error">' . __('Error communicating with payment provider.', 'schedula-smart-appointment-booking') . '</div>';
-                }
-
-                $session = json_decode(wp_remote_retrieve_body($response), true);
-
-                if (empty($session) || isset($session['error']) || $session['payment_status'] !== 'paid') {
-                        $error_msg = $session['error']['message'] ?? 'Payment not completed.';
-                        return '<div class="schedula-stripe-message schedula-stripe-error">' . __('Payment was not successful.', 'schedula-smart-appointment-booking') . '</div>';
-                }
-
-                $transient_key = $session['client_reference_id'] ?? null;
-                if (!$transient_key) {
-                        return '<div class="schedula-stripe-message schedula-stripe-error">' . __('Could not find appointment reference.', 'schedula-smart-appointment-booking') . '</div>';
-                }
-
-                $form_data = get_transient($transient_key);
-                if (!$form_data) {
-                        $payment_intent_id = $session['payment_intent'];
-                        global $wpdb;
-                        $payments_table = $this->db->get_table_name('payments');
-                        $existing_payment = $wpdb->get_var($wpdb->prepare("SELECT appointment_id FROM {$payments_table} WHERE transaction_id = %s", $payment_intent_id));
-                        if ($existing_payment) {
-                                return '<div class="schedula-stripe-message schedula-stripe-success">' . __('Your booking is confirmed. You should receive an email shortly.', 'schedula-smart-appointment-booking') . '</div>';
+                // Simple async verification script
+                $verification_script = "
+                (function() {
+                    const messageDiv = document.getElementById('schedula-payment-message');
+                    const sessionId = '" . esc_js($checkout_session_id) . "';
+                    
+                    fetch('" . esc_url(rest_url('schesab/v1/stripe/verify-payment')) . "', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-WP-Nonce': '" . wp_create_nonce('wp_rest') . "'
+                        },
+                        body: JSON.stringify({ checkout_session_id: sessionId })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            messageDiv.className = 'schedula-stripe-message schedula-stripe-success';
+                            messageDiv.textContent = '" . esc_js($success_message) . "';
+                            setSchedulaPaymentStatus('success');
+                        } else {
+                            messageDiv.className = 'schedula-stripe-message schedula-stripe-error';
+                            messageDiv.textContent = data.message || '" . esc_js($error_message) . "';
                         }
+                    })
+                    .catch(error => {
+                        messageDiv.className = 'schedula-stripe-message schedula-stripe-error';
+                        messageDiv.textContent = '" . esc_js($error_message) . "';
+                    });
+                })();
+                ";
 
-                        return '<div class="schedula-stripe-message schedula-stripe-error">' . __('Your session has expired. Please try to book again.', 'schedula-smart-appointment-booking') . '</div>';
-                }
-
-                $appointments_api = new \SCHESAB\Api\SCHESAB_Appointments();
-                $payment_info = [
-                        'method' => 'stripe',
-                        'transaction_id' => $session['payment_intent'],
-                        'amount' => (float) ($session['amount_total'] / 100),
-                        'currency' => $session['currency'],
-                ];
-
-                $appointment_id = $appointments_api->create_appointment_from_payment($form_data, $payment_info);
-
-                if (is_wp_error($appointment_id)) {
-                        return '<div class="schedula-stripe-message schedula-stripe-error">' . __('There was an error creating your booking. Please contact support.', 'schedula-smart-appointment-booking') . '</div>';
-                }
-
-                set_transient($processed_transient_key, $appointment_id, HOUR_IN_SECONDS);
-                delete_transient($transient_key);
-
-                $message = __('Payment successful! Your booking is confirmed. This tab will close automatically.', 'schedula-smart-appointment-booking');
-                wp_add_inline_script('schedula-payment-status', 'document.addEventListener("DOMContentLoaded", function() { setSchedulaPaymentStatus("success"); });');
-                return "<div id=\"schedula-payment-message\" class=\"schedula-stripe-message schedula-stripe-success\">{$message}</div>";
+                wp_add_inline_script('schedula-payment-status', $verification_script);
+                
+                return "<div id=\"schedula-payment-message\" class=\"schedula-stripe-message schedula-stripe-info\">{$loading_message}</div>";
         }
 
         /**

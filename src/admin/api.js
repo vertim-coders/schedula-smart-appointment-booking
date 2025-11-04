@@ -942,6 +942,17 @@ const stripeApi = {
    */
   testStripeCredentials: (credentials) => {
     return apiClient.post('/stripe/test-credentials', credentials)
+  },
+
+  /**
+   * Verifies a Stripe payment asynchronously.
+   * @param {string} checkoutSessionId - The Stripe Checkout Session ID to verify.
+   * @returns {Promise<Object>} A promise that resolves to the verification result with success status and message.
+   */
+  verifyPayment: (checkoutSessionId) => {
+    return apiClient.post('/stripe/verify-payment', {
+      checkout_session_id: checkoutSessionId
+    })
   }
 }
 

@@ -78,6 +78,101 @@ class SCHESAB_Stripe
                 ]
             ]
         ]);
+
+        // Route to verify payment asynchronously (for fast page loading)
+        register_rest_route($this->namespace, '/stripe/verify-payment', [
+            'methods' => WP_REST_Server::CREATABLE, // POST
+            'callback' => [$this, 'verify_payment'],
+            'permission_callback' => [$this, 'check_frontend_permissions'],
+            'args' => [
+                'checkout_session_id' => [
+                    'sanitize_callback' => 'sanitize_text_field',
+                    'required' => true,
+                ]
+            ]
+        ]);
+    }
+
+    /**
+     * Verifies payment asynchronously (simple version for fast page loading).
+     *
+     * @param WP_REST_Request $request The request object.
+     * @return WP_REST_Response
+     */
+    public function verify_payment(WP_REST_Request $request)
+    {
+        $checkout_session_id = $request->get_param('checkout_session_id');
+        
+        if (empty($checkout_session_id)) {
+            return new WP_REST_Response(['success' => false, 'message' => __('Session ID is missing.', 'schedula-smart-appointment-booking')], 400);
+        }
+
+        // Check if already processed
+        $processed_transient_key = 'schesab_processed_' . $checkout_session_id;
+        if (get_transient($processed_transient_key)) {
+            return new WP_REST_Response(['success' => true, 'message' => __('Payment verified.', 'schedula-smart-appointment-booking')], 200);
+        }
+
+        $settings = $this->get_stripe_credentials_and_mode();
+        if (is_wp_error($settings)) {
+            return new WP_REST_Response(['success' => false, 'message' => __('Could not retrieve payment settings.', 'schedula-smart-appointment-booking')], 500);
+        }
+
+        try {
+            $stripe = new \Stripe\StripeClient($settings['secretKey']);
+            $session = $stripe->checkout->sessions->retrieve($checkout_session_id);
+
+            if ($session->payment_status !== 'paid') {
+                return new WP_REST_Response(['success' => false, 'message' => __('Payment not completed.', 'schedula-smart-appointment-booking')], 400);
+            }
+
+            $transient_key = $session->client_reference_id;
+            if (!$transient_key) {
+                return new WP_REST_Response(['success' => false, 'message' => __('Could not find appointment reference.', 'schedula-smart-appointment-booking')], 400);
+            }
+
+            $form_data = get_transient($transient_key);
+            if (!$form_data) {
+                // Check if payment already exists by payment intent
+                global $wpdb;
+                $db = \SCHESAB\Database\SCHESAB_Database::get_instance();
+                $payments_table = $db->get_table_name('payments');
+                $existing_payment = $wpdb->get_var($wpdb->prepare(
+                    "SELECT appointment_id FROM {$payments_table} WHERE transaction_id = %s LIMIT 1",
+                    $session->payment_intent
+                ));
+                
+                if ($existing_payment) {
+                    set_transient($processed_transient_key, $existing_payment, HOUR_IN_SECONDS);
+                    return new WP_REST_Response(['success' => true, 'message' => __('Payment verified.', 'schedula-smart-appointment-booking')], 200);
+                }
+
+                return new WP_REST_Response(['success' => false, 'message' => __('Session expired. Please try again.', 'schedula-smart-appointment-booking')], 400);
+            }
+
+            // Create appointment
+            $appointments_api = new \SCHESAB\Api\SCHESAB_Appointments();
+            $payment_info = [
+                'method' => 'stripe',
+                'transaction_id' => $session->payment_intent,
+                'amount' => (float) ($session->amount_total / 100),
+                'currency' => $session->currency,
+            ];
+
+            $appointment_id = $appointments_api->create_appointment_from_payment($form_data, $payment_info);
+
+            if (is_wp_error($appointment_id)) {
+                return new WP_REST_Response(['success' => false, 'message' => __('Error creating appointment.', 'schedula-smart-appointment-booking')], 500);
+            }
+
+            set_transient($processed_transient_key, $appointment_id, HOUR_IN_SECONDS);
+            delete_transient($transient_key);
+
+            return new WP_REST_Response(['success' => true, 'message' => __('Payment verified and appointment created.', 'schedula-smart-appointment-booking')], 200);
+
+        } catch (\Exception $e) {
+            return new WP_REST_Response(['success' => false, 'message' => __('Error verifying payment.', 'schedula-smart-appointment-booking')], 500);
+        }
     }
 
     /**

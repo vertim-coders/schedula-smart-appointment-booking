@@ -134,6 +134,10 @@ This plugin connects to several third-party services to provide its full range o
 
 <p><a href="https://demos.vertimcoders.com/schedula-live-demo/" rel="nofollow">DEMO Schedula Booking Plugin</a>.</p>
 
+== Source Code ==
+
+<p>The source code and unminified assets for this plugin are publicly available in our GitHub repository. Administrators and developers who need to review or audit the plugin's source files can access them at: <a href="https://github.com/vertim-coders/schedula-smart-appointment-booking" rel="nofollow">https://github.com/vertim-coders/schedula-smart-appointment-booking</a>.</p>
+
 == Frequently Asked Questions ==
 
 = Where can I find Schedula documentation and user guides? =

@@ -1,64 +1,58 @@
-/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/frontend/components/common/BasePhoneInput.vue?vue&type=style&index=0&id=841a0ce8&scoped=true&lang=css ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************/
 
-.vue-tel-input[data-v-841a0ce8] {
+.vue-tel-input[data-v-6d0f6b4a] {
   background-color: var(--vti-bg-color, #fff) !important; 
   color: var(--vti-text-color, #000) !important; 
   border-color: var(--vti-border-color, #ccc) !important;
 }
-.vue-tel-input .vti__input[data-v-841a0ce8] {
+.vue-tel-input .vti__input[data-v-6d0f6b4a] {
   background-color: var(--vti-bg-color, #fff) !important;
   color: var(--vti-text-color, #000) !important;
   border-color: var(--vti-border-color, #ccc) !important;
 }
-.vue-tel-input .vti__dropdown[data-v-841a0ce8] {
+.vue-tel-input .vti__dropdown[data-v-6d0f6b4a] {
   background-color: var(--vti-bg-color, #fff) !important;
   color: var(--vti-text-color, #000) !important;
   border-color: var(--vti-border-color, #ccc) !important;
 }
-.vue-tel-input .vti__dropdown-list[data-v-841a0ce8] {
+.vue-tel-input .vti__dropdown-list[data-v-6d0f6b4a] {
   background-color: var(--vti-bg-color, #fff) !important;
   color: var(--vti-text-color, #000) !important;
   border-color: var(--vti-border-color, #ccc) !important;
 }
-.vue-tel-input .vti__dropdown-item[data-v-841a0ce8] {
+.vue-tel-input .vti__dropdown-item[data-v-6d0f6b4a] {
   color: var(--vti-text-color, #000) !important;
 }
-.vue-tel-input .vti__selected-flag[data-v-841a0ce8] {
+.vue-tel-input .vti__selected-flag[data-v-6d0f6b4a] {
   background-color: var(--vti-bg-color, #fff) !important;
 }
-.vue-tel-input.vue-tel-input[data-v-841a0ce8] {
+.vue-tel-input.vue-tel-input[data-v-6d0f6b4a] {
   border: 1px solid var(--vti-border-color, #ccc) !important;
 }
-.vue-tel-input .vti__input[data-v-841a0ce8],
-.vue-tel-input .vti__dropdown[data-v-841a0ce8] {
+.vue-tel-input .vti__input[data-v-6d0f6b4a],
+.vue-tel-input .vti__dropdown[data-v-6d0f6b4a] {
   border: none !important;
 }
-.vue-tel-input[data-v-841a0ce8] {
+.vue-tel-input[data-v-6d0f6b4a] {
   padding: 0 !important;
 }
-.vue-tel-input .vti__input[data-v-841a0ce8] {
-  padding: var(--841a0ce8-props\.style\.padding) !important; 
-  height: var(--841a0ce8-props\.style\.height) !important; 
-  line-height: var(--841a0ce8-props\.style\.lineHeight) !important;
+.vue-tel-input .vti__input[data-v-6d0f6b4a] {
+  padding: var(--8d2e647a) !important; 
+  height: var(--746e0135) !important; 
+  line-height: var(--27041f49) !important;
 }
-.vue-tel-input .vti__dropdown[data-v-841a0ce8] {
-  padding: var(--841a0ce8-props\.style\.padding) !important;
+.vue-tel-input .vti__dropdown[data-v-6d0f6b4a] {
+  padding: var(--8d2e647a) !important;
 }
-.vue-tel-input .vti__dropdown-arrow[data-v-841a0ce8] {
+.vue-tel-input .vti__dropdown-arrow[data-v-6d0f6b4a] {
   border-top-color: var(--vti-text-color, #000) !important;
 }
 
 
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/frontend/components/reservation/ServiceFormClient.vue?vue&type=style&index=0&id=50a47088&scoped=true&lang=css ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************/
 
 /* Global styles applied via CSS variables from useAppearanceSettings */
 /* These are default values, they will be overridden by inline styles from computed properties */
 /* Ensure these are in sync with useAppearanceSettings.js */
-[data-v-50a47088]:root {
+[data-v-29bb701a]:root {
   /* Use CSS variables from useAppearanceSettings.js for global theme */
   /* These are NOT default values, they are the actual values applied by the composable */
   font-family: var(--font-family-form, 'Inter', sans-serif);
@@ -72,7 +66,7 @@
   --shadow-form: var(--shadow-form);
 }
 .schedula {
-&[data-v-50a47088] {
+&[data-v-29bb701a] {
 
   /* Base container for the whole form */
 
@@ -129,7 +123,7 @@
 
   /* Override the default arrow color with the text color */
   }
-.wp-reservation-form[data-v-50a47088] {
+.wp-reservation-form[data-v-29bb701a] {
     background-color: transparent !important;
     font-family: var(--font-family-form) !important; /* Apply font family */
     font-size: var(--base-font-size-form) !important; /* Apply base font size */
@@ -137,28 +131,28 @@
     /* min-h-screen is already applied via Tailwind in template */
     /* transition-all duration-300 is already applied via Tailwind in template */
 }
-.relative.rounded-lg.overflow-hidden.shadow-lg.w-full.max-w-xl.mx-auto.flex.flex-col[data-v-50a47088] {
+.relative.rounded-lg.overflow-hidden.shadow-lg.w-full.max-w-xl.mx-auto.flex.flex-col[data-v-29bb701a] {
     border-radius: var(--border-radius-form) !important; /* Apply rounded corners */
     box-shadow: var(--shadow-form) !important; /* Apply shadows */
     height: auto !important;
     max-height: none !important;
 }
-.form-body[data-v-50a47088] {
+.form-body[data-v-29bb701a] {
     /* Styles are applied via inline styles from computed properties */
     flex-grow: 1 !important; /* Allows it to take available space */
     overflow-y: visible !important; /* Prevents internal scrolling */
     -webkit-overflow-scrolling: auto !important; /* Revert to default scrolling behavior */
 }
-.desktop-progress[data-v-50a47088] {
+.desktop-progress[data-v-29bb701a] {
     padding-left: 1rem; /* px-4 */
     padding-right: 1rem; /* px-4 */
     padding-top: 1rem; /* py-4 */
     padding-bottom: 1rem; /* py-4 */
 }
 @media (min-width: 640px) {
-&[data-v-50a47088] { /* sm breakpoint */
+&[data-v-29bb701a] { /* sm breakpoint */
     }
-.desktop-progress[data-v-50a47088] {
+.desktop-progress[data-v-29bb701a] {
       padding-left: 1.5rem; /* sm:px-6 */
       padding-right: 1.5rem; /* sm:px-6 */
       padding-top: 1.25rem; /* sm:py-5 */
@@ -166,42 +160,42 @@
 }
 }
 @media (min-width: 1024px) {
-&[data-v-50a47088] { /* lg breakpoint */
+&[data-v-29bb701a] { /* lg breakpoint */
     }
-.desktop-progress[data-v-50a47088] {
+.desktop-progress[data-v-29bb701a] {
       padding-left: 1.5rem; /* lg:px-6 */
       padding-right: 1.5rem; /* lg:px-6 */
 }
 }
-.is-preview .desktop-progress[data-v-50a47088] {
+.is-preview .desktop-progress[data-v-29bb701a] {
     padding-left: 0.75rem !important; /* Slightly reduced for preview */
     padding-right: 0.75rem !important;
     padding-top: 0.75rem !important;
     padding-bottom: 0.75rem !important;
 }
-.is-preview .desktop-progress .ml-2[data-v-50a47088] {
+.is-preview .desktop-progress .ml-2[data-v-29bb701a] {
     margin-left: 0.375rem !important; /* Tighter margin for preview */
 }
-.is-preview .desktop-progress .flex-1[data-v-50a47088] {
+.is-preview .desktop-progress .flex-1[data-v-29bb701a] {
     flex: 1 1 0% !important;
     margin-left: 0.375rem !important;
     margin-right: 0.375rem !important;
 }
-.is-preview .desktop-progress .text-xs[data-v-50a47088] {
+.is-preview .desktop-progress .text-xs[data-v-29bb701a] {
     font-size: 0.65rem !important; /* Match subtitle size */
     white-space: normal !important;
     word-break: break-word !important;
 }
-.form-group[data-v-50a47088] {
+.form-group[data-v-29bb701a] {
     margin-bottom: 0.75rem;
 }
-.form-label[data-v-50a47088] {
+.form-label[data-v-29bb701a] {
     /* Styles applied via inline styles from computed properties */
     color: inherit;
 }
-.form-input[data-v-50a47088],
-  .form-select[data-v-50a47088],
-  .form-textarea[data-v-50a47088] {
+.form-input[data-v-29bb701a],
+  .form-select[data-v-29bb701a],
+  .form-textarea[data-v-29bb701a] {
     border-radius: var(--border-radius-form); /* Apply rounded corners */
     font-size: var(--base-font-size-form); /* Apply base font size */
     /* Padding adjusted in JS computed property: inputStyles */
@@ -209,33 +203,33 @@
     color: var(--text-color);
     border-color: var(--text-color);
 }
-.form-input[data-v-50a47088]:focus,
-  .form-select[data-v-50a47088]:focus,
-  .form-textarea[data-v-50a47088]:focus,
-  button[data-v-50a47088]:focus,
-  .form-checkbox[data-v-50a47088]:focus,
-  .form-radio[data-v-50a47088]:focus {
+.form-input[data-v-29bb701a]:focus,
+  .form-select[data-v-29bb701a]:focus,
+  .form-textarea[data-v-29bb701a]:focus,
+  button[data-v-29bb701a]:focus,
+  .form-checkbox[data-v-29bb701a]:focus,
+  .form-radio[data-v-29bb701a]:focus {
     outline: none !important;
     box-shadow: none !important;
     border-color: inherit !important;
     --tw-ring-color: transparent !important;
 }
-.preview-editable-label[data-v-50a47088] {
+.preview-editable-label[data-v-29bb701a] {
     cursor: pointer;
     opacity: 0.6;
     transition: opacity 0.2s ease-in-out;
     font-size: 0.75rem; /* Smaller font size */
 }
-.preview-editable-label[data-v-50a47088]:hover {
+.preview-editable-label[data-v-29bb701a]:hover {
     opacity: 1;
 }
-.form-textarea[data-v-50a47088]:focus,
-  button[data-v-50a47088]:focus,
-  input[data-v-50a47088]:focus,
-  select[data-v-50a47088]:focus,
-  textarea[data-v-50a47088]:focus,
-  [tabindex][data-v-50a47088]:focus,
-  a[data-v-50a47088]:focus {
+.form-textarea[data-v-29bb701a]:focus,
+  button[data-v-29bb701a]:focus,
+  input[data-v-29bb701a]:focus,
+  select[data-v-29bb701a]:focus,
+  textarea[data-v-29bb701a]:focus,
+  [tabindex][data-v-29bb701a]:focus,
+  a[data-v-29bb701a]:focus {
     outline: none !important;
     box-shadow: none !important;
     --tw-ring-color: transparent !important;
@@ -243,39 +237,39 @@
     --tw-ring-shadow: none !important;
     border-color: inherit !important;
 }
-[data-v-50a47088]:focus {
+[data-v-29bb701a]:focus {
     outline: none !important;
     box-shadow: none !important;
 }
-[data-v-50a47088]::-moz-focus-inner {
+[data-v-29bb701a]::-moz-focus-inner {
     border: 0 !important;
 }
-[data-v-50a47088]:-ms-input-placeholder {
+[data-v-29bb701a]:-ms-input-placeholder {
     color: #9CA3AF !important;
 }
-[data-v-50a47088]::-ms-input-placeholder {
+[data-v-29bb701a]::-ms-input-placeholder {
     color: #9CA3AF !important;
 }
-.form-help-text[data-v-50a47088] {
+.form-help-text[data-v-29bb701a] {
     /* Tailwind classes handle this */
     color: inherit;
 }
-.checkbox-group[data-v-50a47088] {
+.checkbox-group[data-v-29bb701a] {
     /* Tailwind classes handle this */
     display: flex;
     flex-direction: column;
 }
-.form-checkbox[data-v-50a47088],
-  .form-radio[data-v-50a47088] {
+.form-checkbox[data-v-29bb701a],
+  .form-radio[data-v-29bb701a] {
     accent-color: var(--primary-color);
 }
-.color-picker-group[data-v-50a47088] {
+.color-picker-group[data-v-29bb701a] {
     /* Tailwind classes handle this */
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
-.color-input[data-v-50a47088] {
+.color-input[data-v-29bb701a] {
     /* Custom styles for color input */
     width: 2.5rem; /* w-10 */
     height: 2.5rem; /* h-10 */
@@ -286,70 +280,70 @@
     -webkit-appearance: none;
     appearance: none;
 }
-.color-input[data-v-50a47088]::-webkit-color-swatch-wrapper {
+.color-input[data-v-29bb701a]::-webkit-color-swatch-wrapper {
     padding: 0;
 }
-.color-input[data-v-50a47088]::-webkit-color-swatch {
+.color-input[data-v-29bb701a]::-webkit-color-swatch {
     border: none;
     border-radius: 0.25rem; /* slightly less rounded than wrapper */
 }
-.inline-flex.items-center[data-v-50a47088] {
+.inline-flex.items-center[data-v-29bb701a] {
     /* Common styles for all buttons, specific styles via :style */
     display: inline-flex;
     align-items: center;
 }
-button[data-v-50a47088]:hover:not(:disabled) {
+button[data-v-29bb701a]:hover:not(:disabled) {
     transform: translateY(-1px);
     box-shadow: var(--shadow-form); /* Apply shadows */
 }
-button[data-v-50a47088]:active:not(:disabled) {
+button[data-v-29bb701a]:active:not(:disabled) {
     transform: translateY(0);
 }
-.time-slot[data-v-50a47088]:hover:not(.selected):not(:disabled),
-  .time-slot-btn[data-v-50a47088]:hover:not(.selected):not(:disabled),
-  .calendar-date[data-v-50a47088]:hover:not(.selected):not(:disabled) {
-    background-color: var(--50a47088-settings\.colors\.primary) !important;
-    color: var(--50a47088-settings\.colors\.headerText) !important;
-    border-color: var(--50a47088-settings\.colors\.primary) !important;
+.time-slot[data-v-29bb701a]:hover:not(.selected):not(:disabled),
+  .time-slot-btn[data-v-29bb701a]:hover:not(.selected):not(:disabled),
+  .calendar-date[data-v-29bb701a]:hover:not(.selected):not(:disabled) {
+    background-color: var(--6e8abfc9) !important;
+    color: var(--b37c9b9a) !important;
+    border-color: var(--6e8abfc9) !important;
 }
-.calendar-date.disabled[data-v-50a47088]:hover,
-  .calendar-date[disabled][data-v-50a47088]:hover,
-  .calendar-date.isOtherMonth[data-v-50a47088]:hover {
+.calendar-date.disabled[data-v-29bb701a]:hover,
+  .calendar-date[disabled][data-v-29bb701a]:hover,
+  .calendar-date.isOtherMonth[data-v-29bb701a]:hover {
     color: #9CA3AF !important;
     background-color: transparent !important;
     cursor: not-allowed !important;
     opacity: 0.5 !important;
 }
-.calendar-date.selected[data-v-50a47088],
-  .time-slot.selected[data-v-50a47088],
-  .time-slot-btn.selected[data-v-50a47088] {
-    background-color: var(--50a47088-settings\.colors\.primary) !important;
-    color: var(--50a47088-settings\.colors\.headerText) !important;
-    border-color: var(--50a47088-settings\.colors\.primary) !important;
+.calendar-date.selected[data-v-29bb701a],
+  .time-slot.selected[data-v-29bb701a],
+  .time-slot-btn.selected[data-v-29bb701a] {
+    background-color: var(--6e8abfc9) !important;
+    color: var(--b37c9b9a) !important;
+    border-color: var(--6e8abfc9) !important;
 }
-.calendar-date.disabled[data-v-50a47088],
-  .calendar-date[disabled][data-v-50a47088] {
+.calendar-date.disabled[data-v-29bb701a],
+  .calendar-date[disabled][data-v-29bb701a] {
     color: #9CA3AF !important;
     background-color: transparent !important;
     cursor: not-allowed !important;
     opacity: 0.5 !important;
 }
-.calendar-date.isOtherMonth[data-v-50a47088] {
+.calendar-date.isOtherMonth[data-v-29bb701a] {
     color: #9CA3AF !important;
     background-color: transparent !important;
     cursor: not-allowed !important;
     opacity: 0.5 !important;
 }
-.info-card[data-v-50a47088], .detail-card[data-v-50a47088], .confirmation-summary[data-v-50a47088] {
+.info-card[data-v-29bb701a], .detail-card[data-v-29bb701a], .confirmation-summary[data-v-29bb701a] {
     /* Styles applied via inline styles from computed properties */
     border-radius: var(--border-radius-form); /* Apply rounded corners */
     box-shadow: var(--shadow-form); /* Apply shadows */
 }
-.relative.rounded-lg.overflow-hidden.shadow-lg > div[style*="padding-bottom"][data-v-50a47088] {
+.relative.rounded-lg.overflow-hidden.shadow-lg > div[style*="padding-bottom"][data-v-29bb701a] {
     position: relative;
     width: 100%;
 }
-.relative.rounded-lg.overflow-hidden.shadow-lg img[data-v-50a47088] {
+.relative.rounded-lg.overflow-hidden.shadow-lg img[data-v-29bb701a] {
     position: absolute;
     top: 0;
     left: 0;
@@ -358,26 +352,26 @@ button[data-v-50a47088]:active:not(:disabled) {
     object-fit: cover;
 }
 @media (max-width: 639px) {
-&[data-v-50a47088] { /* sm breakpoint */
+&[data-v-29bb701a] { /* sm breakpoint */
 
     /* Ensure selected state still looks good on mobile without scaling */
     }
-.calendar-date[data-v-50a47088],
-    .time-slot-btn[data-v-50a47088],
-    .time-slot[data-v-50a47088] {
+.calendar-date[data-v-29bb701a],
+    .time-slot-btn[data-v-29bb701a],
+    .time-slot[data-v-29bb701a] {
       transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out !important; /* Keep subtle color transition */
       transform: scale(1.0) !important; /* Prevent scaling on mobile */
       box-shadow: none !important; /* Remove shadows on mobile */
 }
-.calendar-date.selected[data-v-50a47088],
-    .time-slot-btn.selected[data-v-50a47088],
-    .time-slot.selected[data-v-50a47088] {
+.calendar-date.selected[data-v-29bb701a],
+    .time-slot-btn.selected[data-v-29bb701a],
+    .time-slot.selected[data-v-29bb701a] {
       transform: scale(1.0) !important; /* Override selected scaling for mobile */
       box-shadow: none !important; /* Override selected shadow for mobile */
 }
 }
 @media (max-width: 639px) {
-&[data-v-50a47088] { /* sm breakpoint */
+&[data-v-29bb701a] { /* sm breakpoint */
     /* Calendar date height reduction on smaller screens */
 
     /* Adjust padding for the form body on mobile for compactness */
@@ -386,58 +380,58 @@ button[data-v-50a47088]:active:not(:disabled) {
     
     /* Adjust padding for navigation buttons container on mobile */
     }
-.header-section h1[data-v-50a47088] {
+.header-section h1[data-v-29bb701a] {
       font-size: 1.125rem; /* text-lg */
 }
-.header-section p[data-v-50a47088] {
+.header-section p[data-v-29bb701a] {
       font-size: 0.75rem; /* text-xs */
 }
-.calendar-date[data-v-50a47088] {
+.calendar-date[data-v-29bb701a] {
       height: 2.5rem; /* h-10 */
 }
-.form-body[data-v-50a47088] {
+.form-body[data-v-29bb701a] {
       padding-left: 1rem; /* Smaller px-4 */
       padding-right: 1rem; /* Smaller px-4 */
       padding-top: 1rem; /* Smaller py-4 */
       padding-bottom: 1rem; /* Smaller py-4 */
 }
-.confirmation-summary[data-v-50a47088] {
+.confirmation-summary[data-v-29bb701a] {
       padding: 1rem; /* Smaller p-4 */
 }
-.confirmation-summary .summary-item[data-v-50a47088] {
+.confirmation-summary .summary-item[data-v-29bb701a] {
       padding: 0.75rem; /* Smaller p-2 */
 }
-.flex.flex-col.sm\:flex-row.items-center.py-3.sm\:py-5[data-v-50a47088] {
+.flex.flex-col.sm\:flex-row.items-center.py-3.sm\:py-5[data-v-29bb701a] {
       padding-top: 0.75rem; /* py-3 equivalent */
       padding-bottom: 0.75rem; /* py-3 equivalent */
 }
 }
 @media (min-width: 640px) and (max-width: 1023px) {
-&[data-v-50a47088] { /* sm to lg breakpoints */
+&[data-v-29bb701a] { /* sm to lg breakpoints */
     }
-.header-section h1[data-v-50a47088] {
+.header-section h1[data-v-29bb701a] {
       font-size: 1.25rem; /* sm:text-xl */
 }
-.header-section p[data-v-50a47088] {
+.header-section p[data-v-29bb701a] {
       font-size: 0.875rem; /* sm:text-sm */
 }
 }
-.is-preview .header-section h1[data-v-50a47088] {
+.is-preview .header-section h1[data-v-29bb701a] {
     font-size: 20px !important;
 }
-.is-preview .header-section p[data-v-50a47088] {
+.is-preview .header-section p[data-v-29bb701a] {
     font-size: 14px !important;
 }
-.schedula-service-form-container[data-v-50a47088] {
+.schedula-service-form-container[data-v-29bb701a] {
     background-color: transparent !important;
 }
-select[data-v-50a47088],
-  textarea[data-v-50a47088] {
-    background-color: var(--50a47088-inputStyles\.backgroundColor) !important;
-    color: var(--50a47088-inputStyles\.color) !important;
-    border-color: var(--50a47088-inputStyles\.borderColor) !important; /* Also apply border color */
+select[data-v-29bb701a],
+  textarea[data-v-29bb701a] {
+    background-color: var(--3dd3bf66) !important;
+    color: var(--6127624a) !important;
+    border-color: var(--7a332c0f) !important; /* Also apply border color */
 }
-select[data-v-50a47088] {
+select[data-v-29bb701a] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -445,70 +439,14 @@ select[data-v-50a47088] {
     background-position: right 0.75rem center;
     background-size: 1.5em 1.5em;
 }
-.step-content .schedula-grid.schedula-grid-cols-1.lg\:schedula-grid-cols-2[data-v-50a47088] {
+.step-content .schedula-grid.schedula-grid-cols-1.lg\:schedula-grid-cols-2[data-v-29bb701a] {
     min-height: 500px !important;
     max-height: 500px !important;
 }
-select[data-v-50a47088] {
+select[data-v-29bb701a] {
     background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 20 20%27 fill=%27none%27 stroke=%27%23666%27 stroke-width=%271.5%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M6 8l4 4 4-4%27/%3E%3C/svg%3E");
 }
 }
 
 
-/*!***********************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/frontend/scss/serviceformclient.scss ***!
-  \***********************************************************************************************************************************/
-/* Custom Styles for Schedula Service Form Client (Non-Scoped) */
-/*
-   This file provides global styles for the [schesab_service_form] shortcode container.
-   It ensures the form container is properly styled and prevents theme interference.
-   Component-specific styles remain in ServiceFormClient.vue's <style scoped> block.
-*/
-[id^=schedula-service-form-] {
-  display: block;
-  box-sizing: border-box;
-  padding: 1rem;
-  font-family: "Inter", sans-serif;
-}
-[id^=schedula-service-form-] h1,
-[id^=schedula-service-form-] h2,
-[id^=schedula-service-form-] h3,
-[id^=schedula-service-form-] h4,
-[id^=schedula-service-form-] p,
-[id^=schedula-service-form-] label,
-[id^=schedula-service-form-] input,
-[id^=schedula-service-form-] select,
-[id^=schedula-service-form-] textarea,
-[id^=schedula-service-form-] button {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-[id^=schedula-service-form-] input,
-[id^=schedula-service-form-] select,
-[id^=schedula-service-form-] textarea {
-  font-size: 14px;
-  line-height: 1.5;
-}
-[id^=schedula-service-form-] button {
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.schedula-service-form-container {
-  background-color: transparent;
-  border-radius: 0.5rem;
-  min-height: 300px;
-}
-
-#schedula-service-form-client-js-extra {
-  display: none !important;
-}
-
-.schedula-navigation-btn {
-  margin: 0 !important;
-}
-
-.schedula-payment-option-label {
-  padding: 0.5rem !important;
-}
+[id^=schedula-service-form-]{display:block;box-sizing:border-box;padding:1rem;font-family:"Inter",sans-serif}[id^=schedula-service-form-] h1,[id^=schedula-service-form-] h2,[id^=schedula-service-form-] h3,[id^=schedula-service-form-] h4,[id^=schedula-service-form-] p,[id^=schedula-service-form-] label,[id^=schedula-service-form-] input,[id^=schedula-service-form-] select,[id^=schedula-service-form-] textarea,[id^=schedula-service-form-] button{box-sizing:border-box;margin:0;padding:0}[id^=schedula-service-form-] input,[id^=schedula-service-form-] select,[id^=schedula-service-form-] textarea{font-size:14px;line-height:1.5}[id^=schedula-service-form-] button{cursor:pointer;font-size:14px}.schedula-service-form-container{background-color:rgba(0,0,0,0);border-radius:.5rem;min-height:300px}#schedula-service-form-client-js-extra{display:none !important}.schedula-navigation-btn{margin:0 !important}.schedula-payment-option-label{padding:.5rem !important}

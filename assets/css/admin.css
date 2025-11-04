@@ -1,22 +1,19 @@
-/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/header/HeaderPage.vue?vue&type=style&index=0&id=15a44284&scoped=true&lang=css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************/
 
 /* Base header styles */
-.schedula-header[data-v-15a44284] {
+.schedula-header[data-v-f3db5e28] {
   position: fixed !important;
   z-index: 9998 !important; /* Below WP admin bar (9999) but above content */
   backdrop-filter: blur(8px);
 }
 
 /* WordPress admin bar adjustments - UPDATED */
-body.admin-bar .schedula-header[data-v-15a44284] {
+body.admin-bar .schedula-header[data-v-f3db5e28] {
   top: 32px !important; /* WordPress admin bar height on desktop */
 }
 
 /* Mobile-specific adjustments - REDUCED PADDING AND HEIGHT */
 @media (max-width: 639px) {
-.schedula-header[data-v-15a44284] {
+.schedula-header[data-v-f3db5e28] {
     left: 0 !important;
     width: 100% !important;
     position: fixed !important;
@@ -26,7 +23,7 @@ body.admin-bar .schedula-header[data-v-15a44284] {
 }
   
   /* Mobile WordPress admin bar adjustment - reduced padding */
-body.admin-bar .schedula-header[data-v-15a44284] {
+body.admin-bar .schedula-header[data-v-f3db5e28] {
     top: 0px !important; /* Keep at top 0 */
     height: 80px !important; /* 48px content + 32px admin bar space */
     padding-top: 32px !important; /* Reduced from 46px to 32px */
@@ -34,14 +31,14 @@ body.admin-bar .schedula-header[data-v-15a44284] {
 }
   
   /* Ensure the content area of header stays compact */
-body.admin-bar .schedula-header[data-v-15a44284] > * {
+body.admin-bar .schedula-header[data-v-f3db5e28] > * {
     height: 48px !important; /* Match reduced header height */
     display: flex !important;
     align-items: center !important;
 }
   
   /* Additional class for ensuring mobile positioning */
-.schedula-header.mobile-header-positioned[data-v-15a44284] {
+.schedula-header.mobile-header-positioned[data-v-f3db5e28] {
     position: fixed !important;
     top: 0px !important;
 }
@@ -49,41 +46,41 @@ body.admin-bar .schedula-header[data-v-15a44284] > * {
 
 /* Desktop styles */
 @media (min-width: 640px) {
-.schedula-header[data-v-15a44284] {
+.schedula-header[data-v-f3db5e28] {
     position: fixed !important;
 }
-body.admin-bar .schedula-header[data-v-15a44284] {
+body.admin-bar .schedula-header[data-v-f3db5e28] {
     top: 32px !important; /* WordPress desktop admin bar height */
 }
 }
 
 /* Content spacing adjustments */
-.schedula-main[data-v-15a44284] {
+.schedula-main[data-v-f3db5e28] {
   margin-top: 50px; /* Base header height */
   padding: 16px 8px;
 }
 
 /* WordPress admin bar body adjustments */
-body.admin-bar .schedula-main[data-v-15a44284] {
+body.admin-bar .schedula-main[data-v-f3db5e28] {
   margin-top: 82px; /* 50px header + 32px desktop admin bar */
 }
 
 /* Mobile content spacing - UPDATED FOR REDUCED SIZES */
 @media (max-width: 639px) {
-.schedula-main[data-v-15a44284] {
+.schedula-main[data-v-f3db5e28] {
     margin-top: 48px; /* Reduced mobile header height */
 }
-body.admin-bar .schedula-main[data-v-15a44284] {
+body.admin-bar .schedula-main[data-v-f3db5e28] {
     margin-top: 80px; /* 48px header + 32px admin bar padding */
 }
 }
 
 /* Touch handling for mobile */
 @media (max-width: 639px) {
-.schedula-header[data-v-15a44284] {
+.schedula-header[data-v-f3db5e28] {
     padding: 0 12px;
 }
-.schedula-header nav a[data-v-15a44284] {
+.schedula-header nav a[data-v-f3db5e28] {
     min-width: 32px;
     min-height: 32px;
     display: flex;
@@ -91,14 +88,14 @@ body.admin-bar .schedula-main[data-v-15a44284] {
     justify-content: center;
     touch-action: manipulation;
 }
-.schedula-header nav a i[data-v-15a44284] {
+.schedula-header nav a i[data-v-f3db5e28] {
     font-size: 16px;
 }
 }
 
 /* Desktop styles */
 @media (min-width: 640px) {
-.schedula-header nav a[data-v-15a44284] {
+.schedula-header nav a[data-v-f3db5e28] {
     padding: 8px 12px;
     border-radius: 6px;
 }
@@ -106,19 +103,19 @@ body.admin-bar .schedula-main[data-v-15a44284] {
 
 /* Desktop sidebar adjustments */
 @media (min-width: 768px) {
-.schedula-header[data-v-15a44284] {
+.schedula-header[data-v-f3db5e28] {
     width: calc(100% - 160px) !important;
     left: 160px;
 }
 }
-.folded .schedula-header[data-v-15a44284] {
+.folded .schedula-header[data-v-f3db5e28] {
   width: calc(100% - 36px) !important;
   left: 36px;
 }
 
 /* Mobile override - full width on mobile */
 @media (max-width: 767px) {
-.schedula-header[data-v-15a44284] {
+.schedula-header[data-v-f3db5e28] {
     width: 100% !important;
     left: 0 !important;
     right: 0 !important;
@@ -127,17 +124,14 @@ body.admin-bar .schedula-main[data-v-15a44284] {
 
 /* Performance optimization */
 @media (max-width: 639px) {
-.schedula-header[data-v-15a44284] {
+.schedula-header[data-v-f3db5e28] {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
 }
 
-/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/shared/ToastContainer.vue?vue&type=style&index=0&id=0354d944&scoped=true&lang=css ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************/
 
-.toast-container[data-v-0354d944] {
+.toast-container[data-v-2ae8eb6e] {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -145,7 +139,7 @@ body.admin-bar .schedula-main[data-v-15a44284] {
     pointer-events: none;
     max-width: 420px;
 }
-.toast[data-v-0354d944] {
+.toast[data-v-2ae8eb6e] {
     display: flex;
     align-items: center;
     background: white;
@@ -161,45 +155,45 @@ body.admin-bar .schedula-main[data-v-15a44284] {
     max-width: 100%;
     word-wrap: break-word;
 }
-.toast-success[data-v-0354d944] {
+.toast-success[data-v-2ae8eb6e] {
     border-left-color: #10b981;
     background-color: #f0fdf4;
 }
-.toast-error[data-v-0354d944] {
+.toast-error[data-v-2ae8eb6e] {
     border-left-color: #ef4444;
     background-color: #fef2f2;
 }
-.toast-warning[data-v-0354d944] {
+.toast-warning[data-v-2ae8eb6e] {
     border-left-color: #f59e0b;
     background-color: #fffbeb;
 }
-.toast-info[data-v-0354d944] {
+.toast-info[data-v-2ae8eb6e] {
     border-left-color: #3b82f6;
     background-color: #eff6ff;
 }
-.toast-icon[data-v-0354d944] {
+.toast-icon[data-v-2ae8eb6e] {
     margin-right: 12px;
     font-size: 20px;
     flex-shrink: 0;
 }
-.toast-success .toast-icon[data-v-0354d944] { color: #10b981;
+.toast-success .toast-icon[data-v-2ae8eb6e] { color: #10b981;
 }
-.toast-error .toast-icon[data-v-0354d944] { color: #ef4444;
+.toast-error .toast-icon[data-v-2ae8eb6e] { color: #ef4444;
 }
-.toast-warning .toast-icon[data-v-0354d944] { color: #f59e0b;
+.toast-warning .toast-icon[data-v-2ae8eb6e] { color: #f59e0b;
 }
-.toast-info .toast-icon[data-v-0354d944] { color: #3b82f6;
+.toast-info .toast-icon[data-v-2ae8eb6e] { color: #3b82f6;
 }
-.toast-content[data-v-0354d944] {
+.toast-content[data-v-2ae8eb6e] {
     flex: 1;
     min-width: 0;
 }
-.toast-message[data-v-0354d944] {
+.toast-message[data-v-2ae8eb6e] {
     font-weight: 500;
     color: #374151;
     line-height: 1.4;
 }
-.toast-close[data-v-0354d944] {
+.toast-close[data-v-2ae8eb6e] {
     margin-left: 12px;
     background: none;
     border: none;
@@ -211,24 +205,21 @@ body.admin-bar .schedula-main[data-v-15a44284] {
     transition: background-color 0.2s ease;
     flex-shrink: 0;
 }
-.toast-close[data-v-0354d944]:hover {
+.toast-close[data-v-2ae8eb6e]:hover {
     background-color: rgba(0, 0, 0, 0.05);
     color: #374151;
 }
-.toast-enter-active[data-v-0354d944] { transition: all 0.3s ease-out;
+.toast-enter-active[data-v-2ae8eb6e] { transition: all 0.3s ease-out;
 }
-.toast-leave-active[data-v-0354d944] { transition: all 0.3s ease-in;
+.toast-leave-active[data-v-2ae8eb6e] { transition: all 0.3s ease-in;
 }
-.toast-enter-from[data-v-0354d944] { opacity: 0; transform: translateX(100%);
+.toast-enter-from[data-v-2ae8eb6e] { opacity: 0; transform: translateX(100%);
 }
-.toast-leave-to[data-v-0354d944] { opacity: 0; transform: translateX(100%);
+.toast-leave-to[data-v-2ae8eb6e] { opacity: 0; transform: translateX(100%);
 }
-.toast-move[data-v-0354d944] { transition: transform 0.3s ease;
+.toast-move[data-v-2ae8eb6e] { transition: transform 0.3s ease;
 }
   
-/*!********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/common/BaseFormStyles.vue?vue&type=style&index=0&id=41df69db&lang=css ***!
-  \********************************************************************************************************************************************************************************************************************************************************************/
 
 /* These styles are intentionally NOT scoped.
    They are meant to be global and provide consistent base styling
@@ -407,29 +398,17 @@ textarea {
   box-sizing: border-box !important;
 }
 
-/*!***************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/App.vue?vue&type=style&index=0&id=3a030f38&scoped=true&lang=css ***!
-  \***************************************************************************************************************************************************************************************************************************************************/
 
-.appearance-page[data-v-3a030f38] {
+.appearance-page[data-v-0a711c39] {
   /* Add any styles to disable or override the admin styles on the appearance page */
 }
 
-/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/dashboard/StatsCard.vue?vue&type=style&index=0&id=8daf2ed8&scoped=true&lang=css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************/
 
 /* No specific styles needed here, Tailwind CSS handles everything */
 
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/dashboard/SmartSuggestionsCard.vue?vue&type=style&index=0&id=43d34de1&scoped=true&lang=css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************/
 
 /* No specific styles needed beyond Tailwind */
 
-/*!*******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/DashboardPage.vue?vue&type=style&index=0&id=7f489fcf&lang=css ***!
-  \*******************************************************************************************************************************************************************************************************************************************************/
 
 /* Global styles for admin theme variables are assumed to be loaded from global-admin.css */
 
@@ -540,65 +519,56 @@ button:disabled:hover {
 }
 
 
-/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/OnboardingWizard.vue?vue&type=style&index=0&id=728f230a&scoped=true&lang=css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************/
 
 /* Add any specific styles for the wizard here */
-.modal-fade-enter-active[data-v-728f230a], .modal-fade-leave-active[data-v-728f230a] {
+.modal-fade-enter-active[data-v-5b7fa837], .modal-fade-leave-active[data-v-5b7fa837] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-728f230a], .modal-fade-leave-to[data-v-728f230a] {
+.modal-fade-enter-from[data-v-5b7fa837], .modal-fade-leave-to[data-v-5b7fa837] {
   opacity: 0;
 }
 
 /* Custom dropdown item hover effect */
-.dropdown-item[data-v-728f230a]:hover {
+.dropdown-item[data-v-5b7fa837]:hover {
   background-color: #f3f4f6; /* gray-100 */
 }
-.dark-mode .dropdown-item[data-v-728f230a]:hover {
+.dark-mode .dropdown-item[data-v-5b7fa837]:hover {
   background-color: #374151; /* gray-700 */
 }
 
 /* Dark mode styles for native select options */
-.dark-mode .input-field option[data-v-728f230a],
-.dark-mode .input-field optgroup[data-v-728f230a] {
+.dark-mode .input-field option[data-v-5b7fa837],
+.dark-mode .input-field optgroup[data-v-5b7fa837] {
   background-color: var(--admin-card-bg-color, #1f2937);
   color: var(--admin-text-color, #f9fafb);
 }
 
-/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/shared/AppLoader.vue?vue&type=style&index=0&id=72ba5d5a&scoped=true&lang=css ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************/
 
   /* No additional scoped styles needed, Tailwind's animate-spin handles it */
   
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appointments/AppointmentsListe.vue?vue&type=style&index=0&id=4ec6d2f0&scoped=true&lang=css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************/
 
-.break-words[data-v-4ec6d2f0] {
+.break-words[data-v-3327dc1b] {
   word-break: break-word;
   overflow-wrap: break-word;
 }
 
 /* Responsive table adjustments */
 @media (max-width: 639px) { /* Small screens (sm breakpoint in Tailwind is 640px) */
-table[data-v-4ec6d2f0], thead[data-v-4ec6d2f0], tbody[data-v-4ec6d2f0], th[data-v-4ec6d2f0], td[data-v-4ec6d2f0], tr[data-v-4ec6d2f0] {
+table[data-v-3327dc1b], thead[data-v-3327dc1b], tbody[data-v-3327dc1b], th[data-v-3327dc1b], td[data-v-3327dc1b], tr[data-v-3327dc1b] {
     display: block;
 }
-thead tr[data-v-4ec6d2f0] {
+thead tr[data-v-3327dc1b] {
     position: absolute;
     top: -9999px;
     left: -9999px;
 }
-tr[data-v-4ec6d2f0] {
+tr[data-v-3327dc1b] {
     border: 1px solid var(--admin-border-color);
     margin-bottom: 0.5rem;
     border-radius: 0.5rem; /* rounded-lg */
     overflow: hidden; /* Ensures border-radius applies */
 }
-td[data-v-4ec6d2f0] {
+td[data-v-3327dc1b] {
     /* Behave like a "row" */
     border: none;
     border-bottom: 1px solid var(--admin-border-color);
@@ -606,7 +576,7 @@ td[data-v-4ec6d2f0] {
     padding-left: 50% !important; /* Adjust based on label width */
     text-align: right;
 }
-td[data-v-4ec6d2f0]:before {
+td[data-v-3327dc1b]:before {
     /* Now like a table header */
     position: absolute;
     /* Top/left values mimic padding */
@@ -623,44 +593,41 @@ td[data-v-4ec6d2f0]:before {
   /*
   Label the data
   */
-td[data-v-4ec6d2f0]:nth-of-type(1):before { content: "Date & Time:";
+td[data-v-3327dc1b]:nth-of-type(1):before { content: "Date & Time:";
 }
-td[data-v-4ec6d2f0]:nth-of-type(2):before { content: "Client:";
+td[data-v-3327dc1b]:nth-of-type(2):before { content: "Client:";
 }
-td[data-v-4ec6d2f0]:nth-of-type(3):before { content: "Employe:";
+td[data-v-3327dc1b]:nth-of-type(3):before { content: "Employe:";
 }
-td[data-v-4ec6d2f0]:nth-of-type(4):before { content: "Service:";
+td[data-v-3327dc1b]:nth-of-type(4):before { content: "Service:";
 }
-td[data-v-4ec6d2f0]:nth-of-type(5):before { content: "Price:";
+td[data-v-3327dc1b]:nth-of-type(5):before { content: "Price:";
 } /* Added for mobile view */
-td[data-v-4ec6d2f0]:nth-of-type(6):before { content: "Phone:";
+td[data-v-3327dc1b]:nth-of-type(6):before { content: "Phone:";
 }
-td[data-v-4ec6d2f0]:nth-of-type(7):before { content: "Email:";
+td[data-v-3327dc1b]:nth-of-type(7):before { content: "Email:";
 }
-td[data-v-4ec6d2f0]:nth-of-type(8):before { content: "Duration:";
+td[data-v-3327dc1b]:nth-of-type(8):before { content: "Duration:";
 }
-td[data-v-4ec6d2f0]:nth-of-type(9):before { content: "Status:";
+td[data-v-3327dc1b]:nth-of-type(9):before { content: "Status:";
 }
-td[data-v-4ec6d2f0]:nth-of-type(10):before { content: "Actions:";
+td[data-v-3327dc1b]:nth-of-type(10):before { content: "Actions:";
 }
 
   /* Hide the desktop cells */
-.sm\:table-cell.hidden[data-v-4ec6d2f0] {
+.sm\:table-cell.hidden[data-v-3327dc1b] {
     display: none;
 }
 
   /* Show the stacked cells */
-.block.sm\:hidden[data-v-4ec6d2f0] {
+.block.sm\:hidden[data-v-3327dc1b] {
     display: block;
 }
 }
 
-/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/common/BaseInput.vue?vue&type=style&index=0&id=7d7f7fc5&scoped=true&lang=css ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************/
 
 /* These styles are specific to BaseInput's internal layout, not the input's appearance */
-.standardized-input-container[data-v-7d7f7fc5] {
+.standardized-input-container[data-v-082c25fc] {
   display: flex;
   width: 100%;
   position: relative;
@@ -669,12 +636,9 @@ td[data-v-4ec6d2f0]:nth-of-type(10):before { content: "Actions:";
 /* The standardized-input class itself is now global, so no need to redefine it here. */
 /* If you had other specific layout needs for the input itself, they would go here. */
 
-/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/common/BaseTextarea.vue?vue&type=style&index=0&id=8fdad8e2&scoped=true&lang=css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************/
 
 /* These styles are specific to BaseTextarea's internal layout, not the textarea's appearance */
-.standardized-input-container[data-v-8fdad8e2] {
+.standardized-input-container[data-v-4fc365fe] {
   display: flex;
   width: 100%;
   min-height: 44px; /* Ensure consistent height for container */
@@ -682,441 +646,381 @@ td[data-v-4ec6d2f0]:nth-of-type(10):before { content: "Actions:";
 }
 /* The standardized-input and resize-vertical classes are now global. */
 
-/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/common/BaseSelect.vue?vue&type=style&index=0&id=7fb5eb91&scoped=true&lang=css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************/
 
 /* These styles are specific to BaseSelect's internal layout, not the select's appearance */
-.standardized-input-container[data-v-7fb5eb91] {
+.standardized-input-container[data-v-6fdc9328] {
   display: flex;
   width: 100%;
   position: relative;
 }
 /* The standardized-input and select-appearance classes are now global. */
 
-/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/common/BaseCheckbox.vue?vue&type=style&index=0&id=669ae8d0&scoped=true&lang=css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************/
 
 /* Add any specific scoped styles for BaseCheckbox here if needed */
 
-/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/common/BaseInputWithButton.vue?vue&type=style&index=0&id=4664833d&scoped=true&lang=css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************/
 
 /* The standardized-input-container, standardized-input-main, and standardized-button classes are now global. */
 /* No specific scoped styles needed here, as the global styles handle the layout and appearance. */
 
-/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appointments/AppointmentsForm.vue?vue&type=style&index=0&id=8bb4ff5a&scoped=true&lang=css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************/
 
 
 /* Modal transition styles */
-.modal-fade-enter-active[data-v-8bb4ff5a],
-.modal-fade-leave-active[data-v-8bb4ff5a] {
+.modal-fade-enter-active[data-v-eea07f8e],
+.modal-fade-leave-active[data-v-eea07f8e] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-8bb4ff5a],
-.modal-fade-leave-to[data-v-8bb4ff5a] {
+.modal-fade-enter-from[data-v-eea07f8e],
+.modal-fade-leave-to[data-v-eea07f8e] {
   opacity: 0;
 }
 
 /* Optional: Add a slight scale/slide effect for the modal content */
-.modal-fade-enter-active .modal-content[data-v-8bb4ff5a],
-.modal-fade-leave-active .modal-content[data-v-8bb4ff5a] {
+.modal-fade-enter-active .modal-content[data-v-eea07f8e],
+.modal-fade-leave-active .modal-content[data-v-eea07f8e] {
   transition: transform 0.3s ease;
 }
-.modal-fade-enter-from .modal-content[data-v-8bb4ff5a],
-.modal-fade-leave-to .modal-content[data-v-8bb4ff5a] {
+.modal-fade-enter-from .modal-content[data-v-eea07f8e],
+.modal-fade-leave-to .modal-content[data-v-eea07f8e] {
   transform: scale(0.95);
 }
 
-/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/AppointmentsPage.vue?vue&type=style&index=0&id=7333aaf2&scoped=true&lang=css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************/
 
 /* No modal-fade transition for the form itself, as it's now a full page */
 /* Modal transition styles for Delete Confirmation Modal (only) */
-.modal-fade-enter-active[data-v-7333aaf2],
-.modal-fade-leave-active[data-v-7333aaf2] {
+.modal-fade-enter-active[data-v-59d89397],
+.modal-fade-leave-active[data-v-59d89397] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-7333aaf2],
-.modal-fade-leave-to[data-v-7333aaf2] {
+.modal-fade-enter-from[data-v-59d89397],
+.modal-fade-leave-to[data-v-59d89397] {
   opacity: 0;
 }
 
 /* Optional: Add a slight scale/slide effect for the modal content */
-.modal-fade-enter-active > div[data-v-7333aaf2],
-.modal-fade-leave-active > div[data-v-7333aaf2] {
+.modal-fade-enter-active > div[data-v-59d89397],
+.modal-fade-leave-active > div[data-v-59d89397] {
   transition: transform 0.3s ease;
 }
-.modal-fade-enter-from > div[data-v-7333aaf2],
-.modal-fade-leave-to > div[data-v-7333aaf2] {
+.modal-fade-enter-from > div[data-v-59d89397],
+.modal-fade-leave-to > div[data-v-59d89397] {
   transform: scale(0.95);
 }
 
 /* Datepicker specific styles to ensure good contrast */
 /* These styles are often needed to override Flowbite's defaults for better visibility */
-.datepicker-grid .datepicker-cell.selected[data-v-7333aaf2],
-.datepicker-grid .datepicker-cell.range-start[data-v-7333aaf2],
-.datepicker-grid .datepicker-cell.range-end[data-v-7333aaf2],
-.datepicker-grid .datepicker-cell.range-middle[data-v-7333aaf2],
-.datepicker-grid .datepicker-cell.range-start.selected[data-v-7333aaf2],
-.datepicker-grid .datepicker-cell.range-end.selected[data-v-7333aaf2] {
+.datepicker-grid .datepicker-cell.selected[data-v-59d89397],
+.datepicker-grid .datepicker-cell.range-start[data-v-59d89397],
+.datepicker-grid .datepicker-cell.range-end[data-v-59d89397],
+.datepicker-grid .datepicker-cell.range-middle[data-v-59d89397],
+.datepicker-grid .datepicker-cell.range-start.selected[data-v-59d89397],
+.datepicker-grid .datepicker-cell.range-end.selected[data-v-59d89397] {
   color: var(--admin-card-text-color) !important;
 }
 
 /* Specific styles for selected/hovered cells to ensure good contrast */
-.datepicker-grid .datepicker-cell.selected[data-v-7333aaf2],
-.datepicker-grid .datepicker-cell.range-start[data-v-7333aaf2],
-.datepicker-grid .datepicker-cell.range-end[data-v-7333aaf2] {
+.datepicker-grid .datepicker-cell.selected[data-v-59d89397],
+.datepicker-grid .datepicker-cell.range-start[data-v-59d89397],
+.datepicker-grid .datepicker-cell.range-end[data-v-59d89397] {
   background-color: var(--admin-link-indigo-bg) !important; /* Using indigo for selected dates */
   color: var(--admin-link-indigo-text) !important;
 }
-.datepicker-grid .datepicker-cell.range-middle[data-v-7333aaf2] {
+.datepicker-grid .datepicker-cell.range-middle[data-v-59d89397] {
   background-color: var(--admin-input-border-color) !important; /* Lighter border color for range middle */
   color: var(--admin-card-text-color) !important;
 }
-.datepicker-grid .datepicker-cell[data-v-7333aaf2]:hover:not(.selected):not(.range-middle) {
+.datepicker-grid .datepicker-cell[data-v-59d89397]:hover:not(.selected):not(.range-middle) {
   background-color: var(--admin-input-border-color) !important; /* Lighter border color for hover */
 }
-input[type="text"][data-v-7333aaf2]::-webkit-calendar-picker-indicator {
+input[type="text"][data-v-59d89397]::-webkit-calendar-picker-indicator {
   display: none;
 }
-input[type="text"][data-v-7333aaf2]::-moz-calendar-picker-indicator {
+input[type="text"][data-v-59d89397]::-moz-calendar-picker-indicator {
   display: none;
 }
-input[type="text"][data-v-7333aaf2]::-ms-calendar-picker-indicator {
+input[type="text"][data-v-59d89397]::-ms-calendar-picker-indicator {
   display: none;
 }
-.column-visibility-button[data-v-7333aaf2]:hover {
+.column-visibility-button[data-v-59d89397]:hover {
   background-color: var(--admin-border-color);
 }
 
-/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/staff/EmployeList.vue?vue&type=style&index=0&id=33ca77b4&scoped=true&lang=css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************/
 
 /* Add any specific styles for EmployeListe.vue here if needed */
 
-/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/staff/EmployeForm.vue?vue&type=style&index=0&id=9bbcc568&scoped=true&lang=css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************/
 
 /* Scoped styles specific to EmployeForm.vue */
-.content-card[data-v-9bbcc568] {
+.content-card[data-v-38e5c48a] {
   background-color: var(--admin-card-bg-color);
   box-shadow: var(--admin-shadow);
   border: 1px solid var(--admin-border-color);
 }
-.input-field[data-v-9bbcc568] {
+.input-field[data-v-38e5c48a] {
   background-color: var(--admin-input-bg-color);
   color: var(--admin-input-text-color);
   border-color: var(--admin-input-border-color);
 }
-.input-field[data-v-9bbcc568]:focus {
+.input-field[data-v-38e5c48a]:focus {
   border-color: var(--admin-link-indigo-bg);
   box-shadow: 0 0 0 1px var(--admin-link-indigo-bg);
 }
-.form-checkbox[data-v-9bbcc568] {
+.form-checkbox[data-v-38e5c48a] {
   accent-color: var(--admin-link-indigo-bg);
   border-color: var(--admin-input-border-color);
   background-color: var(--admin-input-bg-color);
 }
-.break-label[data-v-9bbcc568] {
+.break-label[data-v-38e5c48a] {
   border: 1px solid var(--admin-suggestion-yellow-border);
 }
 
 /* Modal styles - ensure they match the global toast styling if possible for consistency */
-.modal-fade-enter-active[data-v-9bbcc568], .modal-fade-leave-active[data-v-9bbcc568] {
+.modal-fade-enter-active[data-v-38e5c48a], .modal-fade-leave-active[data-v-38e5c48a] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-9bbcc568], .modal-fade-leave-to[data-v-9bbcc568] {
+.modal-fade-enter-from[data-v-38e5c48a], .modal-fade-leave-to[data-v-38e5c48a] {
   opacity: 0;
 }
-.modal-fade-enter-active .modal-content[data-v-9bbcc568],
-.modal-fade-leave-active .modal-content[data-v-9bbcc568] {
+.modal-fade-enter-active .modal-content[data-v-38e5c48a],
+.modal-fade-leave-active .modal-content[data-v-38e5c48a] {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-.modal-fade-enter-from .modal-content[data-v-9bbcc568],
-.modal-fade-leave-to .modal-content[data-v-9bbcc568] {
+.modal-fade-enter-from .modal-content[data-v-38e5c48a],
+.modal-fade-leave-to .modal-content[data-v-38e5c48a] {
   transform: translateY(-20px) scale(0.95);
   opacity: 0;
 }
-.modal-content[data-v-9bbcc568] {
+.modal-content[data-v-38e5c48a] {
   background-color: var(--admin-card-bg-color);
   color: var(--admin-text-color);
   border: 1px solid var(--admin-border-color);
 }
 
-/*!***************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/StaffPage.vue?vue&type=style&index=0&id=122973ca&scoped=true&lang=css ***!
-  \***************************************************************************************************************************************************************************************************************************************************************/
 
-.modal-fade-enter-active[data-v-122973ca],
-  .modal-fade-leave-active[data-v-122973ca] {
+.modal-fade-enter-active[data-v-056ec447],
+  .modal-fade-leave-active[data-v-056ec447] {
     transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-122973ca],
-  .modal-fade-leave-to[data-v-122973ca] {
+.modal-fade-enter-from[data-v-056ec447],
+  .modal-fade-leave-to[data-v-056ec447] {
     opacity: 0;
 }
-.modal-fade-enter-active > div[data-v-122973ca],
-  .modal-fade-leave-active > div[data-v-122973ca] {
+.modal-fade-enter-active > div[data-v-056ec447],
+  .modal-fade-leave-active > div[data-v-056ec447] {
     transition: transform 0.3s ease;
 }
-.modal-fade-enter-from > div[data-v-122973ca],
-  .modal-fade-leave-to > div[data-v-122973ca] {
+.modal-fade-enter-from > div[data-v-056ec447],
+  .modal-fade-leave-to > div[data-v-056ec447] {
     transform: scale(0.95);
 }
-.modal-content[data-v-122973ca] {
+.modal-content[data-v-056ec447] {
     background-color: var(--admin-card-bg-color);
     color: var(--admin-text-color);
     border: 1px solid var(--admin-border-color);
 }
   
-/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/categories/CategoryList.vue?vue&type=style&index=0&id=73e27c8f&scoped=true&lang=css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************/
 
 
 
 
 /* Modal transition styles (kept here for the delete confirmation modal) */
-.modal-fade-enter-active[data-v-73e27c8f],
-.modal-fade-leave-active[data-v-73e27c8f] {
+.modal-fade-enter-active[data-v-049abe90],
+.modal-fade-leave-active[data-v-049abe90] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-73e27c8f],
-.modal-fade-leave-to[data-v-73e27c8f] {
+.modal-fade-enter-from[data-v-049abe90],
+.modal-fade-leave-to[data-v-049abe90] {
   opacity: 0;
 }
 
 /* Optional: Add a slight scale/slide effect for the modal content */
-.modal-fade-enter-active .modal-content[data-v-73e27c8f],
-.modal-fade-leave-active .modal-content[data-v-73e27c8f] {
+.modal-fade-enter-active .modal-content[data-v-049abe90],
+.modal-fade-leave-active .modal-content[data-v-049abe90] {
   transition: transform 0.3s ease;
 }
-.modal-fade-enter-from .modal-content[data-v-73e27c8f],
-.modal-fade-leave-to .modal-content[data-v-73e27c8f] {
+.modal-fade-enter-from .modal-content[data-v-049abe90],
+.modal-fade-leave-to .modal-content[data-v-049abe90] {
   transform: scale(0.95);
 }
 
 
-/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/modals/ManageCategoriesModal.vue?vue&type=style&index=0&id=0438a75a&scoped=true&lang=css ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************/
 
-.content-card[data-v-0438a75a] {
+.content-card[data-v-6aac14f5] {
   background-color: var(--admin-card-bg);
   border: 1px solid var(--admin-border-color);
   color: var(--admin-text-color);
 }
 
-/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/ServicesCategoriesPage.vue?vue&type=style&index=0&id=3215e7ed&scoped=true&lang=css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************/
 
 /* Modal transition styles */
-.modal-fade-enter-active[data-v-3215e7ed],
-.modal-fade-leave-active[data-v-3215e7ed] {
+.modal-fade-enter-active[data-v-12b13423],
+.modal-fade-leave-active[data-v-12b13423] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-3215e7ed],
-.modal-fade-leave-to[data-v-3215e7ed] {
+.modal-fade-enter-from[data-v-12b13423],
+.modal-fade-leave-to[data-v-12b13423] {
   opacity: 0;
 }
-.modal-fade-enter-active > div[data-v-3215e7ed],
-.modal-fade-leave-active > div[data-v-3215e7ed] {
+.modal-fade-enter-active > div[data-v-12b13423],
+.modal-fade-leave-active > div[data-v-12b13423] {
   transition: transform 0.3s ease;
 }
-.modal-fade-enter-from > div[data-v-3215e7ed],
-.modal-fade-leave-to > div[data-v-3215e7ed] {
+.modal-fade-enter-from > div[data-v-12b13423],
+.modal-fade-leave-to > div[data-v-12b13423] {
   transform: scale(0.95);
 }
 
 /* Content card style */
-.content-card[data-v-3215e7ed] {
+.content-card[data-v-12b13423] {
   background-color: var(--admin-card-bg);
   border: 1px solid var(--admin-border-color);
   color: var(--admin-text-color);
 }
-.column-visibility-button[data-v-3215e7ed]:hover {
+.column-visibility-button[data-v-12b13423]:hover {
   background-color: var(--admin-border-color);
 }
 
-/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/clients/ClientList.vue?vue&type=style&index=0&id=dea16cc0&scoped=true&lang=css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************/
 
 /* Add any additional styles here */
 
-/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/ClientsPage.vue?vue&type=style&index=0&id=4e9dd443&scoped=true&lang=css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************/
 
-.modal-fade-enter-active[data-v-4e9dd443],
-.modal-fade-leave-active[data-v-4e9dd443] {
+.modal-fade-enter-active[data-v-0e5b1ef8],
+.modal-fade-leave-active[data-v-0e5b1ef8] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-4e9dd443],
-.modal-fade-leave-to[data-v-4e9dd443] {
+.modal-fade-enter-from[data-v-0e5b1ef8],
+.modal-fade-leave-to[data-v-0e5b1ef8] {
   opacity: 0;
 }
 
 /* Optional: Add a slight scale/slide effect for the modal content */
-.modal-fade-enter-active .modal-content[data-v-4e9dd443],
-.modal-fade-leave-active .modal-content[data-v-4e9dd443] {
+.modal-fade-enter-active .modal-content[data-v-0e5b1ef8],
+.modal-fade-leave-active .modal-content[data-v-0e5b1ef8] {
   transition: transform 0.3s ease;
 }
-.modal-fade-enter-from .modal-content[data-v-4e9dd443],
-.modal-fade-leave-to .modal-content[data-v-4e9dd443] {
+.modal-fade-enter-from .modal-content[data-v-0e5b1ef8],
+.modal-fade-leave-to .modal-content[data-v-0e5b1ef8] {
   transform: scale(0.95);
 }
-.column-visibility-button[data-v-4e9dd443]:hover {
+.column-visibility-button[data-v-0e5b1ef8]:hover {
   background-color: var(--admin-border-color);
 }
 
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/notifications/EmailTemplateSelector.vue?vue&type=style&index=0&id=65b8e54e&scoped=true&lang=css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************/
 
-.input-field[data-v-65b8e54e] {
+.input-field[data-v-3bf0bba1] {
   background-color: var(--admin-input-bg-color);
   color: var(--admin-input-text-color);
   border-color: var(--admin-input-border-color);
 }
 
-/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/notifications/EmailBodyEditor.vue?vue&type=style&index=0&id=74d5e744&scoped=true&lang=css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************/
 
-.modal-fade-enter-active[data-v-74d5e744],
-.modal-fade-leave-active[data-v-74d5e744] {
+.modal-fade-enter-active[data-v-1cf71741],
+.modal-fade-leave-active[data-v-1cf71741] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-74d5e744],
-.modal-fade-leave-to[data-v-74d5e744] {
+.modal-fade-enter-from[data-v-1cf71741],
+.modal-fade-leave-to[data-v-1cf71741] {
   opacity: 0;
 }
-.modal-content[data-v-74d5e744] {
+.modal-content[data-v-1cf71741] {
   background-color: var(--admin-card-bg-color);
 }
-.input-field[data-v-74d5e744] {
+.input-field[data-v-1cf71741] {
   background-color: var(--admin-input-bg-color);
   color: var(--admin-input-text-color);
   border-color: var(--admin-input-border-color);
 }
 
-/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/notifications/SmtpSettingsModal.vue?vue&type=style&index=0&id=389f0dad&scoped=true&lang=css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************/
 
-.modal-fade-enter-active[data-v-389f0dad],
-.modal-fade-leave-active[data-v-389f0dad] {
+.modal-fade-enter-active[data-v-5d20e9c4],
+.modal-fade-leave-active[data-v-5d20e9c4] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-389f0dad],
-.modal-fade-leave-to[data-v-389f0dad] {
+.modal-fade-enter-from[data-v-5d20e9c4],
+.modal-fade-leave-to[data-v-5d20e9c4] {
   opacity: 0;
 }
-.modal-content[data-v-389f0dad] {
+.modal-content[data-v-5d20e9c4] {
   background-color: var(--admin-card-bg-color);
 }
-.input-field[data-v-389f0dad] {
+.input-field[data-v-5d20e9c4] {
   background-color: var(--admin-input-bg-color);
   color: var(--admin-input-text-color);
   border-color: var(--admin-input-border-color);
 }
 
 
-/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/NotificationsPage.vue?vue&type=style&index=0&id=78dc47ba&scoped=true&lang=css ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************/
 
-.content-card[data-v-78dc47ba] {
+.content-card[data-v-0ed0dccc] {
   background-color: var(--admin-card-bg-color);
   color: var(--admin-card-text-color);
   border-radius: 0.5rem;
 }
-.input-field[data-v-78dc47ba] {
+.input-field[data-v-0ed0dccc] {
   background-color: var(--admin-input-bg-color);
   color: var(--admin-input-text-color);
   border-color: var(--admin-input-border-color);
 }
 
-/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/AppearanceHomePage.vue?vue&type=style&index=0&id=d339e046&scoped=true&lang=css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************/
 
-h1[data-v-d339e046] {
+h1[data-v-4b654f7a] {
   font-weight: bold;
   font-size: 2.0rem;
 }
 
-/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/form/BasePhoneInputForm.vue?vue&type=style&index=0&id=0e43947c&scoped=true&lang=css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************/
 
-.vue-tel-input[data-v-0e43947c] {
-    background-color: var(--0e43947c-style\?\.backgroundColor\ \|\|\ \"\#fff\") !important; 
-    color: var(--0e43947c-style\?\.color\ \|\|\ \"\#000\") !important; 
-    border-color: var(--0e43947c-style\?\.borderColor\ \|\|\ \"\#ccc\") !important;
+.vue-tel-input[data-v-9885bf0e] {
+    background-color: var(--1e819c9d) !important; 
+    color: var(--3bff4021) !important; 
+    border-color: var(--45b112bc) !important;
 }
-.vue-tel-input .vti__input[data-v-0e43947c] {
-    background-color: var(--0e43947c-style\?\.backgroundColor\ \|\|\ \"\#fff\") !important;
-    color: var(--0e43947c-style\?\.color\ \|\|\ \"\#000\") !important;
-    border-color: var(--0e43947c-style\?\.borderColor\ \|\|\ \"\#ccc\") !important;
+.vue-tel-input .vti__input[data-v-9885bf0e] {
+    background-color: var(--1e819c9d) !important;
+    color: var(--3bff4021) !important;
+    border-color: var(--45b112bc) !important;
 }
-.vue-tel-input .vti__dropdown[data-v-0e43947c] {
-    background-color: var(--0e43947c-style\?\.backgroundColor\ \|\|\ \"\#fff\") !important;
-    color: var(--0e43947c-style\?\.color\ \|\|\ \"\#000\") !important;
-    border-color: var(--0e43947c-style\?\.borderColor\ \|\|\ \"\#ccc\") !important;
+.vue-tel-input .vti__dropdown[data-v-9885bf0e] {
+    background-color: var(--1e819c9d) !important;
+    color: var(--3bff4021) !important;
+    border-color: var(--45b112bc) !important;
 }
-.vue-tel-input .vti__dropdown-list[data-v-0e43947c] {
-    background-color: var(--0e43947c-style\?\.backgroundColor\ \|\|\ \"\#fff\") !important;
-    color: var(--0e43947c-style\?\.color\ \|\|\ \"\#000\") !important;
-    border-color: var(--0e43947c-style\?\.borderColor\ \|\|\ \"\#ccc\") !important;
+.vue-tel-input .vti__dropdown-list[data-v-9885bf0e] {
+    background-color: var(--1e819c9d) !important;
+    color: var(--3bff4021) !important;
+    border-color: var(--45b112bc) !important;
 }
-.vue-tel-input .vti__dropdown-item[data-v-0e43947c] {
-    color: var(--0e43947c-style\?\.color\ \|\|\ \"\#000\") !important;
+.vue-tel-input .vti__dropdown-item[data-v-9885bf0e] {
+    color: var(--3bff4021) !important;
 }
-.vue-tel-input .vti__selected-flag[data-v-0e43947c] {
-    background-color: var(--0e43947c-style\?\.backgroundColor\ \|\|\ \"\#fff\") !important;
+.vue-tel-input .vti__selected-flag[data-v-9885bf0e] {
+    background-color: var(--1e819c9d) !important;
 }
-.vue-tel-input.vue-tel-input[data-v-0e43947c] {
-    border: 1px solid var(--0e43947c-style\?\.borderColor\ \|\|\ \"\#ccc\") !important;
+.vue-tel-input.vue-tel-input[data-v-9885bf0e] {
+    border: 1px solid var(--45b112bc) !important;
 }
-.vue-tel-input .vti__input[data-v-0e43947c],
-  .vue-tel-input .vti__dropdown[data-v-0e43947c] {
+.vue-tel-input .vti__input[data-v-9885bf0e],
+  .vue-tel-input .vti__dropdown[data-v-9885bf0e] {
     border: none !important;
 }
-.vue-tel-input[data-v-0e43947c] {
+.vue-tel-input[data-v-9885bf0e] {
     padding: 0 !important;
 }
-.vue-tel-input .vti__input[data-v-0e43947c] {
-    padding: var(--0e43947c-style\?\.padding) !important; 
-    height: var(--0e43947c-style\?\.height) !important; 
-    line-height: var(--0e43947c-style\?\.lineHeight) !important;
+.vue-tel-input .vti__input[data-v-9885bf0e] {
+    padding: var(--fbea5948) !important; 
+    height: var(--4118647c) !important; 
+    line-height: var(--05ad8710) !important;
 }
-.vue-tel-input .vti__dropdown[data-v-0e43947c] {
-    padding: var(--0e43947c-style\?\.padding) !important;
+.vue-tel-input .vti__dropdown[data-v-9885bf0e] {
+    padding: var(--fbea5948) !important;
 }
-.vue-tel-input .vti__dropdown-arrow[data-v-0e43947c] {
-    border-top-color: var(--0e43947c-style\?\.color\ \|\|\ \"\#000\") !important;
+.vue-tel-input .vti__dropdown-arrow[data-v-9885bf0e] {
+    border-top-color: var(--3bff4021) !important;
 }
   
   
-/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/form/ClientReservationForm.vue?vue&type=style&index=0&id=4063674a&scoped=true&lang=css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************/
 
 /* Global styles applied via CSS variables from useAppearanceSettings */
 /* These are default values, they will be overridden by inline styles from computed properties */
 /* Ensure these are in sync with useAppearanceSettings.js */
-[data-v-4063674a]:root {
+[data-v-2ddd9229]:root {
   /* Use CSS variables from useAppearanceSettings.js for global theme */
   /* These are NOT default values, they are the actual values applied by the composable */
   font-family: var(--font-family-form, 'Inter', sans-serif);
@@ -1131,7 +1035,7 @@ h1[data-v-d339e046] {
 }
 
 /* Base container for the whole form */
-.wp-reservation-form[data-v-4063674a] {
+.wp-reservation-form[data-v-2ddd9229] {
   background-color: var(--background-color);
   font-family: var(--font-family-form); /* Apply font family */
   font-size: var(--base-font-size-form); /* Apply base font size */
@@ -1142,7 +1046,7 @@ h1[data-v-d339e046] {
 
 /* Main form container (the "card") */
 /* Apply rounded corners and shadows directly from CSS variables */
-.relative.rounded-lg.overflow-hidden.shadow-lg.w-full.max-w-xl.mx-auto.flex.flex-col[data-v-4063674a] {
+.relative.rounded-lg.overflow-hidden.shadow-lg.w-full.max-w-xl.mx-auto.flex.flex-col[data-v-2ddd9229] {
   border-radius: var(--border-radius-form); /* Apply rounded corners */
   box-shadow: var(--shadow-form); /* Apply shadows */
   height: auto;
@@ -1150,7 +1054,7 @@ h1[data-v-d339e046] {
 }
 
 /* Main Form Content Area - NO internal scrolling */
-.form-body[data-v-4063674a] {
+.form-body[data-v-2ddd9229] {
   /* Styles are applied via inline styles from computed properties */
   flex-grow: 1; /* Allows it to take available space */
   overflow-y: visible; /* Prevents internal scrolling */
@@ -1161,15 +1065,15 @@ h1[data-v-d339e046] {
 /* .custom-scrollbar::-webkit-scrollbar { ... } */
 
 /* Form Group Styles (labels, inputs, selects, textareas) */
-.form-group[data-v-4063674a] {
+.form-group[data-v-2ddd9229] {
   margin-bottom: 0.75rem;
 }
-.form-label[data-v-4063674a] {
+.form-label[data-v-2ddd9229] {
   /* Styles applied via inline styles from computed properties */
 }
-.form-input[data-v-4063674a],
-.form-select[data-v-4063674a],
-.form-textarea[data-v-4063674a] {
+.form-input[data-v-2ddd9229],
+.form-select[data-v-2ddd9229],
+.form-textarea[data-v-2ddd9229] {
   border-radius: var(--border-radius-form); /* Apply rounded corners */
   font-size: var(--base-font-size-form); /* Apply base font size */
   /* Padding adjusted in JS computed property: inputStyles */
@@ -1179,12 +1083,12 @@ h1[data-v-d339e046] {
 }
 
 /* Remove all focus outlines and rings */
-.form-input[data-v-4063674a]:focus,
-.form-select[data-v-4063674a]:focus,
-.form-textarea[data-v-4063674a]:focus,
-button[data-v-4063674a]:focus,
-.form-checkbox[data-v-4063674a]:focus,
-.form-radio[data-v-4063674a]:focus {
+.form-input[data-v-2ddd9229]:focus,
+.form-select[data-v-2ddd9229]:focus,
+.form-textarea[data-v-2ddd9229]:focus,
+button[data-v-2ddd9229]:focus,
+.form-checkbox[data-v-2ddd9229]:focus,
+.form-radio[data-v-2ddd9229]:focus {
   outline: none !important;
   box-shadow: none !important;
   border-color: inherit !important;
@@ -1193,22 +1097,22 @@ button[data-v-4063674a]:focus,
 
 
 /* Styles for editable labels in preview mode */
-.preview-editable-label[data-v-4063674a] {
+.preview-editable-label[data-v-2ddd9229] {
   cursor: pointer;
   opacity: 0.6;
   transition: opacity 0.2s ease-in-out;
   font-size: 0.75rem; /* Smaller font size */
 }
-.preview-editable-label[data-v-4063674a]:hover {
+.preview-editable-label[data-v-2ddd9229]:hover {
   opacity: 1;
 }
-.form-textarea[data-v-4063674a]:focus,
-button[data-v-4063674a]:focus,
-input[data-v-4063674a]:focus,
-select[data-v-4063674a]:focus,
-textarea[data-v-4063674a]:focus,
-[tabindex][data-v-4063674a]:focus,
-a[data-v-4063674a]:focus {
+.form-textarea[data-v-2ddd9229]:focus,
+button[data-v-2ddd9229]:focus,
+input[data-v-2ddd9229]:focus,
+select[data-v-2ddd9229]:focus,
+textarea[data-v-2ddd9229]:focus,
+[tabindex][data-v-2ddd9229]:focus,
+a[data-v-2ddd9229]:focus {
   outline: none !important;
   box-shadow: none !important;
   --tw-ring-color: transparent !important;
@@ -1218,43 +1122,43 @@ a[data-v-4063674a]:focus {
 }
 
 /* For WebKit browsers like Chrome and Safari */
-[data-v-4063674a]:focus {
+[data-v-2ddd9229]:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 
 /* For Firefox */
-[data-v-4063674a]::-moz-focus-inner {
+[data-v-2ddd9229]::-moz-focus-inner {
   border: 0 !important;
 }
 
 /* For IE10+ */
-[data-v-4063674a]:-ms-input-placeholder {
+[data-v-2ddd9229]:-ms-input-placeholder {
   color: #9CA3AF !important;
 }
 
 /* For Edge */
-[data-v-4063674a]::-ms-input-placeholder {
+[data-v-2ddd9229]::-ms-input-placeholder {
   color: #9CA3AF !important;
 }
-.form-help-text[data-v-4063674a] {
+.form-help-text[data-v-2ddd9229] {
   /* Tailwind classes handle this */
 }
 
 /* Checkbox/Radio Group */
-.checkbox-group[data-v-4063674a] {
+.checkbox-group[data-v-2ddd9229] {
   /* Tailwind classes handle this */
 }
-.form-checkbox[data-v-4063674a],
-.form-radio[data-v-4063674a] {
+.form-checkbox[data-v-2ddd9229],
+.form-radio[data-v-2ddd9229] {
   accent-color: var(--primary-color);
 }
 
 /* Color Picker Specifics */
-.color-picker-group[data-v-4063674a] {
+.color-picker-group[data-v-2ddd9229] {
   /* Tailwind classes handle this */
 }
-.color-input[data-v-4063674a] {
+.color-input[data-v-2ddd9229] {
   /* Custom styles for color input */
   width: 2.5rem; /* w-10 */
   height: 2.5rem; /* h-10 */
@@ -1265,41 +1169,41 @@ a[data-v-4063674a]:focus {
   -webkit-appearance: none;
   appearance: none;
 }
-.color-input[data-v-4063674a]::-webkit-color-swatch-wrapper {
+.color-input[data-v-2ddd9229]::-webkit-color-swatch-wrapper {
   padding: 0;
 }
-.color-input[data-v-4063674a]::-webkit-color-swatch {
+.color-input[data-v-2ddd9229]::-webkit-color-swatch {
   border: none;
   border-radius: 0.25rem; /* slightly less rounded than wrapper */
 }
 
 /* Buttons */
-.inline-flex.items-center[data-v-4063674a] {
+.inline-flex.items-center[data-v-2ddd9229] {
   /* Common styles for all buttons, specific styles via :style */
 }
 
 /* This applies to all buttons globally, including nav buttons */
-button[data-v-4063674a]:hover:not(:disabled) {
+button[data-v-2ddd9229]:hover:not(:disabled) {
   transform: translateY(-1px);
   box-shadow: var(--shadow-form); /* Apply shadows */
 }
-button[data-v-4063674a]:active:not(:disabled) {
+button[data-v-2ddd9229]:active:not(:disabled) {
   transform: translateY(0);
 }
 
 /* Cards (e.g., info-card, detail-card, confirmation-summary) */
-.info-card[data-v-4063674a], .detail-card[data-v-4063674a], .confirmation-summary[data-v-4063674a] {
+.info-card[data-v-2ddd9229], .detail-card[data-v-2ddd9229], .confirmation-summary[data-v-2ddd9229] {
   /* Styles applied via inline styles from computed properties */
   border-radius: var(--border-radius-form); /* Apply rounded corners */
   box-shadow: var(--shadow-form); /* Apply shadows */
 }
 
 /* Aspect Ratio for Service Preview Image */
-.relative.rounded-lg.overflow-hidden.shadow-lg > div[style*="padding-bottom"][data-v-4063674a] {
+.relative.rounded-lg.overflow-hidden.shadow-lg > div[style*="padding-bottom"][data-v-2ddd9229] {
   position: relative;
   width: 100%;
 }
-.relative.rounded-lg.overflow-hidden.shadow-lg img[data-v-4063674a] {
+.relative.rounded-lg.overflow-hidden.shadow-lg img[data-v-2ddd9229] {
   position: absolute;
   top: 0;
   left: 0;
@@ -1311,25 +1215,25 @@ button[data-v-4063674a]:active:not(:disabled) {
 /* Time Slot Buttons & Calendar Dates */
 /* No scaling or strong shadows on hover/active for mobile */
 @media (max-width: 639px) { /* sm breakpoint */
-.calendar-date[data-v-4063674a],
-  .time-slot-btn[data-v-4063674a],
-  .time-slot[data-v-4063674a] {
+.calendar-date[data-v-2ddd9229],
+  .time-slot-btn[data-v-2ddd9229],
+  .time-slot[data-v-2ddd9229] {
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out !important; /* Keep subtle color transition */
     transform: scale(1.0) !important; /* Prevent scaling on mobile */
     box-shadow: none !important; /* Remove shadows on mobile */
 }
-.calendar-date[data-v-4063674a]:hover,
-  .time-slot-btn[data-v-4063674a]:hover,
-  .time-slot[data-v-4063674a]:hover {
+.calendar-date[data-v-2ddd9229]:hover,
+  .time-slot-btn[data-v-2ddd9229]:hover,
+  .time-slot[data-v-2ddd9229]:hover {
     background-color: var(--background-color) !important; /* Revert to normal background on hover */
     border-color: var(--text-color)33 !important; /* Revert to normal border on hover */
     color: var(--text-color) !important; /* Revert to normal text color on hover */
 }
 
   /* Ensure selected state still looks good on mobile without scaling */
-.calendar-date.selected[data-v-4063674a],
-  .time-slot-btn.selected[data-v-4063674a],
-  .time-slot.selected[data-v-4063674a] {
+.calendar-date.selected[data-v-2ddd9229],
+  .time-slot-btn.selected[data-v-2ddd9229],
+  .time-slot.selected[data-v-2ddd9229] {
     transform: scale(1.0) !important; /* Override selected scaling for mobile */
     box-shadow: none !important; /* Override selected shadow for mobile */
 }
@@ -1338,19 +1242,19 @@ button[data-v-4063674a]:active:not(:disabled) {
 
 /* Responsive adjustments for smaller screens (Tailwind breakpoints) */
 @media (max-width: 639px) { /* sm breakpoint */
-.header-section h1[data-v-4063674a] {
+.header-section h1[data-v-2ddd9229] {
     font-size: 1.125rem; /* text-lg */
 }
-.header-section p[data-v-4063674a] {
+.header-section p[data-v-2ddd9229] {
     font-size: 0.75rem; /* text-xs */
 }
   /* Calendar date height reduction on smaller screens */
-.calendar-date[data-v-4063674a] {
+.calendar-date[data-v-2ddd9229] {
     height: 2.5rem; /* h-10 */
 }
 
   /* Adjust padding for the form body on mobile for compactness */
-.form-body[data-v-4063674a] {
+.form-body[data-v-2ddd9229] {
     padding-left: 1rem; /* Smaller px-4 */
     padding-right: 1rem; /* Smaller px-4 */
     padding-top: 1rem; /* Smaller py-4 */
@@ -1358,56 +1262,53 @@ button[data-v-4063674a]:active:not(:disabled) {
 }
   
   /* Adjust padding for confirmation summary and its items on mobile */
-.confirmation-summary[data-v-4063674a] {
+.confirmation-summary[data-v-2ddd9229] {
     padding: 1rem; /* Smaller p-4 */
 }
-.confirmation-summary .summary-item[data-v-4063674a] {
+.confirmation-summary .summary-item[data-v-2ddd9229] {
     padding: 0.75rem; /* Smaller p-2 */
 }
   
   /* Adjust padding for navigation buttons container on mobile */
-.flex.flex-col.sm\:flex-row.items-center.py-3.sm\:py-5[data-v-4063674a] {
+.flex.flex-col.sm\:flex-row.items-center.py-3.sm\:py-5[data-v-2ddd9229] {
     padding-top: 0.75rem; /* py-3 equivalent */
     padding-bottom: 0.75rem; /* py-3 equivalent */
 }
 }
 @media (min-width: 640px) and (max-width: 1023px) { /* sm to lg breakpoints */
-.header-section h1[data-v-4063674a] {
+.header-section h1[data-v-2ddd9229] {
     font-size: 1.25rem; /* sm:text-xl */
 }
-.header-section p[data-v-4063674a] {
+.header-section p[data-v-2ddd9229] {
     font-size: 0.875rem; /* sm:text-sm */
 }
 }
-.is-preview .desktop-progress[data-v-4063674a] {
+.is-preview .desktop-progress[data-v-2ddd9229] {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
-.is-preview .desktop-progress .ml-2[data-v-4063674a] {
+.is-preview .desktop-progress .ml-2[data-v-2ddd9229] {
     margin-left: 0.5rem !important;
 }
-.is-preview .desktop-progress .flex-1[data-v-4063674a] {
+.is-preview .desktop-progress .flex-1[data-v-2ddd9229] {
     flex: 1 1 0% !important;
     margin-left: 0.5rem !important;
     margin-right: 0.5rem !important;
 }
-.is-preview .header-section h1[data-v-4063674a] {
+.is-preview .header-section h1[data-v-2ddd9229] {
   font-size: 20px !important;
 }
-.is-preview .header-section p[data-v-4063674a] {
+.is-preview .header-section p[data-v-2ddd9229] {
   font-size: 14px !important;
 }
-.is-preview .desktop-progress .text-xs[data-v-4063674a] {
+.is-preview .desktop-progress .text-xs[data-v-2ddd9229] {
   white-space: normal !important;
   word-break: break-word !important;
 }
 
 
-/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/LivePreview.vue?vue&type=style&index=0&id=176748fe&scoped=true&lang=css ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************/
 
-.schedula-live-preview-container[data-v-176748fe] {
+.schedula-live-preview-container[data-v-3fe77652] {
   width: 100%;
   height: 100%;
   background: #fff;
@@ -1415,25 +1316,19 @@ button[data-v-4063674a]:active:not(:disabled) {
   font-size: 16px; /* Set a base font size for rem calculation */
 }
 
-/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/LabelEditorModal.vue?vue&type=style&index=0&id=12a8d0b7&scoped=true&lang=css ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************/
 
-.modal-fade-enter-active[data-v-12a8d0b7], .modal-fade-leave-active[data-v-12a8d0b7] {
+.modal-fade-enter-active[data-v-640aa466], .modal-fade-leave-active[data-v-640aa466] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-12a8d0b7], .modal-fade-leave-to[data-v-12a8d0b7] {
+.modal-fade-enter-from[data-v-640aa466], .modal-fade-leave-to[data-v-640aa466] {
   opacity: 0;
 }
 
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/ReservationFormSettings.vue?vue&type=style&index=0&id=45dc5b90&scoped=true&lang=css ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************/
 
 /* Form Controls */
-.schedula-form .form-select[data-v-45dc5b90], 
-.schedula-form input[type="text"][data-v-45dc5b90],
-.schedula-form input[type="color"][data-v-45dc5b90] {
+.schedula-form .form-select[data-v-6b626ece], 
+.schedula-form input[type="text"][data-v-6b626ece],
+.schedula-form input[type="color"][data-v-6b626ece] {
   width: 100% !important;
   height: 32px !important;
   line-height: 32px !important;
@@ -1443,29 +1338,29 @@ button[data-v-4063674a]:active:not(:disabled) {
   border-radius: 4px !important;
   vertical-align: middle !important;
 }
-.schedula-form input[type="color"][data-v-45dc5b90] {
+.schedula-form input[type="color"][data-v-6b626ece] {
   width: 60px !important;
   padding: 2px 4px !important;
 }
 
 /* Form Layout */
-.form-group[data-v-45dc5b90] {
+.form-group[data-v-6b626ece] {
   margin-bottom: 8px !important;
   display: flex !important;
   flex-direction: column !important;
 }
-.form-group > label[data-v-45dc5b90] {
+.form-group > label[data-v-6b626ece] {
   margin-bottom: 4px !important;
   font-size: 11px !important;
   line-height: 1.2 !important;
 }
 
 /* Section Layout */
-.settings-section[data-v-45dc5b90] {
+.settings-section[data-v-6b626ece] {
   margin-bottom: 16px !important;
   padding-bottom: 16px !important;
 }
-.section-title[data-v-45dc5b90] {
+.section-title[data-v-6b626ece] {
   font-size: 16px !important;
   font-weight: 600 !important;
   color: #1f2937 !important;
@@ -1473,35 +1368,35 @@ button[data-v-4063674a]:active:not(:disabled) {
 }
 
 /* Preview Container */
-.schedula-preview[data-v-45dc5b90] {
+.schedula-preview[data-v-6b626ece] {
   display: flex !important;
   flex-direction: column !important;
 }
-.preview-title[data-v-45dc5b90] {
+.preview-title[data-v-6b626ece] {
   font-size: 14px !important;
   font-weight: 600 !important;
   color: #1f2937 !important;
 }
 
 /* Remove preview step selector */
-.preview-step-selector[data-v-45dc5b90] {
+.preview-step-selector[data-v-6b626ece] {
   display: none !important;
 }
 
 /* Preview Container Styles */
-.schedula-preview .preview-wrapper[data-v-45dc5b90] {
+.schedula-preview .preview-wrapper[data-v-6b626ece] {
   width: 100% !important;
   height: 100% !important;
   margin: 0 auto !important;
   padding: 0 !important;
 }
-.schedula-preview .flex-grow[data-v-45dc5b90] {
+.schedula-preview .flex-grow[data-v-6b626ece] {
   background: #f8fafc !important;
   overflow-y: auto !important;
 }
 
 /* Adjust preview iframe/content */
-.live-preview-iframe[data-v-45dc5b90] {
+.live-preview-iframe[data-v-6b626ece] {
   width: 100% !important;
   height: 100% !important;
   transform-origin: top center !important;
@@ -1525,15 +1420,15 @@ button[data-v-4063674a]:active:not(:disabled) {
 */
 
 /* Fade Transition */
-.fade-enter-active[data-v-45dc5b90], .fade-leave-active[data-v-45dc5b90] {
+.fade-enter-active[data-v-6b626ece], .fade-leave-active[data-v-6b626ece] {
   transition: opacity 0.5s;
 }
-.fade-enter[data-v-45dc5b90], .fade-leave-to[data-v-45dc5b90] /* .fade-leave-active in <2.1.8 */ {
+.fade-enter[data-v-6b626ece], .fade-leave-to[data-v-6b626ece] /* .fade-leave-active in <2.1.8 */ {
   opacity: 0;
 }
 
 /* Modal Styles */
-.modal-overlay[data-v-45dc5b90] {
+.modal-overlay[data-v-6b626ece] {
   position: fixed;
   top: 0;
   left: 0;
@@ -1545,7 +1440,7 @@ button[data-v-4063674a]:active:not(:disabled) {
   align-items: center;
   z-index: 999;
 }
-.modal-dialog[data-v-45dc5b90] {
+.modal-dialog[data-v-6b626ece] {
   background: white;
   padding: 20px;
   border-radius: 8px;
@@ -1554,7 +1449,7 @@ button[data-v-4063674a]:active:not(:disabled) {
   max-width: 500px;
   z-index: 1000;
 }
-.modal-header[data-v-45dc5b90] {
+.modal-header[data-v-6b626ece] {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1562,118 +1457,112 @@ button[data-v-4063674a]:active:not(:disabled) {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
-.modal-title[data-v-45dc5b90] {
+.modal-title[data-v-6b626ece] {
   font-size: 1.25rem;
   font-weight: 600;
   color: #333;
 }
-.modal-close-button[data-v-45dc5b90] {
+.modal-close-button[data-v-6b626ece] {
   background: none;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
   color: #666;
 }
-.modal-body[data-v-45dc5b90] {
+.modal-body[data-v-6b626ece] {
   margin-bottom: 20px;
   color: #555;
   font-size: 0.95rem;
 }
-.modal-footer[data-v-45dc5b90] {
+.modal-footer[data-v-6b626ece] {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
 }
-.modal-cancel-button[data-v-45dc5b90], .modal-confirm-button[data-v-45dc5b90] {
+.modal-cancel-button[data-v-6b626ece], .modal-confirm-button[data-v-6b626ece] {
   padding: 8px 15px;
   border-radius: 5px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.modal-cancel-button[data-v-45dc5b90] {
+.modal-cancel-button[data-v-6b626ece] {
   background-color: #e0e0e0;
   color: #333;
 }
-.modal-cancel-button[data-v-45dc5b90]:hover {
+.modal-cancel-button[data-v-6b626ece]:hover {
   background-color: #d0d0d0;
 }
-.modal-confirm-button[data-v-45dc5b90] {
+.modal-confirm-button[data-v-6b626ece] {
   background-color: #ef4444; /* Red for destructive action */
   color: white;
 }
-.modal-confirm-button[data-v-45dc5b90]:hover {
+.modal-confirm-button[data-v-6b626ece]:hover {
   background-color: #dc2626;
 }
 
 /* Modal Transitions */
-.modal-fade-enter-active[data-v-45dc5b90], .modal-fade-leave-active[data-v-45dc5b90] {
+.modal-fade-enter-active[data-v-6b626ece], .modal-fade-leave-active[data-v-6b626ece] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-45dc5b90], .modal-fade-leave-to[data-v-45dc5b90] {
+.modal-fade-enter-from[data-v-6b626ece], .modal-fade-leave-to[data-v-6b626ece] {
   opacity: 0;
 }
-.modal-fade-enter-active .modal-dialog[data-v-45dc5b90],
-.modal-fade-leave-active .modal-dialog[data-v-45dc5b90] {
+.modal-fade-enter-active .modal-dialog[data-v-6b626ece],
+.modal-fade-leave-active .modal-dialog[data-v-6b626ece] {
   transition: transform 0.3s ease-out;
 }
-.modal-fade-enter-from .modal-dialog[data-v-45dc5b90],
-.modal-fade-leave-to .modal-dialog[data-v-45dc5b90] {
+.modal-fade-enter-from .modal-dialog[data-v-6b626ece],
+.modal-fade-leave-to .modal-dialog[data-v-6b626ece] {
   transform: translateY(-20px);
 }
 
-/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/ServiceFormReservation.vue?vue&type=style&index=0&id=7b959b84&scoped=true&lang=css ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************/
 
 /* Scoped styles for this component */
 
 /* Modal transition styles (kept here for the delete confirmation modal) */
-.modal-fade-enter-active[data-v-7b959b84],
-.modal-fade-leave-active[data-v-7b959b84] {
+.modal-fade-enter-active[data-v-31f84d16],
+.modal-fade-leave-active[data-v-31f84d16] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-7b959b84],
-.modal-fade-leave-to[data-v-7b959b84] {
+.modal-fade-enter-from[data-v-31f84d16],
+.modal-fade-leave-to[data-v-31f84d16] {
   opacity: 0;
 }
 
 /* Optional: Add a slight scale/slide effect for the modal content */
-.modal-fade-enter-active .modal-content[data-v-7b959b84],
-.modal-fade-leave-active .modal-content[data-v-7b959b84] {
+.modal-fade-enter-active .modal-content[data-v-31f84d16],
+.modal-fade-leave-active .modal-content[data-v-31f84d16] {
   transition: transform 0.3s ease;
 }
-.modal-fade-enter-from .modal-content[data-v-7b959b84],
-.modal-fade-leave-to .modal-content[data-v-7b959b84] {
+.modal-fade-enter-from .modal-content[data-v-31f84d16],
+.modal-fade-leave-to .modal-content[data-v-31f84d16] {
   transform: scale(0.95);
 }
 
 /* Base styles for the form cards */
-.p-4.rounded-lg.shadow-md.relative[data-v-7b959b84] {
+.p-4.rounded-lg.shadow-md.relative[data-v-31f84d16] {
   transition: all 0.2s ease-in-out;
 }
-.p-4.rounded-lg.shadow-md.relative[data-v-7b959b84]:hover {
+.p-4.rounded-lg.shadow-md.relative[data-v-31f84d16]:hover {
   transform: translateY(-2px);
   box-shadow: var(--admin-hover-shadow); /* Assuming you have a CSS variable for hover shadow */
 }
-code[data-v-7b959b84] {
+code[data-v-31f84d16] {
   font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
   font-size: 0.85em; /* Slightly smaller for compactness */
 }
 
 /* Fade transition for the "Copied!" message */
-.fade-enter-active[data-v-7b959b84], .fade-leave-active[data-v-7b959b84] {
+.fade-enter-active[data-v-31f84d16], .fade-leave-active[data-v-31f84d16] {
   transition: opacity 0.3s ease;
 }
-.fade-enter-from[data-v-7b959b84], .fade-leave-to[data-v-7b959b84] {
+.fade-enter-from[data-v-31f84d16], .fade-leave-to[data-v-31f84d16] {
   opacity: 0;
 }
 
-/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/form/ServiceFormClient.vue?vue&type=style&index=0&id=41934929&scoped=true&lang=css ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************/
 
-[data-v-41934929]:root {
+[data-v-45edb70a]:root {
   /* Use CSS variables from useAppearanceSettings.js for global theme */
   /* These are NOT default values, they are the actual values applied by the composable */
   font-family: var(--font-family-form, 'Inter', sans-serif);
@@ -1688,7 +1577,7 @@ code[data-v-7b959b84] {
 }
 
 /* Base container for the whole form */
-.wp-reservation-form[data-v-41934929] {
+.wp-reservation-form[data-v-45edb70a] {
   background-color: var(--background-color);
   font-family: var(--font-family-form); /* Apply font family */
   font-size: var(--base-font-size-form); /* Apply base font size */
@@ -1699,7 +1588,7 @@ code[data-v-7b959b84] {
 
 /* Main form container (the "card") */
 /* Apply rounded corners and shadows directly from CSS variables */
-.relative.rounded-lg.overflow-hidden.shadow-lg.w-full.max-w-xl.mx-auto.flex.flex-col[data-v-41934929] {
+.relative.rounded-lg.overflow-hidden.shadow-lg.w-full.max-w-xl.mx-auto.flex.flex-col[data-v-45edb70a] {
   border-radius: var(--border-radius-form); /* Apply rounded corners */
   box-shadow: var(--shadow-form); /* Apply shadows */
   height: auto;
@@ -1707,7 +1596,7 @@ code[data-v-7b959b84] {
 }
 
 /* Main Form Content Area - NO internal scrolling */
-.form-body[data-v-41934929] {
+.form-body[data-v-45edb70a] {
   /* Styles are applied via inline styles from computed properties */
   flex-grow: 1; /* Allows it to take available space */
   overflow-y: visible; /* Prevents internal scrolling */
@@ -1715,14 +1604,14 @@ code[data-v-7b959b84] {
 }
 
 /* Adjust desktop-progress for better spacing */
-.desktop-progress[data-v-41934929] {
+.desktop-progress[data-v-45edb70a] {
   padding-left: 1rem; /* px-4 */
   padding-right: 1rem; /* px-4 */
   padding-top: 1rem; /* py-4 */
   padding-bottom: 1rem; /* py-4 */
 }
 @media (min-width: 640px) { /* sm breakpoint */
-.desktop-progress[data-v-41934929] {
+.desktop-progress[data-v-45edb70a] {
     padding-left: 1.5rem; /* sm:px-6 */
     padding-right: 1.5rem; /* sm:px-6 */
     padding-top: 1.25rem; /* sm:py-5 */
@@ -1730,41 +1619,41 @@ code[data-v-7b959b84] {
 }
 }
 @media (min-width: 1024px) { /* lg breakpoint */
-.desktop-progress[data-v-41934929] {
+.desktop-progress[data-v-45edb70a] {
     padding-left: 1.5rem; /* lg:px-6 */
     padding-right: 1.5rem; /* lg:px-6 */
 }
 }
-.is-preview .desktop-progress[data-v-41934929] {
+.is-preview .desktop-progress[data-v-45edb70a] {
   padding-left: 0.75rem !important; /* Slightly reduced for preview */
   padding-right: 0.75rem !important;
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
 }
-.is-preview .desktop-progress .ml-2[data-v-41934929] {
+.is-preview .desktop-progress .ml-2[data-v-45edb70a] {
   margin-left: 0.375rem !important; /* Tighter margin for preview */
 }
-.is-preview .desktop-progress .flex-1[data-v-41934929] {
+.is-preview .desktop-progress .flex-1[data-v-45edb70a] {
   flex: 1 1 0% !important;
   margin-left: 0.375rem !important;
   margin-right: 0.375rem !important;
 }
-.is-preview .desktop-progress .text-xs[data-v-41934929] {
+.is-preview .desktop-progress .text-xs[data-v-45edb70a] {
   font-size: 0.65rem !important; /* Match subtitle size */
   white-space: normal !important;
   word-break: break-word !important;
 }
 
 /* Form Group Styles (labels, inputs, selects, textareas) */
-.form-group[data-v-41934929] {
+.form-group[data-v-45edb70a] {
   margin-bottom: 0.75rem;
 }
-.form-label[data-v-41934929] {
+.form-label[data-v-45edb70a] {
   /* Styles applied via inline styles from computed properties */
 }
-.form-input[data-v-41934929],
-.form-select[data-v-41934929],
-.form-textarea[data-v-41934929] {
+.form-input[data-v-45edb70a],
+.form-select[data-v-45edb70a],
+.form-textarea[data-v-45edb70a] {
   border-radius: var(--border-radius-form); /* Apply rounded corners */
   font-size: var(--base-font-size-form); /* Apply base font size */
   /* Padding adjusted in JS computed property: inputStyles */
@@ -1774,12 +1663,12 @@ code[data-v-7b959b84] {
 }
 
 /* Remove all focus outlines and rings */
-.form-input[data-v-41934929]:focus,
-.form-select[data-v-41934929]:focus,
-.form-textarea[data-v-41934929]:focus,
-button[data-v-41934929]:focus,
-.form-checkbox[data-v-41934929]:focus,
-.form-radio[data-v-41934929]:focus {
+.form-input[data-v-45edb70a]:focus,
+.form-select[data-v-45edb70a]:focus,
+.form-textarea[data-v-45edb70a]:focus,
+button[data-v-45edb70a]:focus,
+.form-checkbox[data-v-45edb70a]:focus,
+.form-radio[data-v-45edb70a]:focus {
   outline: none !important;
   box-shadow: none !important;
   border-color: inherit !important;
@@ -1787,22 +1676,22 @@ button[data-v-41934929]:focus,
 }
 
 /* Styles for editable labels in preview mode */
-.preview-editable-label[data-v-41934929] {
+.preview-editable-label[data-v-45edb70a] {
   cursor: pointer;
   opacity: 0.6;
   transition: opacity 0.2s ease-in-out;
   font-size: 0.75rem; /* Smaller font size */
 }
-.preview-editable-label[data-v-41934929]:hover {
+.preview-editable-label[data-v-45edb70a]:hover {
   opacity: 1;
 }
-.form-textarea[data-v-41934929]:focus,
-button[data-v-41934929]:focus,
-input[data-v-41934929]:focus,
-select[data-v-41934929]:focus,
-textarea[data-v-41934929]:focus,
-[tabindex][data-v-41934929]:focus,
-a[data-v-41934929]:focus {
+.form-textarea[data-v-45edb70a]:focus,
+button[data-v-45edb70a]:focus,
+input[data-v-45edb70a]:focus,
+select[data-v-45edb70a]:focus,
+textarea[data-v-45edb70a]:focus,
+[tabindex][data-v-45edb70a]:focus,
+a[data-v-45edb70a]:focus {
   outline: none !important;
   box-shadow: none !important;
   --tw-ring-color: transparent !important;
@@ -1812,43 +1701,43 @@ a[data-v-41934929]:focus {
 }
 
 /* For WebKit browsers like Chrome and Safari */
-[data-v-41934929]:focus {
+[data-v-45edb70a]:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 
 /* For Firefox */
-[data-v-41934929]::-moz-focus-inner {
+[data-v-45edb70a]::-moz-focus-inner {
   border: 0 !important;
 }
 
 /* For IE10+ */
-[data-v-41934929]:-ms-input-placeholder {
+[data-v-45edb70a]:-ms-input-placeholder {
   color: #9CA3AF !important;
 }
 
 /* For Edge */
-[data-v-41934929]::-ms-input-placeholder {
+[data-v-45edb70a]::-ms-input-placeholder {
   color: #9CA3AF !important;
 }
-.form-help-text[data-v-41934929] {
+.form-help-text[data-v-45edb70a] {
   /* Tailwind classes handle this */
 }
 
 /* Checkbox/Radio Group */
-.checkbox-group[data-v-41934929] {
+.checkbox-group[data-v-45edb70a] {
   /* Tailwind classes handle this */
 }
-.form-checkbox[data-v-41934929],
-.form-radio[data-v-41934929] {
+.form-checkbox[data-v-45edb70a],
+.form-radio[data-v-45edb70a] {
   accent-color: var(--primary-color);
 }
 
 /* Color Picker Specifics */
-.color-picker-group[data-v-41934929] {
+.color-picker-group[data-v-45edb70a] {
   /* Tailwind classes handle this */
 }
-.color-input[data-v-41934929] {
+.color-input[data-v-45edb70a] {
   /* Custom styles for color input */
   width: 2.5rem; /* w-10 */
   height: 2.5rem; /* h-10 */
@@ -1859,41 +1748,41 @@ a[data-v-41934929]:focus {
   -webkit-appearance: none;
   appearance: none;
 }
-.color-input[data-v-41934929]::-webkit-color-swatch-wrapper {
+.color-input[data-v-45edb70a]::-webkit-color-swatch-wrapper {
   padding: 0;
 }
-.color-input[data-v-41934929]::-webkit-color-swatch {
+.color-input[data-v-45edb70a]::-webkit-color-swatch {
   border: none;
   border-radius: 0.25rem; /* slightly less rounded than wrapper */
 }
 
 /* Buttons */
-.inline-flex.items-center[data-v-41934929] {
+.inline-flex.items-center[data-v-45edb70a] {
   /* Common styles for all buttons, specific styles via :style */
 }
 
 /* This applies to all buttons globally, including nav buttons */
-button[data-v-41934929]:hover:not(:disabled) {
+button[data-v-45edb70a]:hover:not(:disabled) {
   transform: translateY(-1px);
   box-shadow: var(--shadow-form); /* Apply shadows */
 }
-button[data-v-41934929]:active:not(:disabled) {
+button[data-v-45edb70a]:active:not(:disabled) {
   transform: translateY(0);
 }
 
 /* Cards (e.g., info-card, detail-card, confirmation-summary) */
-.info-card[data-v-41934929], .detail-card[data-v-41934929], .confirmation-summary[data-v-41934929] {
+.info-card[data-v-45edb70a], .detail-card[data-v-45edb70a], .confirmation-summary[data-v-45edb70a] {
   /* Styles applied via inline styles from computed properties */
   border-radius: var(--border-radius-form); /* Apply rounded corners */
   box-shadow: var(--shadow-form); /* Apply shadows */
 }
 
 /* Aspect Ratio for Service Preview Image */
-.relative.rounded-lg.overflow-hidden.shadow-lg > div[style*="padding-bottom"][data-v-41934929] {
+.relative.rounded-lg.overflow-hidden.shadow-lg > div[style*="padding-bottom"][data-v-45edb70a] {
   position: relative;
   width: 100%;
 }
-.relative.rounded-lg.overflow-hidden.shadow-lg img[data-v-41934929] {
+.relative.rounded-lg.overflow-hidden.shadow-lg img[data-v-45edb70a] {
   position: absolute;
   top: 0;
   left: 0;
@@ -1905,25 +1794,25 @@ button[data-v-41934929]:active:not(:disabled) {
 /* Time Slot Buttons & Calendar Dates */
 /* No scaling or strong shadows on hover/active for mobile */
 @media (max-width: 639px) { /* sm breakpoint */
-.calendar-date[data-v-41934929],
-  .time-slot-btn[data-v-41934929],
-  .time-slot[data-v-41934929] {
+.calendar-date[data-v-45edb70a],
+  .time-slot-btn[data-v-45edb70a],
+  .time-slot[data-v-45edb70a] {
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out !important; /* Keep subtle color transition */
     transform: scale(1.0) !important; /* Prevent scaling on mobile */
     box-shadow: none !important; /* Remove shadows on mobile */
 }
-.calendar-date[data-v-41934929]:hover,
-  .time-slot-btn[data-v-41934929]:hover,
-  .time-slot[data-v-41934929]:hover {
+.calendar-date[data-v-45edb70a]:hover,
+  .time-slot-btn[data-v-45edb70a]:hover,
+  .time-slot[data-v-45edb70a]:hover {
     background-color: var(--background-color) !important; /* Revert to normal background on hover */
     border-color: var(--text-color)33 !important; /* Revert to normal border on hover */
     color: var(--text-color) !important; /* Revert to normal text color on hover */
 }
 
   /* Ensure selected state still looks good on mobile without scaling */
-.calendar-date.selected[data-v-41934929],
-  .time-slot-btn.selected[data-v-41934929],
-  .time-slot.selected[data-v-41934929] {
+.calendar-date.selected[data-v-45edb70a],
+  .time-slot-btn.selected[data-v-45edb70a],
+  .time-slot.selected[data-v-45edb70a] {
     transform: scale(1.0) !important; /* Override selected scaling for mobile */
     box-shadow: none !important; /* Override selected shadow for mobile */
 }
@@ -1931,19 +1820,19 @@ button[data-v-41934929]:active:not(:disabled) {
 
 /* Responsive adjustments for smaller screens (Tailwind breakpoints) */
 @media (max-width: 639px) { /* sm breakpoint */
-.header-section h1[data-v-41934929] {
+.header-section h1[data-v-45edb70a] {
     font-size: 1.125rem; /* text-lg */
 }
-.header-section p[data-v-41934929] {
+.header-section p[data-v-45edb70a] {
     font-size: 0.75rem; /* text-xs */
 }
   /* Calendar date height reduction on smaller screens */
-.calendar-date[data-v-41934929] {
+.calendar-date[data-v-45edb70a] {
     height: 2.5rem; /* h-10 */
 }
 
   /* Adjust padding for the form body on mobile for compactness */
-.form-body[data-v-41934929] {
+.form-body[data-v-45edb70a] {
     padding-left: 1rem; /* Smaller px-4 */
     padding-right: 1rem; /* Smaller px-4 */
     padding-top: 1rem; /* Smaller py-4 */
@@ -1951,39 +1840,36 @@ button[data-v-41934929]:active:not(:disabled) {
 }
   
   /* Adjust padding for confirmation summary and its items on mobile */
-.confirmation-summary[data-v-41934929] {
+.confirmation-summary[data-v-45edb70a] {
     padding: 1rem; /* Smaller p-4 */
 }
-.confirmation-summary .summary-item[data-v-41934929] {
+.confirmation-summary .summary-item[data-v-45edb70a] {
     padding: 0.75rem; /* Smaller p-2 */
 }
   
   /* Adjust padding for navigation buttons container on mobile */
-.flex.flex-col.sm\:flex-row.items-center.py-3.sm\:py-5[data-v-41934929] {
+.flex.flex-col.sm\:flex-row.items-center.py-3.sm\:py-5[data-v-45edb70a] {
     padding-top: 0.75rem; /* py-3 equivalent */
     padding-bottom: 0.75rem; /* py-3 equivalent */
 }
 }
 @media (min-width: 640px) and (max-width: 1023px) { /* sm to lg breakpoints */
-.header-section h1[data-v-41934929] {
+.header-section h1[data-v-45edb70a] {
     font-size: 1.25rem; /* sm:text-xl */
 }
-.header-section p[data-v-41934929] {
+.header-section p[data-v-45edb70a] {
     font-size: 0.875rem; /* sm:text-sm */
 }
 }
-.is-preview .header-section h1[data-v-41934929] {
+.is-preview .header-section h1[data-v-45edb70a] {
   font-size: 20px !important;
 }
-.is-preview .header-section p[data-v-41934929] {
+.is-preview .header-section p[data-v-45edb70a] {
   font-size: 14px !important;
 }
 
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/ServiceFormClientLivePreview.vue?vue&type=style&index=0&id=1a9de8e3&scoped=true&lang=css ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************/
 
-.preview-wrapper[data-v-1a9de8e3] {
+.preview-wrapper[data-v-ad71e244] {
   /* Ensure this wrapper takes full height and width of its parent */
   width: 100%;
   height: 100%;
@@ -1992,23 +1878,17 @@ button[data-v-41934929]:active:not(:disabled) {
   overflow: hidden; /* Hide any overflow from the child component */
 }
 
-/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/ServiceFormDetails.vue?vue&type=style&index=0&id=50dfb2b4&scoped=true&lang=css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************/
 
 /* Add any specific styling for ServiceFormDetails here if needed */
 
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/ServiceFormCustomization.vue?vue&type=style&index=0&id=7fe3a776&scoped=true&lang=css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************/
 
 /* Scoped styles for this component */
-.schedula-settings[data-v-7fe3a776] {
+.schedula-settings[data-v-e6f1a3aa] {
   font-family: var(--admin-font-family);
   background-color: var(--admin-page-bg-color);
   color: var(--admin-text-color);
 }
-.section-title[data-v-7fe3a776] {
+.section-title[data-v-e6f1a3aa] {
   font-size: 1.125rem; /* text-lg */
   font-weight: 600; /* font-semibold */
   color: var(--admin-text-color);
@@ -2018,7 +1898,7 @@ button[data-v-41934929]:active:not(:disabled) {
   display: flex;
   align-items: center;
 }
-.section-subtitle[data-v-7fe3a776] {
+.section-subtitle[data-v-e6f1a3aa] {
   font-size: 1rem; /* text-base */
   font-weight: 600; /* font-semibold */
   color: var(--admin-text-color);
@@ -2029,17 +1909,17 @@ button[data-v-41934929]:active:not(:disabled) {
   display: flex;
   align-items: center;
 }
-.form-checkbox[data-v-7fe3a776] {
+.form-checkbox[data-v-e6f1a3aa] {
   accent-color: var(--admin-link-indigo-bg);
   width: 1.125em; /* Default browser checkbox size */
   height: 1.125em; /* Default browser checkbox size */
   border-color: var(--admin-input-border-color);
   background-color: var(--admin-input-bg-color);
 }
-.schedula-form .form-select[data-v-7fe3a776], 
-.schedula-form .form-input[data-v-7fe3a776],
-.schedula-form input[type="text"][data-v-7fe3a776],
-.schedula-form input[type="color"][data-v-7fe3a776] {
+.schedula-form .form-select[data-v-e6f1a3aa], 
+.schedula-form .form-input[data-v-e6f1a3aa],
+.schedula-form input[type="text"][data-v-e6f1a3aa],
+.schedula-form input[type="color"][data-v-e6f1a3aa] {
   width: 100% !important;
   height: 32px !important;
   line-height: 32px !important;
@@ -2052,26 +1932,26 @@ button[data-v-41934929]:active:not(:disabled) {
   color: var(--admin-input-text-color);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
-.schedula-form input[type="color"][data-v-7fe3a776] {
+.schedula-form input[type="color"][data-v-e6f1a3aa] {
   width: 60px !important;
   padding: 2px 4px !important;
 }
-.form-select[data-v-7fe3a776]:focus, .form-input[data-v-7fe3a776]:focus {
+.form-select[data-v-e6f1a3aa]:focus, .form-input[data-v-e6f1a3aa]:focus {
   border-color: var(--admin-link-indigo-bg);
   box-shadow: 0 0 0 1px var(--admin-link-indigo-bg);
   outline: none;
 }
-.checkbox-grid[data-v-7fe3a776] {
+.checkbox-grid[data-v-e6f1a3aa] {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.75rem; /* gap-3 */
 }
 @media (min-width: 768px) { /* md breakpoint */
-.checkbox-grid[data-v-7fe3a776] {
+.checkbox-grid[data-v-e6f1a3aa] {
     grid-template-columns: repeat(2, 1fr);
 }
 }
-.loading-container[data-v-7fe3a776], .error-container[data-v-7fe3a776] {
+.loading-container[data-v-e6f1a3aa], .error-container[data-v-e6f1a3aa] {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2081,13 +1961,13 @@ button[data-v-41934929]:active:not(:disabled) {
   box-shadow: var(--admin-shadow);
   color: var(--admin-text-color);
 }
-.loading-spinner[data-v-7fe3a776] {
+.loading-spinner[data-v-e6f1a3aa] {
   font-size: 1.25rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.error-message[data-v-7fe3a776] {
+.error-message[data-v-e6f1a3aa] {
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1px solid;
@@ -2097,7 +1977,7 @@ button[data-v-41934929]:active:not(:disabled) {
   gap: 0.5rem;
   text-align: center;
 }
-.retry-btn[data-v-7fe3a776] {
+.retry-btn[data-v-e6f1a3aa] {
   background-color: var(--admin-button-secondary-bg);
   color: var(--admin-button-secondary-text);
   padding: 0.5rem 1rem;
@@ -2107,12 +1987,12 @@ button[data-v-41934929]:active:not(:disabled) {
   transition: all 0.2s ease;
   margin-top: 1rem;
 }
-.retry-btn[data-v-7fe3a776]:hover {
+.retry-btn[data-v-e6f1a3aa]:hover {
   background-color: var(--admin-button-secondary-hover-bg);
 }
 
 /* Modal styles (Reset Confirmation & Label Editor) */
-.modal-overlay[data-v-7fe3a776] {
+.modal-overlay[data-v-e6f1a3aa] {
   position: fixed;
   top: 0;
   left: 0;
@@ -2124,7 +2004,7 @@ button[data-v-41934929]:active:not(:disabled) {
   align-items: center;
   z-index: 999;
 }
-.modal-dialog[data-v-7fe3a776] {
+.modal-dialog[data-v-e6f1a3aa] {
   background-color: var(--admin-card-bg-color);
   padding: 25px;
   border-radius: 8px;
@@ -2133,7 +2013,7 @@ button[data-v-41934929]:active:not(:disabled) {
   max-width: 500px;
   z-index: 1000;
 }
-.modal-header[data-v-7fe3a776] {
+.modal-header[data-v-e6f1a3aa] {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2141,72 +2021,72 @@ button[data-v-41934929]:active:not(:disabled) {
   padding-bottom: 10px;
   border-bottom: 1px solid var(--admin-border-color);
 }
-.modal-title[data-v-7fe3a776] {
+.modal-title[data-v-e6f1a3aa] {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--admin-text-color);
 }
-.modal-close-button[data-v-7fe3a776] {
+.modal-close-button[data-v-e6f1a3aa] {
   background: none;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--admin-card-text-color);
 }
-.modal-body[data-v-7fe3a776] {
+.modal-body[data-v-e6f1a3aa] {
   margin-bottom: 20px;
   color: var(--admin-card-text-color);
   font-size: 0.95rem;
 }
-.modal-footer[data-v-7fe3a776] {
+.modal-footer[data-v-e6f1a3aa] {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
 }
-.modal-cancel-button[data-v-7fe3a776], .modal-confirm-button[data-v-7fe3a776] {
+.modal-cancel-button[data-v-e6f1a3aa], .modal-confirm-button[data-v-e6f1a3aa] {
   padding: 8px 15px;
   border-radius: 5px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.modal-cancel-button[data-v-7fe3a776] {
+.modal-cancel-button[data-v-e6f1a3aa] {
   background-color: var(--admin-button-secondary-bg);
   color: var(--admin-button-secondary-text);
   border: 1px solid var(--admin-input-border-color);
 }
-.modal-cancel-button[data-v-7fe3a776]:hover {
+.modal-cancel-button[data-v-e6f1a3aa]:hover {
   background-color: var(--admin-button-secondary-hover-bg);
 }
-.modal-confirm-button[data-v-7fe3a776] {
+.modal-confirm-button[data-v-e6f1a3aa] {
   background-color: var(--admin-suggestion-red-bg);
   color: var(--admin-suggestion-red-text);
   border: 1px solid var(--admin-input-border-color);
 }
-.modal-confirm-button[data-v-7fe3a776]:hover {
+.modal-confirm-button[data-v-e6f1a3aa]:hover {
   background-color: var(--admin-suggestion-red-hover-bg);
 }
 
 /* Transition styles */
-.modal-fade-enter-active[data-v-7fe3a776], .modal-fade-leave-active[data-v-7fe3a776] {
+.modal-fade-enter-active[data-v-e6f1a3aa], .modal-fade-leave-active[data-v-e6f1a3aa] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-7fe3a776], .modal-fade-leave-to[data-v-7fe3a776] {
+.modal-fade-enter-from[data-v-e6f1a3aa], .modal-fade-leave-to[data-v-e6f1a3aa] {
   opacity: 0;
 }
 
 /* Further refinements for the preview area */
-.schedula-preview[data-v-7fe3a776] {
+.schedula-preview[data-v-e6f1a3aa] {
   height: 100%;
 }
-.preview-title[data-v-7fe3a776] {
+.preview-title[data-v-e6f1a3aa] {
   font-size: 1.125rem; /* text-lg */
   font-weight: 600; /* font-semibold */
   color: var(--admin-text-color);
   display: flex;
   align-items: center;
 }
-.preview-wrapper[data-v-7fe3a776] {
+.preview-wrapper[data-v-e6f1a3aa] {
   /* This ensures the iframe container takes full height and width */
   width: 100%;
   height: 100%;
@@ -2214,38 +2094,32 @@ button[data-v-41934929]:active:not(:disabled) {
   overflow: hidden; /* Hide overflow for rounded corners */
 }
 
-/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/common/BaseFormLayout.vue?vue&type=style&index=0&id=4cd76823&scoped=true&lang=css ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************/
 
-.success-message[data-v-4cd76823] {
+.success-message[data-v-428d8b20] {
   background-color: var(--admin-badge-green-bg);
   border: 1px solid var(--admin-badge-green-text);
   color: var(--admin-badge-green-text);
 }
-.error-message[data-v-4cd76823] {
+.error-message[data-v-428d8b20] {
   background-color: var(--admin-badge-red-bg);
   border: 1px solid var(--admin-badge-red-text);
   color: var(--admin-badge-red-text);
 }
 
-/*!******************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/SettingsPage.vue?vue&type=style&index=0&id=2f085614&scoped=true&lang=css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************/
 
-.header-container[data-v-2f085614] {
+.header-container[data-v-04af3c82] {
   display: flex;
   padding-left: 5mm;
   align-items: center; /* Vertically centers items if needed */
 }
 
 /* Styles for input fields to ensure dark mode compatibility */
-.input-field[data-v-2f085614] {
+.input-field[data-v-04af3c82] {
   background-color: var(--admin-input-bg-color);
   color: var(--admin-input-text-color);
   border-color: var(--admin-input-border-color);
 }
-.input-field[data-v-2f085614]:focus {
+.input-field[data-v-04af3c82]:focus {
   border-color: var(--admin-link-indigo-bg);
   box-shadow: 0 0 0 1px var(--admin-link-indigo-bg);
   outline: none;
@@ -2253,81 +2127,78 @@ button[data-v-41934929]:active:not(:disabled) {
 
 
 /* Specific styles for the working hours/holidays cards */
-.day-schedule-card[data-v-2f085614] {
+.day-schedule-card[data-v-04af3c82] {
   background-color: var(--admin-card-bg-color);
   color: var(--admin-text-color);
   border-color: var(--admin-border-color);
 }
-.day-schedule-card[data-v-2f085614]:hover {
+.day-schedule-card[data-v-04af3c82]:hover {
   background-color: var(--admin-input-bg-color); /* Lighter hover for dark mode */
 }
-.duplicate-button[data-v-2f085614] {
+.duplicate-button[data-v-04af3c82] {
   background-color: var(--admin-button-secondary-bg);
   color: var(--admin-button-secondary-text);
   border: 1px solid var(--admin-input-border-color);
 }
-.duplicate-button[data-v-2f085614]:hover {
+.duplicate-button[data-v-04af3c82]:hover {
   background-color: var(--admin-button-secondary-hover-bg);
 }
-.dropdown-menu[data-v-2f085614] {
+.dropdown-menu[data-v-04af3c82] {
   background-color: var(--admin-card-bg-color);
   border-color: var(--admin-border-color);
   color: var(--admin-text-color);
 }
-.dropdown-item[data-v-2f085614] {
+.dropdown-item[data-v-04af3c82] {
   color: var(--admin-text-color);
 }
-.dropdown-item[data-v-2f085614]:hover {
+.dropdown-item[data-v-04af3c82]:hover {
   background-color: var(--admin-input-bg-color);
 }
-.break-label[data-v-2f085614] {
+.break-label[data-v-04af3c82] {
   background-color: var(--admin-suggestion-yellow-bg);
   color: var(--admin-suggestion-yellow-text);
   border: 1px solid var(--admin-suggestion-yellow-border);
 }
-.break-remove-button[data-v-2f085614] {
+.break-remove-button[data-v-04af3c82] {
   background-color: var(--admin-suggestion-yellow-bg);
   color: var(--admin-suggestion-yellow-text);
 }
-.break-remove-button[data-v-2f085614]:hover {
+.break-remove-button[data-v-04af3c82]:hover {
   background-color: var(--admin-suggestion-yellow-hover-bg);
 }
-.preview-card[data-v-2f085614] {
+.preview-card[data-v-04af3c82] {
   background-color: var(--admin-input-bg-color);
   border-color: var(--admin-input-border-color);
   color: var(--admin-input-text-color);
 }
-.modal-content[data-v-2f085614] {
+.modal-content[data-v-04af3c82] {
   background-color: var(--admin-card-bg-color);
   color: var(--admin-text-color);
 }
 
-/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/payments/PaymentList.vue?vue&type=style&index=0&id=51ee30d2&scoped=true&lang=css ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************/
 
-.break-words[data-v-51ee30d2] {
+.break-words[data-v-371c992b] {
   word-break: break-word;
   overflow-wrap: break-word;
 }
 
 /* Responsive table adjustments */
 @media (max-width: 639px) { /* Small screens (sm breakpoint in Tailwind is 640px) */
-table[data-v-51ee30d2], thead[data-v-51ee30d2], tbody[data-v-51ee30d2], th[data-v-51ee30d2], td[data-v-51ee30d2], tr[data-v-51ee30d2] {
+table[data-v-371c992b], thead[data-v-371c992b], tbody[data-v-371c992b], th[data-v-371c992b], td[data-v-371c992b], tr[data-v-371c992b] {
     display: block;
 }
-thead tr[data-v-51ee30d2] {
+thead tr[data-v-371c992b] {
     position: absolute;
     top: -9999px;
     left: -9999px;
 }
-tr[data-v-51ee30d2] {
+tr[data-v-371c992b] {
     border: 1px solid var(--admin-border-color);
     margin-bottom: 0.5rem;
     border-radius: 0.5rem; /* rounded-lg */
     overflow: hidden; /* Ensures border-radius applies */
 }
-td[data-v-51ee30d2] {
+td[data-v-371c992b] {
     /* Behave like a "row" */
     border: none;
     border-bottom: 1px solid var(--admin-border-color);
@@ -2335,7 +2206,7 @@ td[data-v-51ee30d2] {
     padding-left: 50% !important; /* Adjust based on label width */
     text-align: right;
 }
-td[data-v-51ee30d2]:before {
+td[data-v-371c992b]:before {
     /* Now like a table header */
     position: absolute;
     /* Top/left values mimic padding */
@@ -2350,41 +2221,38 @@ td[data-v-51ee30d2]:before {
 }
 
   /* Hide the desktop cells */
-.sm\:table-cell.hidden[data-v-51ee30d2] {
+.sm\:table-cell.hidden[data-v-371c992b] {
     display: none;
 }
 
   /* Show the stacked cells */
-.block.sm\:hidden[data-v-51ee30d2] {
+.block.sm\:hidden[data-v-371c992b] {
     display: block;
 }
 }
 
-/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/payments/PaymentReceiptModal.vue?vue&type=style&index=0&id=dd53a7ee&scoped=true&lang=css ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************/
 
-.modal-fade-enter-active[data-v-dd53a7ee],
-.modal-fade-leave-active[data-v-dd53a7ee] {
+.modal-fade-enter-active[data-v-2a3d3e6a],
+.modal-fade-leave-active[data-v-2a3d3e6a] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-dd53a7ee],
-.modal-fade-leave-to[data-v-dd53a7ee] {
+.modal-fade-enter-from[data-v-2a3d3e6a],
+.modal-fade-leave-to[data-v-2a3d3e6a] {
   opacity: 0;
 }
-.modal-fade-enter-active .bg-white[data-v-dd53a7ee],
-.modal-fade-leave-active .bg-white[data-v-dd53a7ee] {
+.modal-fade-enter-active .bg-white[data-v-2a3d3e6a],
+.modal-fade-leave-active .bg-white[data-v-2a3d3e6a] {
   transition: transform 0.3s ease;
 }
-.modal-fade-enter-from .bg-white[data-v-dd53a7ee],
-.modal-fade-leave-to .bg-white[data-v-dd53a7ee] {
+.modal-fade-enter-from .bg-white[data-v-2a3d3e6a],
+.modal-fade-leave-to .bg-white[data-v-2a3d3e6a] {
   transform: translateY(20px) scale(0.98);
 }
-.receipt-content[data-v-dd53a7ee] {
+.receipt-content[data-v-2a3d3e6a] {
   font-family: 'Inter', sans-serif;
   color: #374151;
 }
-.section-title[data-v-dd53a7ee] {
+.section-title[data-v-2a3d3e6a] {
   font-size: 1.125rem;
   font-weight: 600;
   color: #4338ca;
@@ -2394,145 +2262,133 @@ td[data-v-51ee30d2]:before {
   display: flex;
   align-items: center;
 }
-.section-title i[data-v-dd53a7ee] {
+.section-title i[data-v-2a3d3e6a] {
   color: #818cf8;
 }
-.section-content[data-v-dd53a7ee] {
+.section-content[data-v-2a3d3e6a] {
   font-size: 0.95rem;
   line-height: 1.6;
 }
-.section-content p[data-v-dd53a7ee] {
+.section-content p[data-v-2a3d3e6a] {
   margin-bottom: 0.25rem;
 }
-.section-content strong[data-v-dd53a7ee] {
+.section-content strong[data-v-2a3d3e6a] {
   font-weight: 500;
   color: #1f2937;
 }
 
-/*!******************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/PaymentsPage.vue?vue&type=style&index=0&id=090c7e00&scoped=true&lang=css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************/
 
 /* Modal transition styles (kept here for the delete confirmation modal) */
-.modal-fade-enter-active[data-v-090c7e00],
-.modal-fade-leave-active[data-v-090c7e00] {
+.modal-fade-enter-active[data-v-21e1760e],
+.modal-fade-leave-active[data-v-21e1760e] {
   transition: opacity 0.3s ease;
 }
-.modal-fade-enter-from[data-v-090c7e00],
-.modal-fade-leave-to[data-v-090c7e00] {
+.modal-fade-enter-from[data-v-21e1760e],
+.modal-fade-leave-to[data-v-21e1760e] {
   opacity: 0;
 }
 
 /* Datepicker specific styles to ensure good contrast */
 /* These styles are often needed to override Flowbite's defaults for better visibility */
-.datepicker-grid .datepicker-cell.selected[data-v-090c7e00],
-.datepicker-grid .datepicker-cell.range-start[data-v-090c7e00],
-.datepicker-grid .datepicker-cell.range-end[data-v-090c7e00],
-.datepicker-grid .datepicker-cell.range-middle[data-v-090c7e00],
-.datepicker-grid .datepicker-cell.range-start.selected[data-v-090c7e00],
-.datepicker-grid .datepicker-cell.range-end.selected[data-v-090c7e00] {
+.datepicker-grid .datepicker-cell.selected[data-v-21e1760e],
+.datepicker-grid .datepicker-cell.range-start[data-v-21e1760e],
+.datepicker-grid .datepicker-cell.range-end[data-v-21e1760e],
+.datepicker-grid .datepicker-cell.range-middle[data-v-21e1760e],
+.datepicker-grid .datepicker-cell.range-start.selected[data-v-21e1760e],
+.datepicker-grid .datepicker-cell.range-end.selected[data-v-21e1760e] {
   color: var(--admin-card-text-color) !important;
 }
 
 /* Specific styles for selected/hovered cells to ensure good contrast */
-.datepicker-grid .datepicker-cell.selected[data-v-090c7e00],
-.datepicker-grid .datepicker-cell.range-start[data-v-090c7e00],
-.datepicker-grid .datepicker-cell.range-end[data-v-090c7e00] {
+.datepicker-grid .datepicker-cell.selected[data-v-21e1760e],
+.datepicker-grid .datepicker-cell.range-start[data-v-21e1760e],
+.datepicker-grid .datepicker-cell.range-end[data-v-21e1760e] {
   background-color: var(--admin-link-indigo-bg) !important; /* Using indigo for selected dates */
   color: var(--admin-link-indigo-text) !important;
 }
-.datepicker-grid .datepicker-cell.range-middle[data-v-090c7e00] {
+.datepicker-grid .datepicker-cell.range-middle[data-v-21e1760e] {
   background-color: var(--admin-input-border-color) !important; /* Lighter border color for range middle */
   color: var(--admin-card-text-color) !important;
 }
-.datepicker-grid .datepicker-cell[data-v-090c7e00]:hover:not(.selected):not(.range-middle) {
+.datepicker-grid .datepicker-cell[data-v-21e1760e]:hover:not(.selected):not(.range-middle) {
   background-color: var(--admin-input-border-color) !important; /* Lighter border color for hover */
 }
 
 /* Hide the native date picker indicator for text inputs */
 /* This is crucial to remove the small calendar icon */
-input[type="text"][data-v-090c7e00]::-webkit-calendar-picker-indicator {
+input[type="text"][data-v-21e1760e]::-webkit-calendar-picker-indicator {
   display: none;
 }
-input[type="text"][data-v-090c7e00]::-moz-calendar-picker-indicator {
+input[type="text"][data-v-21e1760e]::-moz-calendar-picker-indicator {
   display: none;
 }
-input[type="text"][data-v-090c7e00]::-ms-calendar-picker-indicator {
+input[type="text"][data-v-21e1760e]::-ms-calendar-picker-indicator {
   display: none;
 }
 
-/*!****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/AgendaPage.vue?vue&type=style&index=0&id=fdcd6242&scoped=true&lang=css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************/
 
 /* Smooth transitions and hover effects */
-.transition-all[data-v-fdcd6242] {
+.transition-all[data-v-3cc9d0f3] {
   transition: all 0.2s ease-in-out;
 }
 
 /* Custom scrollbar for modal content */
-.overflow-y-auto[data-v-fdcd6242]::-webkit-scrollbar {
+.overflow-y-auto[data-v-3cc9d0f3]::-webkit-scrollbar {
   width: 6px;
 }
-.overflow-y-auto[data-v-fdcd6242]::-webkit-scrollbar-track {
+.overflow-y-auto[data-v-3cc9d0f3]::-webkit-scrollbar-track {
   background: #f1f5f9;
   border-radius: 3px;
 }
-.overflow-y-auto[data-v-fdcd6242]::-webkit-scrollbar-thumb {
+.overflow-y-auto[data-v-3cc9d0f3]::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 3px;
 }
-.overflow-y-auto[data-v-fdcd6242]::-webkit-scrollbar-thumb:hover {
+.overflow-y-auto[data-v-3cc9d0f3]::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
 
 /* Prevent text selection on calendar elements */
-.cursor-pointer[data-v-fdcd6242] {
+.cursor-pointer[data-v-3cc9d0f3] {
   user-select: none;
 }
 
 /* Animation for quick preview */
-@keyframes fadeIn-fdcd6242 {
+@keyframes fadeIn-3cc9d0f3 {
 from { opacity: 0; transform: translateY(10px);
 }
 to { opacity: 1; transform: translateY(0);
 }
 }
-.fixed.z-50.bg-gray-900[data-v-fdcd6242] {
-  animation: fadeIn-fdcd6242 0.2s ease-out;
+.fixed.z-50.bg-gray-900[data-v-3cc9d0f3] {
+  animation: fadeIn-3cc9d0f3 0.2s ease-out;
 }
 
-/*!***************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/GoProPage.vue?vue&type=style&index=0&id=68f812e0&scoped=true&lang=css ***!
-  \***************************************************************************************************************************************************************************************************************************************************************/
 
 /* Enhanced animations and effects */
-.content-card[data-v-68f812e0] {
+.content-card[data-v-5943c13a] {
   transition: all 0.3s ease;
 }
 
 /* Responsive improvements */
 @media (max-width: 640px) {
-.group[data-v-68f812e0]:hover {
+.group[data-v-5943c13a]:hover {
     transform: scale(1.02);
 }
 }
 
 /* Custom hover effects */
-.group:hover .fas[data-v-68f812e0],
-.group:hover .fab[data-v-68f812e0] {
-  animation: bounce-68f812e0 0.6s ease-in-out;
+.group:hover .fas[data-v-5943c13a],
+.group:hover .fab[data-v-5943c13a] {
+  animation: bounce-5943c13a 0.6s ease-in-out;
 }
-@keyframes bounce-68f812e0 {
+@keyframes bounce-5943c13a {
 0%, 100% { transform: translateY(0);
 }
 50% { transform: translateY(-2px);
 }
 }
 
-/*!************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/admin/style/global-admin.css ***!
-  \************************************************************************************/
 /*
   These CSS variables are defined in the :style attribute of the root div
   via the adminCustomStyles computed property from useAdminAppearance.js.
@@ -3145,52 +3001,4 @@ to { opacity: 1; transform: translateY(0);
   color: white !important;
 }
 
-/*!********************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/admin/scss/admin.scss ***!
-  \********************************************************************************************************************/
-.notice,
-.notice1 {
-  display: none !important;
-}
-
-@media (min-width: 768px) {
-  .schedula-header {
-    width: calc(100% - 160px) !important;
-  }
-}
-.folded .schedula-header {
-  width: calc(100% - 0px) !important;
-}
-
-.schedula-hd-container {
-  width: calc(100% - 100px) !important;
-}
-
-.schedula-app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.schedula-main {
-  flex: 1;
-  margin-top: 0;
-  padding: 8px;
-}
-
-/* Global styles */
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: "Inter", sans-serif;
-}
-
-/* WordPress admin bar adjustment */
-body.admin-bar header {
-  top: 32px !important;
-}
-
-body.admin-bar .schedula-main {
-  margin-top: 52px;
-}
+.notice,.notice1{display:none !important}@media(min-width: 768px){.schedula-header{width:calc(100% - 160px) !important}}.folded .schedula-header{width:calc(100% - 0px) !important}.schedula-hd-container{width:calc(100% - 100px) !important}.schedula-app{display:flex;flex-direction:column;min-height:100vh}.schedula-main{flex:1;margin-top:0;padding:8px}body,html{margin:0;padding:0;font-family:"Inter",sans-serif}body.admin-bar header{top:32px !important}body.admin-bar .schedula-main{margin-top:52px}
