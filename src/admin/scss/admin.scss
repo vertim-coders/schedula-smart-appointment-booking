@@ -1,0 +1,43 @@
+.notice,
+.notice1 {
+  display: none !important;
+}
+@media (min-width: 768px) {
+  .schedula-header {
+    width: calc(100% - 160px) !important;
+  }
+}
+
+.folded .schedula-header {
+  width: calc(100% - 0px) !important;
+}
+.schedula-hd-container {
+  width: calc(100% - 100px) !important;
+}
+.schedula-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.schedula-main {
+  flex: 1;
+  margin-top: 0;
+  padding: 8px;
+}
+/* Global styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* WordPress admin bar adjustment */
+body.admin-bar header {
+  top: 32px !important;
+}
+
+body.admin-bar .schedula-main {
+  margin-top: 52px;
+}

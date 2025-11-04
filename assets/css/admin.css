@@ -1,0 +1,3196 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/header/HeaderPage.vue?vue&type=style&index=0&id=15a44284&scoped=true&lang=css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+
+/* Base header styles */
+.schedula-header[data-v-15a44284] {
+  position: fixed !important;
+  z-index: 9998 !important; /* Below WP admin bar (9999) but above content */
+  backdrop-filter: blur(8px);
+}
+
+/* WordPress admin bar adjustments - UPDATED */
+body.admin-bar .schedula-header[data-v-15a44284] {
+  top: 32px !important; /* WordPress admin bar height on desktop */
+}
+
+/* Mobile-specific adjustments - REDUCED PADDING AND HEIGHT */
+@media (max-width: 639px) {
+.schedula-header[data-v-15a44284] {
+    left: 0 !important;
+    width: 100% !important;
+    position: fixed !important;
+    top: 0px !important; /* Always top 0 on mobile */
+    height: 48px !important; /* Reduced from 60px to 48px */
+    box-sizing: border-box !important;
+}
+  
+  /* Mobile WordPress admin bar adjustment - reduced padding */
+body.admin-bar .schedula-header[data-v-15a44284] {
+    top: 0px !important; /* Keep at top 0 */
+    height: 80px !important; /* 48px content + 32px admin bar space */
+    padding-top: 32px !important; /* Reduced from 46px to 32px */
+    box-sizing: border-box !important;
+}
+  
+  /* Ensure the content area of header stays compact */
+body.admin-bar .schedula-header[data-v-15a44284] > * {
+    height: 48px !important; /* Match reduced header height */
+    display: flex !important;
+    align-items: center !important;
+}
+  
+  /* Additional class for ensuring mobile positioning */
+.schedula-header.mobile-header-positioned[data-v-15a44284] {
+    position: fixed !important;
+    top: 0px !important;
+}
+}
+
+/* Desktop styles */
+@media (min-width: 640px) {
+.schedula-header[data-v-15a44284] {
+    position: fixed !important;
+}
+body.admin-bar .schedula-header[data-v-15a44284] {
+    top: 32px !important; /* WordPress desktop admin bar height */
+}
+}
+
+/* Content spacing adjustments */
+.schedula-main[data-v-15a44284] {
+  margin-top: 50px; /* Base header height */
+  padding: 16px 8px;
+}
+
+/* WordPress admin bar body adjustments */
+body.admin-bar .schedula-main[data-v-15a44284] {
+  margin-top: 82px; /* 50px header + 32px desktop admin bar */
+}
+
+/* Mobile content spacing - UPDATED FOR REDUCED SIZES */
+@media (max-width: 639px) {
+.schedula-main[data-v-15a44284] {
+    margin-top: 48px; /* Reduced mobile header height */
+}
+body.admin-bar .schedula-main[data-v-15a44284] {
+    margin-top: 80px; /* 48px header + 32px admin bar padding */
+}
+}
+
+/* Touch handling for mobile */
+@media (max-width: 639px) {
+.schedula-header[data-v-15a44284] {
+    padding: 0 12px;
+}
+.schedula-header nav a[data-v-15a44284] {
+    min-width: 32px;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: manipulation;
+}
+.schedula-header nav a i[data-v-15a44284] {
+    font-size: 16px;
+}
+}
+
+/* Desktop styles */
+@media (min-width: 640px) {
+.schedula-header nav a[data-v-15a44284] {
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+}
+
+/* Desktop sidebar adjustments */
+@media (min-width: 768px) {
+.schedula-header[data-v-15a44284] {
+    width: calc(100% - 160px) !important;
+    left: 160px;
+}
+}
+.folded .schedula-header[data-v-15a44284] {
+  width: calc(100% - 36px) !important;
+  left: 36px;
+}
+
+/* Mobile override - full width on mobile */
+@media (max-width: 767px) {
+.schedula-header[data-v-15a44284] {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+}
+
+/* Performance optimization */
+@media (max-width: 639px) {
+.schedula-header[data-v-15a44284] {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/shared/ToastContainer.vue?vue&type=style&index=0&id=0354d944&scoped=true&lang=css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+
+.toast-container[data-v-0354d944] {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    pointer-events: none;
+    max-width: 420px;
+}
+.toast[data-v-0354d944] {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 12px;
+    padding: 16px;
+    min-height: 60px;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: 4px solid;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+.toast-success[data-v-0354d944] {
+    border-left-color: #10b981;
+    background-color: #f0fdf4;
+}
+.toast-error[data-v-0354d944] {
+    border-left-color: #ef4444;
+    background-color: #fef2f2;
+}
+.toast-warning[data-v-0354d944] {
+    border-left-color: #f59e0b;
+    background-color: #fffbeb;
+}
+.toast-info[data-v-0354d944] {
+    border-left-color: #3b82f6;
+    background-color: #eff6ff;
+}
+.toast-icon[data-v-0354d944] {
+    margin-right: 12px;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+.toast-success .toast-icon[data-v-0354d944] { color: #10b981;
+}
+.toast-error .toast-icon[data-v-0354d944] { color: #ef4444;
+}
+.toast-warning .toast-icon[data-v-0354d944] { color: #f59e0b;
+}
+.toast-info .toast-icon[data-v-0354d944] { color: #3b82f6;
+}
+.toast-content[data-v-0354d944] {
+    flex: 1;
+    min-width: 0;
+}
+.toast-message[data-v-0354d944] {
+    font-weight: 500;
+    color: #374151;
+    line-height: 1.4;
+}
+.toast-close[data-v-0354d944] {
+    margin-left: 12px;
+    background: none;
+    border: none;
+    color: #6b7280;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    flex-shrink: 0;
+}
+.toast-close[data-v-0354d944]:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #374151;
+}
+.toast-enter-active[data-v-0354d944] { transition: all 0.3s ease-out;
+}
+.toast-leave-active[data-v-0354d944] { transition: all 0.3s ease-in;
+}
+.toast-enter-from[data-v-0354d944] { opacity: 0; transform: translateX(100%);
+}
+.toast-leave-to[data-v-0354d944] { opacity: 0; transform: translateX(100%);
+}
+.toast-move[data-v-0354d944] { transition: transform 0.3s ease;
+}
+  
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/common/BaseFormStyles.vue?vue&type=style&index=0&id=41df69db&lang=css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+
+/* These styles are intentionally NOT scoped.
+   They are meant to be global and provide consistent base styling
+   for form elements across your application.
+*/
+
+/* Standardized Input System Containers */
+.standardized-input-container {
+  display: flex !important; /* Ensure flex behavior */
+  width: 100% !important;
+  min-height: 44px !important; /* Consistent height for containers */
+  position: relative !important;
+  align-items: center !important; /* Vertically align content */
+  box-sizing: border-box !important; /* Ensure consistent box model */
+}
+
+/* Base styling for all single-line inputs (input, select, textarea) */
+.standardized-input {
+  width: 100% !important;
+  height: 44px !important;
+  min-height: 44px !important;
+  padding: 12px 16px !important;
+  border: 1px solid var(--admin-input-border-color) !important;
+  border-radius: 8px !important; /* Fully rounded for standalone inputs */
+  font-size: 14px !important;
+  line-height: 1.25 !important;
+  color: var(--admin-input-text-color) !important;
+  background-color: var(--admin-input-bg-color) !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important; /* Tailwind shadow-sm */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+  box-sizing: border-box !important;
+}
+.standardized-input:focus {
+  outline: none !important;
+  border-color: var(--admin-link-indigo-bg) !important;
+  box-shadow: 0 0 0 3px var(--admin-link-indigo-bg-light) !important;
+}
+.standardized-input:disabled {
+  background-color: var(--admin-border-color) !important;
+  color: var(--admin-input-text-muted) !important;
+  cursor: not-allowed !important;
+}
+.vue-tel-input{
+  border: 1px solid var(--admin-input-border-color) !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  background-color: var(--admin-input-bg-color) !important;
+}
+.vue-tel-input:focus-within {
+  outline: none !important;
+  border-color: var(--admin-link-indigo-bg) !important;
+  box-shadow: 0 0 0 3px var(--admin-link-indigo-bg-light) !important;
+}
+.vue-tel-input .vti__input {
+  background-color: var(--admin-input-bg-color) !important;
+  color: var(--admin-input-text-color) !important;
+}
+.vue-tel-input .vti__dropdown, .vue-tel-input .vti__dropdown-list {
+  background-color: var(--admin-card-bg-color) !important;
+  border-color: var(--admin-border-color) !important;
+}
+.vue-tel-input .vti__dropdown-item.highlighted {
+  background-color: var(--admin-link-indigo-bg) !important;
+}
+.standardized-input.phone-input{
+  border: none !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+.standardized-input.phone-input:focus{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Specific style for main input within a container (e.g., with a button) */
+.standardized-input-main {
+  flex: 1 !important;
+  min-width: 0 !important;
+  height: 44px !important;
+  min-height: 44px !important;
+  padding: 12px 16px !important;
+  border: 1px solid var(--admin-input-border-color) !important;
+  border-radius: 8px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-right: none !important;
+  font-size: 14px !important;
+  line-height: 1.25 !important;
+  color: var(--admin-input-text-color) !important;
+  background-color: var(--admin-input-bg-color) !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+  box-sizing: border-box !important;
+}
+.standardized-input-main:focus {
+  outline: none !important;
+  border-color: var(--admin-link-indigo-bg) !important;
+  box-shadow: 0 0 0 3px var(--admin-link-indigo-bg-light) !important;
+}
+
+/* Button that sits next to the main input */
+.standardized-button {
+  flex-shrink: 0 !important;
+  height: 44px !important;
+  min-height: 44px !important;
+  padding: 0 16px !important;
+  border: 1px solid var(--admin-button-primary-bg) !important;
+  border-radius: 8px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  margin-left: 0 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: var(--admin-button-primary-text) !important;
+  background-color: var(--admin-button-primary-bg) !important;
+  cursor: pointer !important;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out !important;
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.standardized-button:hover {
+  opacity: 0.9;
+}
+.standardized-button:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px var(--admin-link-indigo-bg-light) !important;
+}
+.standardized-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed !important;
+}
+
+/* Special handling for textarea to allow vertical resizing */
+.standardized-input.resize-vertical {
+  height: auto !important;
+  min-height: 80px !important;
+  resize: vertical !important;
+  padding: 10px 12px !important;
+}
+.standardized-input.select-appearance,
+.standardized-input-main.select-appearance {
+  appearance: none !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27none%27 viewBox=%270 0 20 20%27%3e%3cpath stroke=%27%236b7280%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%271.5%27 d=%27m6 8 4 4 4-4%27/%3e%3c/svg%3e") !important;
+  background-position: right 12px center !important;
+  background-repeat: no-repeat !important;
+  background-size: 16px 12px !important;
+  padding-right: 40px !important;
+  height: 44px !important;
+  min-height: 44px !important;
+  max-width : 100% !important;
+}
+.standardized-input select,
+.standardized-input-main select {
+  width: 100% !important;
+  flex-grow: 1 !important;
+}
+.wp-core-ui .standardized-input select,
+.wp-core-ui .standardized-input-main select {
+  max-width: none !important;
+}
+
+
+/* Global resets to prevent external style interference */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+  font-family: inherit !important;
+  font-size: 14px !important;
+  box-sizing: border-box !important;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/App.vue?vue&type=style&index=0&id=3a030f38&scoped=true&lang=css ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+
+.appearance-page[data-v-3a030f38] {
+  /* Add any styles to disable or override the admin styles on the appearance page */
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/dashboard/StatsCard.vue?vue&type=style&index=0&id=8daf2ed8&scoped=true&lang=css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+
+/* No specific styles needed here, Tailwind CSS handles everything */
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/dashboard/SmartSuggestionsCard.vue?vue&type=style&index=0&id=43d34de1&scoped=true&lang=css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+
+/* No specific styles needed beyond Tailwind */
+
+/*!*******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/DashboardPage.vue?vue&type=style&index=0&id=7f489fcf&lang=css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************/
+
+/* Global styles for admin theme variables are assumed to be loaded from global-admin.css */
+
+/* Flowbite Datepicker styles - Reverted to original hardcoded colors as per user request */
+.datepicker-dropdown,
+.datepicker-picker,
+.datepicker-panel {
+  background-color: #ffffff !important;
+  border-color: #e5e7eb !important;
+  box-shadow: 0 10px 15px -3px rgba(240, 233, 233, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+.datepicker-header,
+.datepicker-footer {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  border-top: 1px solid #e5e7eb !important;
+}
+.datepicker-controls .datepicker-title,
+.datepicker-controls .datepicker-view-selected,
+.datepicker-controls .button,
+.datepicker-controls .button:hover,
+.datepicker-grid .datepicker-cell,
+.datepicker-grid .datepicker-cell.focused,
+.datepicker-grid .datepicker-cell.selected,
+.datepicker-grid .datepicker-cell.range-start,
+.datepicker-grid .datepicker-cell.range-end,
+.datepicker-grid .datepicker-cell.range-middle,
+.datepicker-grid .datepicker-cell.range-start.selected,
+.datepicker-grid .datepicker-cell.range-end.selected {
+  color: #374151 !important;
+}
+.datepicker-grid .datepicker-cell.selected,
+.datepicker-grid .datepicker-cell.range-start,
+.datepicker-grid .datepicker-cell.range-end {
+  background-color: #4f46e5 !important;
+  color: #ffffff !important;
+}
+.datepicker-grid .datepicker-cell.range-middle {
+  background-color: #c7d2fe !important;
+  color: #374151 !important;
+}
+.datepicker-grid .datepicker-cell:hover:not(.selected):not(.range-middle) {
+  background-color: #e0e7ff !important;
+}
+
+/* Hide native date picker indicator */
+input[type="text"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+input[type="text"]::-moz-calendar-picker-indicator {
+  display: none;
+}
+input[type="text"]::-ms-calendar-picker-indicator {
+  display: none;
+}
+* Enhanced error validation styles */
+.input-field.border-red-500 {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1) !important;
+}
+.input-field.border-red-500:focus {
+  border-color: #ef4444 !important;
+  ring-color: #ef4444 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2) !important;
+}
+
+/* Error message styling */
+.absolute.top-full {
+  z-index: 20;
+}
+
+/* Enhanced animation for error messages */
+.fade-in-error {
+  animation: fadeInError 0.3s ease-in-out;
+}
+@keyframes fadeInError {
+from {
+    opacity: 0;
+    transform: translateY(-5px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+/* Button disabled state enhancement */
+button:disabled {
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+}
+button:disabled:hover {
+  background-color: inherit !important;
+  box-shadow: inherit !important;
+}
+
+/* Dark mode error message styles */
+.dark .text-red-600 {
+  color: #f87171 !important;
+}
+.dark .bg-red-50 {
+  background-color: rgba(239, 68, 68, 0.1) !important;
+  color: #f87171 !important;
+}
+.dark .border-red-200 {
+  border-color: rgba(239, 68, 68, 0.3) !important;
+}
+
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/OnboardingWizard.vue?vue&type=style&index=0&id=728f230a&scoped=true&lang=css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+
+/* Add any specific styles for the wizard here */
+.modal-fade-enter-active[data-v-728f230a], .modal-fade-leave-active[data-v-728f230a] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-728f230a], .modal-fade-leave-to[data-v-728f230a] {
+  opacity: 0;
+}
+
+/* Custom dropdown item hover effect */
+.dropdown-item[data-v-728f230a]:hover {
+  background-color: #f3f4f6; /* gray-100 */
+}
+.dark-mode .dropdown-item[data-v-728f230a]:hover {
+  background-color: #374151; /* gray-700 */
+}
+
+/* Dark mode styles for native select options */
+.dark-mode .input-field option[data-v-728f230a],
+.dark-mode .input-field optgroup[data-v-728f230a] {
+  background-color: var(--admin-card-bg-color, #1f2937);
+  color: var(--admin-text-color, #f9fafb);
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/shared/AppLoader.vue?vue&type=style&index=0&id=72ba5d5a&scoped=true&lang=css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+
+  /* No additional scoped styles needed, Tailwind's animate-spin handles it */
+  
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appointments/AppointmentsListe.vue?vue&type=style&index=0&id=4ec6d2f0&scoped=true&lang=css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+
+.break-words[data-v-4ec6d2f0] {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Responsive table adjustments */
+@media (max-width: 639px) { /* Small screens (sm breakpoint in Tailwind is 640px) */
+table[data-v-4ec6d2f0], thead[data-v-4ec6d2f0], tbody[data-v-4ec6d2f0], th[data-v-4ec6d2f0], td[data-v-4ec6d2f0], tr[data-v-4ec6d2f0] {
+    display: block;
+}
+thead tr[data-v-4ec6d2f0] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+tr[data-v-4ec6d2f0] {
+    border: 1px solid var(--admin-border-color);
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem; /* rounded-lg */
+    overflow: hidden; /* Ensures border-radius applies */
+}
+td[data-v-4ec6d2f0] {
+    /* Behave like a "row" */
+    border: none;
+    border-bottom: 1px solid var(--admin-border-color);
+    position: relative;
+    padding-left: 50% !important; /* Adjust based on label width */
+    text-align: right;
+}
+td[data-v-4ec6d2f0]:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0px;
+    left: 6px;
+    width: 45%; /* Adjust to fit content */
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+    color: var(--admin-card-text-color);
+}
+
+  /*
+  Label the data
+  */
+td[data-v-4ec6d2f0]:nth-of-type(1):before { content: "Date & Time:";
+}
+td[data-v-4ec6d2f0]:nth-of-type(2):before { content: "Client:";
+}
+td[data-v-4ec6d2f0]:nth-of-type(3):before { content: "Employe:";
+}
+td[data-v-4ec6d2f0]:nth-of-type(4):before { content: "Service:";
+}
+td[data-v-4ec6d2f0]:nth-of-type(5):before { content: "Price:";
+} /* Added for mobile view */
+td[data-v-4ec6d2f0]:nth-of-type(6):before { content: "Phone:";
+}
+td[data-v-4ec6d2f0]:nth-of-type(7):before { content: "Email:";
+}
+td[data-v-4ec6d2f0]:nth-of-type(8):before { content: "Duration:";
+}
+td[data-v-4ec6d2f0]:nth-of-type(9):before { content: "Status:";
+}
+td[data-v-4ec6d2f0]:nth-of-type(10):before { content: "Actions:";
+}
+
+  /* Hide the desktop cells */
+.sm\:table-cell.hidden[data-v-4ec6d2f0] {
+    display: none;
+}
+
+  /* Show the stacked cells */
+.block.sm\:hidden[data-v-4ec6d2f0] {
+    display: block;
+}
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/common/BaseInput.vue?vue&type=style&index=0&id=7d7f7fc5&scoped=true&lang=css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+
+/* These styles are specific to BaseInput's internal layout, not the input's appearance */
+.standardized-input-container[data-v-7d7f7fc5] {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+/* The standardized-input class itself is now global, so no need to redefine it here. */
+/* If you had other specific layout needs for the input itself, they would go here. */
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/common/BaseTextarea.vue?vue&type=style&index=0&id=8fdad8e2&scoped=true&lang=css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+
+/* These styles are specific to BaseTextarea's internal layout, not the textarea's appearance */
+.standardized-input-container[data-v-8fdad8e2] {
+  display: flex;
+  width: 100%;
+  min-height: 44px; /* Ensure consistent height for container */
+  position: relative;
+}
+/* The standardized-input and resize-vertical classes are now global. */
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/common/BaseSelect.vue?vue&type=style&index=0&id=7fb5eb91&scoped=true&lang=css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+
+/* These styles are specific to BaseSelect's internal layout, not the select's appearance */
+.standardized-input-container[data-v-7fb5eb91] {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+/* The standardized-input and select-appearance classes are now global. */
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/common/BaseCheckbox.vue?vue&type=style&index=0&id=669ae8d0&scoped=true&lang=css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+
+/* Add any specific scoped styles for BaseCheckbox here if needed */
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/common/BaseInputWithButton.vue?vue&type=style&index=0&id=4664833d&scoped=true&lang=css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+
+/* The standardized-input-container, standardized-input-main, and standardized-button classes are now global. */
+/* No specific scoped styles needed here, as the global styles handle the layout and appearance. */
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appointments/AppointmentsForm.vue?vue&type=style&index=0&id=8bb4ff5a&scoped=true&lang=css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+
+
+/* Modal transition styles */
+.modal-fade-enter-active[data-v-8bb4ff5a],
+.modal-fade-leave-active[data-v-8bb4ff5a] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-8bb4ff5a],
+.modal-fade-leave-to[data-v-8bb4ff5a] {
+  opacity: 0;
+}
+
+/* Optional: Add a slight scale/slide effect for the modal content */
+.modal-fade-enter-active .modal-content[data-v-8bb4ff5a],
+.modal-fade-leave-active .modal-content[data-v-8bb4ff5a] {
+  transition: transform 0.3s ease;
+}
+.modal-fade-enter-from .modal-content[data-v-8bb4ff5a],
+.modal-fade-leave-to .modal-content[data-v-8bb4ff5a] {
+  transform: scale(0.95);
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/AppointmentsPage.vue?vue&type=style&index=0&id=7333aaf2&scoped=true&lang=css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+
+/* No modal-fade transition for the form itself, as it's now a full page */
+/* Modal transition styles for Delete Confirmation Modal (only) */
+.modal-fade-enter-active[data-v-7333aaf2],
+.modal-fade-leave-active[data-v-7333aaf2] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-7333aaf2],
+.modal-fade-leave-to[data-v-7333aaf2] {
+  opacity: 0;
+}
+
+/* Optional: Add a slight scale/slide effect for the modal content */
+.modal-fade-enter-active > div[data-v-7333aaf2],
+.modal-fade-leave-active > div[data-v-7333aaf2] {
+  transition: transform 0.3s ease;
+}
+.modal-fade-enter-from > div[data-v-7333aaf2],
+.modal-fade-leave-to > div[data-v-7333aaf2] {
+  transform: scale(0.95);
+}
+
+/* Datepicker specific styles to ensure good contrast */
+/* These styles are often needed to override Flowbite's defaults for better visibility */
+.datepicker-grid .datepicker-cell.selected[data-v-7333aaf2],
+.datepicker-grid .datepicker-cell.range-start[data-v-7333aaf2],
+.datepicker-grid .datepicker-cell.range-end[data-v-7333aaf2],
+.datepicker-grid .datepicker-cell.range-middle[data-v-7333aaf2],
+.datepicker-grid .datepicker-cell.range-start.selected[data-v-7333aaf2],
+.datepicker-grid .datepicker-cell.range-end.selected[data-v-7333aaf2] {
+  color: var(--admin-card-text-color) !important;
+}
+
+/* Specific styles for selected/hovered cells to ensure good contrast */
+.datepicker-grid .datepicker-cell.selected[data-v-7333aaf2],
+.datepicker-grid .datepicker-cell.range-start[data-v-7333aaf2],
+.datepicker-grid .datepicker-cell.range-end[data-v-7333aaf2] {
+  background-color: var(--admin-link-indigo-bg) !important; /* Using indigo for selected dates */
+  color: var(--admin-link-indigo-text) !important;
+}
+.datepicker-grid .datepicker-cell.range-middle[data-v-7333aaf2] {
+  background-color: var(--admin-input-border-color) !important; /* Lighter border color for range middle */
+  color: var(--admin-card-text-color) !important;
+}
+.datepicker-grid .datepicker-cell[data-v-7333aaf2]:hover:not(.selected):not(.range-middle) {
+  background-color: var(--admin-input-border-color) !important; /* Lighter border color for hover */
+}
+input[type="text"][data-v-7333aaf2]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+input[type="text"][data-v-7333aaf2]::-moz-calendar-picker-indicator {
+  display: none;
+}
+input[type="text"][data-v-7333aaf2]::-ms-calendar-picker-indicator {
+  display: none;
+}
+.column-visibility-button[data-v-7333aaf2]:hover {
+  background-color: var(--admin-border-color);
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/staff/EmployeList.vue?vue&type=style&index=0&id=33ca77b4&scoped=true&lang=css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+
+/* Add any specific styles for EmployeListe.vue here if needed */
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/staff/EmployeForm.vue?vue&type=style&index=0&id=9bbcc568&scoped=true&lang=css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+
+/* Scoped styles specific to EmployeForm.vue */
+.content-card[data-v-9bbcc568] {
+  background-color: var(--admin-card-bg-color);
+  box-shadow: var(--admin-shadow);
+  border: 1px solid var(--admin-border-color);
+}
+.input-field[data-v-9bbcc568] {
+  background-color: var(--admin-input-bg-color);
+  color: var(--admin-input-text-color);
+  border-color: var(--admin-input-border-color);
+}
+.input-field[data-v-9bbcc568]:focus {
+  border-color: var(--admin-link-indigo-bg);
+  box-shadow: 0 0 0 1px var(--admin-link-indigo-bg);
+}
+.form-checkbox[data-v-9bbcc568] {
+  accent-color: var(--admin-link-indigo-bg);
+  border-color: var(--admin-input-border-color);
+  background-color: var(--admin-input-bg-color);
+}
+.break-label[data-v-9bbcc568] {
+  border: 1px solid var(--admin-suggestion-yellow-border);
+}
+
+/* Modal styles - ensure they match the global toast styling if possible for consistency */
+.modal-fade-enter-active[data-v-9bbcc568], .modal-fade-leave-active[data-v-9bbcc568] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-9bbcc568], .modal-fade-leave-to[data-v-9bbcc568] {
+  opacity: 0;
+}
+.modal-fade-enter-active .modal-content[data-v-9bbcc568],
+.modal-fade-leave-active .modal-content[data-v-9bbcc568] {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.modal-fade-enter-from .modal-content[data-v-9bbcc568],
+.modal-fade-leave-to .modal-content[data-v-9bbcc568] {
+  transform: translateY(-20px) scale(0.95);
+  opacity: 0;
+}
+.modal-content[data-v-9bbcc568] {
+  background-color: var(--admin-card-bg-color);
+  color: var(--admin-text-color);
+  border: 1px solid var(--admin-border-color);
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/StaffPage.vue?vue&type=style&index=0&id=122973ca&scoped=true&lang=css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+
+.modal-fade-enter-active[data-v-122973ca],
+  .modal-fade-leave-active[data-v-122973ca] {
+    transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-122973ca],
+  .modal-fade-leave-to[data-v-122973ca] {
+    opacity: 0;
+}
+.modal-fade-enter-active > div[data-v-122973ca],
+  .modal-fade-leave-active > div[data-v-122973ca] {
+    transition: transform 0.3s ease;
+}
+.modal-fade-enter-from > div[data-v-122973ca],
+  .modal-fade-leave-to > div[data-v-122973ca] {
+    transform: scale(0.95);
+}
+.modal-content[data-v-122973ca] {
+    background-color: var(--admin-card-bg-color);
+    color: var(--admin-text-color);
+    border: 1px solid var(--admin-border-color);
+}
+  
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/categories/CategoryList.vue?vue&type=style&index=0&id=73e27c8f&scoped=true&lang=css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+
+
+
+
+/* Modal transition styles (kept here for the delete confirmation modal) */
+.modal-fade-enter-active[data-v-73e27c8f],
+.modal-fade-leave-active[data-v-73e27c8f] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-73e27c8f],
+.modal-fade-leave-to[data-v-73e27c8f] {
+  opacity: 0;
+}
+
+/* Optional: Add a slight scale/slide effect for the modal content */
+.modal-fade-enter-active .modal-content[data-v-73e27c8f],
+.modal-fade-leave-active .modal-content[data-v-73e27c8f] {
+  transition: transform 0.3s ease;
+}
+.modal-fade-enter-from .modal-content[data-v-73e27c8f],
+.modal-fade-leave-to .modal-content[data-v-73e27c8f] {
+  transform: scale(0.95);
+}
+
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/modals/ManageCategoriesModal.vue?vue&type=style&index=0&id=0438a75a&scoped=true&lang=css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+
+.content-card[data-v-0438a75a] {
+  background-color: var(--admin-card-bg);
+  border: 1px solid var(--admin-border-color);
+  color: var(--admin-text-color);
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/ServicesCategoriesPage.vue?vue&type=style&index=0&id=3215e7ed&scoped=true&lang=css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+
+/* Modal transition styles */
+.modal-fade-enter-active[data-v-3215e7ed],
+.modal-fade-leave-active[data-v-3215e7ed] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-3215e7ed],
+.modal-fade-leave-to[data-v-3215e7ed] {
+  opacity: 0;
+}
+.modal-fade-enter-active > div[data-v-3215e7ed],
+.modal-fade-leave-active > div[data-v-3215e7ed] {
+  transition: transform 0.3s ease;
+}
+.modal-fade-enter-from > div[data-v-3215e7ed],
+.modal-fade-leave-to > div[data-v-3215e7ed] {
+  transform: scale(0.95);
+}
+
+/* Content card style */
+.content-card[data-v-3215e7ed] {
+  background-color: var(--admin-card-bg);
+  border: 1px solid var(--admin-border-color);
+  color: var(--admin-text-color);
+}
+.column-visibility-button[data-v-3215e7ed]:hover {
+  background-color: var(--admin-border-color);
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/clients/ClientList.vue?vue&type=style&index=0&id=dea16cc0&scoped=true&lang=css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+
+/* Add any additional styles here */
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/ClientsPage.vue?vue&type=style&index=0&id=4e9dd443&scoped=true&lang=css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+
+.modal-fade-enter-active[data-v-4e9dd443],
+.modal-fade-leave-active[data-v-4e9dd443] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-4e9dd443],
+.modal-fade-leave-to[data-v-4e9dd443] {
+  opacity: 0;
+}
+
+/* Optional: Add a slight scale/slide effect for the modal content */
+.modal-fade-enter-active .modal-content[data-v-4e9dd443],
+.modal-fade-leave-active .modal-content[data-v-4e9dd443] {
+  transition: transform 0.3s ease;
+}
+.modal-fade-enter-from .modal-content[data-v-4e9dd443],
+.modal-fade-leave-to .modal-content[data-v-4e9dd443] {
+  transform: scale(0.95);
+}
+.column-visibility-button[data-v-4e9dd443]:hover {
+  background-color: var(--admin-border-color);
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/notifications/EmailTemplateSelector.vue?vue&type=style&index=0&id=65b8e54e&scoped=true&lang=css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+
+.input-field[data-v-65b8e54e] {
+  background-color: var(--admin-input-bg-color);
+  color: var(--admin-input-text-color);
+  border-color: var(--admin-input-border-color);
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/notifications/EmailBodyEditor.vue?vue&type=style&index=0&id=74d5e744&scoped=true&lang=css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+
+.modal-fade-enter-active[data-v-74d5e744],
+.modal-fade-leave-active[data-v-74d5e744] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-74d5e744],
+.modal-fade-leave-to[data-v-74d5e744] {
+  opacity: 0;
+}
+.modal-content[data-v-74d5e744] {
+  background-color: var(--admin-card-bg-color);
+}
+.input-field[data-v-74d5e744] {
+  background-color: var(--admin-input-bg-color);
+  color: var(--admin-input-text-color);
+  border-color: var(--admin-input-border-color);
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/notifications/SmtpSettingsModal.vue?vue&type=style&index=0&id=389f0dad&scoped=true&lang=css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+
+.modal-fade-enter-active[data-v-389f0dad],
+.modal-fade-leave-active[data-v-389f0dad] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-389f0dad],
+.modal-fade-leave-to[data-v-389f0dad] {
+  opacity: 0;
+}
+.modal-content[data-v-389f0dad] {
+  background-color: var(--admin-card-bg-color);
+}
+.input-field[data-v-389f0dad] {
+  background-color: var(--admin-input-bg-color);
+  color: var(--admin-input-text-color);
+  border-color: var(--admin-input-border-color);
+}
+
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/NotificationsPage.vue?vue&type=style&index=0&id=78dc47ba&scoped=true&lang=css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+
+.content-card[data-v-78dc47ba] {
+  background-color: var(--admin-card-bg-color);
+  color: var(--admin-card-text-color);
+  border-radius: 0.5rem;
+}
+.input-field[data-v-78dc47ba] {
+  background-color: var(--admin-input-bg-color);
+  color: var(--admin-input-text-color);
+  border-color: var(--admin-input-border-color);
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/AppearanceHomePage.vue?vue&type=style&index=0&id=d339e046&scoped=true&lang=css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+
+h1[data-v-d339e046] {
+  font-weight: bold;
+  font-size: 2.0rem;
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/form/BasePhoneInputForm.vue?vue&type=style&index=0&id=0e43947c&scoped=true&lang=css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+
+.vue-tel-input[data-v-0e43947c] {
+    background-color: var(--0e43947c-style\?\.backgroundColor\ \|\|\ \"\#fff\") !important; 
+    color: var(--0e43947c-style\?\.color\ \|\|\ \"\#000\") !important; 
+    border-color: var(--0e43947c-style\?\.borderColor\ \|\|\ \"\#ccc\") !important;
+}
+.vue-tel-input .vti__input[data-v-0e43947c] {
+    background-color: var(--0e43947c-style\?\.backgroundColor\ \|\|\ \"\#fff\") !important;
+    color: var(--0e43947c-style\?\.color\ \|\|\ \"\#000\") !important;
+    border-color: var(--0e43947c-style\?\.borderColor\ \|\|\ \"\#ccc\") !important;
+}
+.vue-tel-input .vti__dropdown[data-v-0e43947c] {
+    background-color: var(--0e43947c-style\?\.backgroundColor\ \|\|\ \"\#fff\") !important;
+    color: var(--0e43947c-style\?\.color\ \|\|\ \"\#000\") !important;
+    border-color: var(--0e43947c-style\?\.borderColor\ \|\|\ \"\#ccc\") !important;
+}
+.vue-tel-input .vti__dropdown-list[data-v-0e43947c] {
+    background-color: var(--0e43947c-style\?\.backgroundColor\ \|\|\ \"\#fff\") !important;
+    color: var(--0e43947c-style\?\.color\ \|\|\ \"\#000\") !important;
+    border-color: var(--0e43947c-style\?\.borderColor\ \|\|\ \"\#ccc\") !important;
+}
+.vue-tel-input .vti__dropdown-item[data-v-0e43947c] {
+    color: var(--0e43947c-style\?\.color\ \|\|\ \"\#000\") !important;
+}
+.vue-tel-input .vti__selected-flag[data-v-0e43947c] {
+    background-color: var(--0e43947c-style\?\.backgroundColor\ \|\|\ \"\#fff\") !important;
+}
+.vue-tel-input.vue-tel-input[data-v-0e43947c] {
+    border: 1px solid var(--0e43947c-style\?\.borderColor\ \|\|\ \"\#ccc\") !important;
+}
+.vue-tel-input .vti__input[data-v-0e43947c],
+  .vue-tel-input .vti__dropdown[data-v-0e43947c] {
+    border: none !important;
+}
+.vue-tel-input[data-v-0e43947c] {
+    padding: 0 !important;
+}
+.vue-tel-input .vti__input[data-v-0e43947c] {
+    padding: var(--0e43947c-style\?\.padding) !important; 
+    height: var(--0e43947c-style\?\.height) !important; 
+    line-height: var(--0e43947c-style\?\.lineHeight) !important;
+}
+.vue-tel-input .vti__dropdown[data-v-0e43947c] {
+    padding: var(--0e43947c-style\?\.padding) !important;
+}
+.vue-tel-input .vti__dropdown-arrow[data-v-0e43947c] {
+    border-top-color: var(--0e43947c-style\?\.color\ \|\|\ \"\#000\") !important;
+}
+  
+  
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/form/ClientReservationForm.vue?vue&type=style&index=0&id=4063674a&scoped=true&lang=css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+
+/* Global styles applied via CSS variables from useAppearanceSettings */
+/* These are default values, they will be overridden by inline styles from computed properties */
+/* Ensure these are in sync with useAppearanceSettings.js */
+[data-v-4063674a]:root {
+  /* Use CSS variables from useAppearanceSettings.js for global theme */
+  /* These are NOT default values, they are the actual values applied by the composable */
+  font-family: var(--font-family-form, 'Inter', sans-serif);
+  font-size: var(--base-font-size-form, 1rem);
+  --primary-color: var(--primary-color);
+  --background-color: var(--background-color);
+  --text-color: var(--text-color);
+  --header-background-color: var(--header-background-color);
+  --header-text-color: var(--header-text-color);
+  --border-radius-form: var(--border-radius-form);
+  --shadow-form: var(--shadow-form);
+}
+
+/* Base container for the whole form */
+.wp-reservation-form[data-v-4063674a] {
+  background-color: var(--background-color);
+  font-family: var(--font-family-form); /* Apply font family */
+  font-size: var(--base-font-size-form); /* Apply base font size */
+  color: var(--text-color);
+  /* min-h-screen is already applied via Tailwind in template */
+  /* transition-all duration-300 is already applied via Tailwind in template */
+}
+
+/* Main form container (the "card") */
+/* Apply rounded corners and shadows directly from CSS variables */
+.relative.rounded-lg.overflow-hidden.shadow-lg.w-full.max-w-xl.mx-auto.flex.flex-col[data-v-4063674a] {
+  border-radius: var(--border-radius-form); /* Apply rounded corners */
+  box-shadow: var(--shadow-form); /* Apply shadows */
+  height: auto;
+  max-height: none;
+}
+
+/* Main Form Content Area - NO internal scrolling */
+.form-body[data-v-4063674a] {
+  /* Styles are applied via inline styles from computed properties */
+  flex-grow: 1; /* Allows it to take available space */
+  overflow-y: visible; /* Prevents internal scrolling */
+  -webkit-overflow-scrolling: auto; /* Revert to default scrolling behavior */
+}
+
+/* Removed custom scrollbar styles as there's no internal scrollbar */
+/* .custom-scrollbar::-webkit-scrollbar { ... } */
+
+/* Form Group Styles (labels, inputs, selects, textareas) */
+.form-group[data-v-4063674a] {
+  margin-bottom: 0.75rem;
+}
+.form-label[data-v-4063674a] {
+  /* Styles applied via inline styles from computed properties */
+}
+.form-input[data-v-4063674a],
+.form-select[data-v-4063674a],
+.form-textarea[data-v-4063674a] {
+  border-radius: var(--border-radius-form); /* Apply rounded corners */
+  font-size: var(--base-font-size-form); /* Apply base font size */
+  /* Padding adjusted in JS computed property: inputStyles */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-color: var(--text-color);
+}
+
+/* Remove all focus outlines and rings */
+.form-input[data-v-4063674a]:focus,
+.form-select[data-v-4063674a]:focus,
+.form-textarea[data-v-4063674a]:focus,
+button[data-v-4063674a]:focus,
+.form-checkbox[data-v-4063674a]:focus,
+.form-radio[data-v-4063674a]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: inherit !important;
+  --tw-ring-color: transparent !important;
+}
+
+
+/* Styles for editable labels in preview mode */
+.preview-editable-label[data-v-4063674a] {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out;
+  font-size: 0.75rem; /* Smaller font size */
+}
+.preview-editable-label[data-v-4063674a]:hover {
+  opacity: 1;
+}
+.form-textarea[data-v-4063674a]:focus,
+button[data-v-4063674a]:focus,
+input[data-v-4063674a]:focus,
+select[data-v-4063674a]:focus,
+textarea[data-v-4063674a]:focus,
+[tabindex][data-v-4063674a]:focus,
+a[data-v-4063674a]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  --tw-ring-color: transparent !important;
+  --tw-ring-offset-shadow: none !important;
+  --tw-ring-shadow: none !important;
+  border-color: inherit !important;
+}
+
+/* For WebKit browsers like Chrome and Safari */
+[data-v-4063674a]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* For Firefox */
+[data-v-4063674a]::-moz-focus-inner {
+  border: 0 !important;
+}
+
+/* For IE10+ */
+[data-v-4063674a]:-ms-input-placeholder {
+  color: #9CA3AF !important;
+}
+
+/* For Edge */
+[data-v-4063674a]::-ms-input-placeholder {
+  color: #9CA3AF !important;
+}
+.form-help-text[data-v-4063674a] {
+  /* Tailwind classes handle this */
+}
+
+/* Checkbox/Radio Group */
+.checkbox-group[data-v-4063674a] {
+  /* Tailwind classes handle this */
+}
+.form-checkbox[data-v-4063674a],
+.form-radio[data-v-4063674a] {
+  accent-color: var(--primary-color);
+}
+
+/* Color Picker Specifics */
+.color-picker-group[data-v-4063674a] {
+  /* Tailwind classes handle this */
+}
+.color-input[data-v-4063674a] {
+  /* Custom styles for color input */
+  width: 2.5rem; /* w-10 */
+  height: 2.5rem; /* h-10 */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  cursor: pointer;
+  padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.color-input[data-v-4063674a]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.color-input[data-v-4063674a]::-webkit-color-swatch {
+  border: none;
+  border-radius: 0.25rem; /* slightly less rounded than wrapper */
+}
+
+/* Buttons */
+.inline-flex.items-center[data-v-4063674a] {
+  /* Common styles for all buttons, specific styles via :style */
+}
+
+/* This applies to all buttons globally, including nav buttons */
+button[data-v-4063674a]:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-form); /* Apply shadows */
+}
+button[data-v-4063674a]:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Cards (e.g., info-card, detail-card, confirmation-summary) */
+.info-card[data-v-4063674a], .detail-card[data-v-4063674a], .confirmation-summary[data-v-4063674a] {
+  /* Styles applied via inline styles from computed properties */
+  border-radius: var(--border-radius-form); /* Apply rounded corners */
+  box-shadow: var(--shadow-form); /* Apply shadows */
+}
+
+/* Aspect Ratio for Service Preview Image */
+.relative.rounded-lg.overflow-hidden.shadow-lg > div[style*="padding-bottom"][data-v-4063674a] {
+  position: relative;
+  width: 100%;
+}
+.relative.rounded-lg.overflow-hidden.shadow-lg img[data-v-4063674a] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Time Slot Buttons & Calendar Dates */
+/* No scaling or strong shadows on hover/active for mobile */
+@media (max-width: 639px) { /* sm breakpoint */
+.calendar-date[data-v-4063674a],
+  .time-slot-btn[data-v-4063674a],
+  .time-slot[data-v-4063674a] {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out !important; /* Keep subtle color transition */
+    transform: scale(1.0) !important; /* Prevent scaling on mobile */
+    box-shadow: none !important; /* Remove shadows on mobile */
+}
+.calendar-date[data-v-4063674a]:hover,
+  .time-slot-btn[data-v-4063674a]:hover,
+  .time-slot[data-v-4063674a]:hover {
+    background-color: var(--background-color) !important; /* Revert to normal background on hover */
+    border-color: var(--text-color)33 !important; /* Revert to normal border on hover */
+    color: var(--text-color) !important; /* Revert to normal text color on hover */
+}
+
+  /* Ensure selected state still looks good on mobile without scaling */
+.calendar-date.selected[data-v-4063674a],
+  .time-slot-btn.selected[data-v-4063674a],
+  .time-slot.selected[data-v-4063674a] {
+    transform: scale(1.0) !important; /* Override selected scaling for mobile */
+    box-shadow: none !important; /* Override selected shadow for mobile */
+}
+}
+
+
+/* Responsive adjustments for smaller screens (Tailwind breakpoints) */
+@media (max-width: 639px) { /* sm breakpoint */
+.header-section h1[data-v-4063674a] {
+    font-size: 1.125rem; /* text-lg */
+}
+.header-section p[data-v-4063674a] {
+    font-size: 0.75rem; /* text-xs */
+}
+  /* Calendar date height reduction on smaller screens */
+.calendar-date[data-v-4063674a] {
+    height: 2.5rem; /* h-10 */
+}
+
+  /* Adjust padding for the form body on mobile for compactness */
+.form-body[data-v-4063674a] {
+    padding-left: 1rem; /* Smaller px-4 */
+    padding-right: 1rem; /* Smaller px-4 */
+    padding-top: 1rem; /* Smaller py-4 */
+    padding-bottom: 1rem; /* Smaller py-4 */
+}
+  
+  /* Adjust padding for confirmation summary and its items on mobile */
+.confirmation-summary[data-v-4063674a] {
+    padding: 1rem; /* Smaller p-4 */
+}
+.confirmation-summary .summary-item[data-v-4063674a] {
+    padding: 0.75rem; /* Smaller p-2 */
+}
+  
+  /* Adjust padding for navigation buttons container on mobile */
+.flex.flex-col.sm\:flex-row.items-center.py-3.sm\:py-5[data-v-4063674a] {
+    padding-top: 0.75rem; /* py-3 equivalent */
+    padding-bottom: 0.75rem; /* py-3 equivalent */
+}
+}
+@media (min-width: 640px) and (max-width: 1023px) { /* sm to lg breakpoints */
+.header-section h1[data-v-4063674a] {
+    font-size: 1.25rem; /* sm:text-xl */
+}
+.header-section p[data-v-4063674a] {
+    font-size: 0.875rem; /* sm:text-sm */
+}
+}
+.is-preview .desktop-progress[data-v-4063674a] {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+.is-preview .desktop-progress .ml-2[data-v-4063674a] {
+    margin-left: 0.5rem !important;
+}
+.is-preview .desktop-progress .flex-1[data-v-4063674a] {
+    flex: 1 1 0% !important;
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+}
+.is-preview .header-section h1[data-v-4063674a] {
+  font-size: 20px !important;
+}
+.is-preview .header-section p[data-v-4063674a] {
+  font-size: 14px !important;
+}
+.is-preview .desktop-progress .text-xs[data-v-4063674a] {
+  white-space: normal !important;
+  word-break: break-word !important;
+}
+
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/LivePreview.vue?vue&type=style&index=0&id=176748fe&scoped=true&lang=css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+
+.schedula-live-preview-container[data-v-176748fe] {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 0.75rem; /* Corresponds to rounded-xl */
+  font-size: 16px; /* Set a base font size for rem calculation */
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/LabelEditorModal.vue?vue&type=style&index=0&id=12a8d0b7&scoped=true&lang=css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+
+.modal-fade-enter-active[data-v-12a8d0b7], .modal-fade-leave-active[data-v-12a8d0b7] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-12a8d0b7], .modal-fade-leave-to[data-v-12a8d0b7] {
+  opacity: 0;
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/ReservationFormSettings.vue?vue&type=style&index=0&id=45dc5b90&scoped=true&lang=css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+
+/* Form Controls */
+.schedula-form .form-select[data-v-45dc5b90], 
+.schedula-form input[type="text"][data-v-45dc5b90],
+.schedula-form input[type="color"][data-v-45dc5b90] {
+  width: 100% !important;
+  height: 32px !important;
+  line-height: 32px !important;
+  padding: 0 8px !important;
+  font-size: 13px !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 4px !important;
+  vertical-align: middle !important;
+}
+.schedula-form input[type="color"][data-v-45dc5b90] {
+  width: 60px !important;
+  padding: 2px 4px !important;
+}
+
+/* Form Layout */
+.form-group[data-v-45dc5b90] {
+  margin-bottom: 8px !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.form-group > label[data-v-45dc5b90] {
+  margin-bottom: 4px !important;
+  font-size: 11px !important;
+  line-height: 1.2 !important;
+}
+
+/* Section Layout */
+.settings-section[data-v-45dc5b90] {
+  margin-bottom: 16px !important;
+  padding-bottom: 16px !important;
+}
+.section-title[data-v-45dc5b90] {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+  margin-bottom: 12px !important;
+}
+
+/* Preview Container */
+.schedula-preview[data-v-45dc5b90] {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.preview-title[data-v-45dc5b90] {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+}
+
+/* Remove preview step selector */
+.preview-step-selector[data-v-45dc5b90] {
+  display: none !important;
+}
+
+/* Preview Container Styles */
+.schedula-preview .preview-wrapper[data-v-45dc5b90] {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+.schedula-preview .flex-grow[data-v-45dc5b90] {
+  background: #f8fafc !important;
+  overflow-y: auto !important;
+}
+
+/* Adjust preview iframe/content */
+.live-preview-iframe[data-v-45dc5b90] {
+  width: 100% !important;
+  height: 100% !important;
+  transform-origin: top center !important;
+}
+
+/* Custom Success Notification - REMOVED */
+/*
+.success-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+*/
+
+/* Fade Transition */
+.fade-enter-active[data-v-45dc5b90], .fade-leave-active[data-v-45dc5b90] {
+  transition: opacity 0.5s;
+}
+.fade-enter[data-v-45dc5b90], .fade-leave-to[data-v-45dc5b90] /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
+
+/* Modal Styles */
+.modal-overlay[data-v-45dc5b90] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-dialog[data-v-45dc5b90] {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 500px;
+  z-index: 1000;
+}
+.modal-header[data-v-45dc5b90] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.modal-title[data-v-45dc5b90] {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+.modal-close-button[data-v-45dc5b90] {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+.modal-body[data-v-45dc5b90] {
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 0.95rem;
+}
+.modal-footer[data-v-45dc5b90] {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.modal-cancel-button[data-v-45dc5b90], .modal-confirm-button[data-v-45dc5b90] {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.modal-cancel-button[data-v-45dc5b90] {
+  background-color: #e0e0e0;
+  color: #333;
+}
+.modal-cancel-button[data-v-45dc5b90]:hover {
+  background-color: #d0d0d0;
+}
+.modal-confirm-button[data-v-45dc5b90] {
+  background-color: #ef4444; /* Red for destructive action */
+  color: white;
+}
+.modal-confirm-button[data-v-45dc5b90]:hover {
+  background-color: #dc2626;
+}
+
+/* Modal Transitions */
+.modal-fade-enter-active[data-v-45dc5b90], .modal-fade-leave-active[data-v-45dc5b90] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-45dc5b90], .modal-fade-leave-to[data-v-45dc5b90] {
+  opacity: 0;
+}
+.modal-fade-enter-active .modal-dialog[data-v-45dc5b90],
+.modal-fade-leave-active .modal-dialog[data-v-45dc5b90] {
+  transition: transform 0.3s ease-out;
+}
+.modal-fade-enter-from .modal-dialog[data-v-45dc5b90],
+.modal-fade-leave-to .modal-dialog[data-v-45dc5b90] {
+  transform: translateY(-20px);
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/ServiceFormReservation.vue?vue&type=style&index=0&id=7b959b84&scoped=true&lang=css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+
+/* Scoped styles for this component */
+
+/* Modal transition styles (kept here for the delete confirmation modal) */
+.modal-fade-enter-active[data-v-7b959b84],
+.modal-fade-leave-active[data-v-7b959b84] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-7b959b84],
+.modal-fade-leave-to[data-v-7b959b84] {
+  opacity: 0;
+}
+
+/* Optional: Add a slight scale/slide effect for the modal content */
+.modal-fade-enter-active .modal-content[data-v-7b959b84],
+.modal-fade-leave-active .modal-content[data-v-7b959b84] {
+  transition: transform 0.3s ease;
+}
+.modal-fade-enter-from .modal-content[data-v-7b959b84],
+.modal-fade-leave-to .modal-content[data-v-7b959b84] {
+  transform: scale(0.95);
+}
+
+/* Base styles for the form cards */
+.p-4.rounded-lg.shadow-md.relative[data-v-7b959b84] {
+  transition: all 0.2s ease-in-out;
+}
+.p-4.rounded-lg.shadow-md.relative[data-v-7b959b84]:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--admin-hover-shadow); /* Assuming you have a CSS variable for hover shadow */
+}
+code[data-v-7b959b84] {
+  font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 0.85em; /* Slightly smaller for compactness */
+}
+
+/* Fade transition for the "Copied!" message */
+.fade-enter-active[data-v-7b959b84], .fade-leave-active[data-v-7b959b84] {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from[data-v-7b959b84], .fade-leave-to[data-v-7b959b84] {
+  opacity: 0;
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/form/ServiceFormClient.vue?vue&type=style&index=0&id=41934929&scoped=true&lang=css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+
+[data-v-41934929]:root {
+  /* Use CSS variables from useAppearanceSettings.js for global theme */
+  /* These are NOT default values, they are the actual values applied by the composable */
+  font-family: var(--font-family-form, 'Inter', sans-serif);
+  font-size: var(--base-font-size-form, 1rem);
+  --primary-color: var(--primary-color);
+  --background-color: var(--background-color);
+  --text-color: var(--text-color);
+  --header-background-color: var(--header-background-color);
+  --header-text-color: var(--header-text-color);
+  --border-radius-form: var(--border-radius-form);
+  --shadow-form: var(--shadow-form);
+}
+
+/* Base container for the whole form */
+.wp-reservation-form[data-v-41934929] {
+  background-color: var(--background-color);
+  font-family: var(--font-family-form); /* Apply font family */
+  font-size: var(--base-font-size-form); /* Apply base font size */
+  color: var(--text-color);
+  /* min-h-screen is already applied via Tailwind in template */
+  /* transition-all duration-300 is already applied via Tailwind in template */
+}
+
+/* Main form container (the "card") */
+/* Apply rounded corners and shadows directly from CSS variables */
+.relative.rounded-lg.overflow-hidden.shadow-lg.w-full.max-w-xl.mx-auto.flex.flex-col[data-v-41934929] {
+  border-radius: var(--border-radius-form); /* Apply rounded corners */
+  box-shadow: var(--shadow-form); /* Apply shadows */
+  height: auto;
+  max-height: none;
+}
+
+/* Main Form Content Area - NO internal scrolling */
+.form-body[data-v-41934929] {
+  /* Styles are applied via inline styles from computed properties */
+  flex-grow: 1; /* Allows it to take available space */
+  overflow-y: visible; /* Prevents internal scrolling */
+  -webkit-overflow-scrolling: auto; /* Revert to default scrolling behavior */
+}
+
+/* Adjust desktop-progress for better spacing */
+.desktop-progress[data-v-41934929] {
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
+  padding-top: 1rem; /* py-4 */
+  padding-bottom: 1rem; /* py-4 */
+}
+@media (min-width: 640px) { /* sm breakpoint */
+.desktop-progress[data-v-41934929] {
+    padding-left: 1.5rem; /* sm:px-6 */
+    padding-right: 1.5rem; /* sm:px-6 */
+    padding-top: 1.25rem; /* sm:py-5 */
+    padding-bottom: 1.25rem; /* sm:py-5 */
+}
+}
+@media (min-width: 1024px) { /* lg breakpoint */
+.desktop-progress[data-v-41934929] {
+    padding-left: 1.5rem; /* lg:px-6 */
+    padding-right: 1.5rem; /* lg:px-6 */
+}
+}
+.is-preview .desktop-progress[data-v-41934929] {
+  padding-left: 0.75rem !important; /* Slightly reduced for preview */
+  padding-right: 0.75rem !important;
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+.is-preview .desktop-progress .ml-2[data-v-41934929] {
+  margin-left: 0.375rem !important; /* Tighter margin for preview */
+}
+.is-preview .desktop-progress .flex-1[data-v-41934929] {
+  flex: 1 1 0% !important;
+  margin-left: 0.375rem !important;
+  margin-right: 0.375rem !important;
+}
+.is-preview .desktop-progress .text-xs[data-v-41934929] {
+  font-size: 0.65rem !important; /* Match subtitle size */
+  white-space: normal !important;
+  word-break: break-word !important;
+}
+
+/* Form Group Styles (labels, inputs, selects, textareas) */
+.form-group[data-v-41934929] {
+  margin-bottom: 0.75rem;
+}
+.form-label[data-v-41934929] {
+  /* Styles applied via inline styles from computed properties */
+}
+.form-input[data-v-41934929],
+.form-select[data-v-41934929],
+.form-textarea[data-v-41934929] {
+  border-radius: var(--border-radius-form); /* Apply rounded corners */
+  font-size: var(--base-font-size-form); /* Apply base font size */
+  /* Padding adjusted in JS computed property: inputStyles */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-color: var(--text-color);
+}
+
+/* Remove all focus outlines and rings */
+.form-input[data-v-41934929]:focus,
+.form-select[data-v-41934929]:focus,
+.form-textarea[data-v-41934929]:focus,
+button[data-v-41934929]:focus,
+.form-checkbox[data-v-41934929]:focus,
+.form-radio[data-v-41934929]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: inherit !important;
+  --tw-ring-color: transparent !important;
+}
+
+/* Styles for editable labels in preview mode */
+.preview-editable-label[data-v-41934929] {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out;
+  font-size: 0.75rem; /* Smaller font size */
+}
+.preview-editable-label[data-v-41934929]:hover {
+  opacity: 1;
+}
+.form-textarea[data-v-41934929]:focus,
+button[data-v-41934929]:focus,
+input[data-v-41934929]:focus,
+select[data-v-41934929]:focus,
+textarea[data-v-41934929]:focus,
+[tabindex][data-v-41934929]:focus,
+a[data-v-41934929]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  --tw-ring-color: transparent !important;
+  --tw-ring-offset-shadow: none !important;
+  --tw-ring-shadow: none !important;
+  border-color: inherit !important;
+}
+
+/* For WebKit browsers like Chrome and Safari */
+[data-v-41934929]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* For Firefox */
+[data-v-41934929]::-moz-focus-inner {
+  border: 0 !important;
+}
+
+/* For IE10+ */
+[data-v-41934929]:-ms-input-placeholder {
+  color: #9CA3AF !important;
+}
+
+/* For Edge */
+[data-v-41934929]::-ms-input-placeholder {
+  color: #9CA3AF !important;
+}
+.form-help-text[data-v-41934929] {
+  /* Tailwind classes handle this */
+}
+
+/* Checkbox/Radio Group */
+.checkbox-group[data-v-41934929] {
+  /* Tailwind classes handle this */
+}
+.form-checkbox[data-v-41934929],
+.form-radio[data-v-41934929] {
+  accent-color: var(--primary-color);
+}
+
+/* Color Picker Specifics */
+.color-picker-group[data-v-41934929] {
+  /* Tailwind classes handle this */
+}
+.color-input[data-v-41934929] {
+  /* Custom styles for color input */
+  width: 2.5rem; /* w-10 */
+  height: 2.5rem; /* h-10 */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  cursor: pointer;
+  padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.color-input[data-v-41934929]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.color-input[data-v-41934929]::-webkit-color-swatch {
+  border: none;
+  border-radius: 0.25rem; /* slightly less rounded than wrapper */
+}
+
+/* Buttons */
+.inline-flex.items-center[data-v-41934929] {
+  /* Common styles for all buttons, specific styles via :style */
+}
+
+/* This applies to all buttons globally, including nav buttons */
+button[data-v-41934929]:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-form); /* Apply shadows */
+}
+button[data-v-41934929]:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Cards (e.g., info-card, detail-card, confirmation-summary) */
+.info-card[data-v-41934929], .detail-card[data-v-41934929], .confirmation-summary[data-v-41934929] {
+  /* Styles applied via inline styles from computed properties */
+  border-radius: var(--border-radius-form); /* Apply rounded corners */
+  box-shadow: var(--shadow-form); /* Apply shadows */
+}
+
+/* Aspect Ratio for Service Preview Image */
+.relative.rounded-lg.overflow-hidden.shadow-lg > div[style*="padding-bottom"][data-v-41934929] {
+  position: relative;
+  width: 100%;
+}
+.relative.rounded-lg.overflow-hidden.shadow-lg img[data-v-41934929] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Time Slot Buttons & Calendar Dates */
+/* No scaling or strong shadows on hover/active for mobile */
+@media (max-width: 639px) { /* sm breakpoint */
+.calendar-date[data-v-41934929],
+  .time-slot-btn[data-v-41934929],
+  .time-slot[data-v-41934929] {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out !important; /* Keep subtle color transition */
+    transform: scale(1.0) !important; /* Prevent scaling on mobile */
+    box-shadow: none !important; /* Remove shadows on mobile */
+}
+.calendar-date[data-v-41934929]:hover,
+  .time-slot-btn[data-v-41934929]:hover,
+  .time-slot[data-v-41934929]:hover {
+    background-color: var(--background-color) !important; /* Revert to normal background on hover */
+    border-color: var(--text-color)33 !important; /* Revert to normal border on hover */
+    color: var(--text-color) !important; /* Revert to normal text color on hover */
+}
+
+  /* Ensure selected state still looks good on mobile without scaling */
+.calendar-date.selected[data-v-41934929],
+  .time-slot-btn.selected[data-v-41934929],
+  .time-slot.selected[data-v-41934929] {
+    transform: scale(1.0) !important; /* Override selected scaling for mobile */
+    box-shadow: none !important; /* Override selected shadow for mobile */
+}
+}
+
+/* Responsive adjustments for smaller screens (Tailwind breakpoints) */
+@media (max-width: 639px) { /* sm breakpoint */
+.header-section h1[data-v-41934929] {
+    font-size: 1.125rem; /* text-lg */
+}
+.header-section p[data-v-41934929] {
+    font-size: 0.75rem; /* text-xs */
+}
+  /* Calendar date height reduction on smaller screens */
+.calendar-date[data-v-41934929] {
+    height: 2.5rem; /* h-10 */
+}
+
+  /* Adjust padding for the form body on mobile for compactness */
+.form-body[data-v-41934929] {
+    padding-left: 1rem; /* Smaller px-4 */
+    padding-right: 1rem; /* Smaller px-4 */
+    padding-top: 1rem; /* Smaller py-4 */
+    padding-bottom: 1rem; /* Smaller py-4 */
+}
+  
+  /* Adjust padding for confirmation summary and its items on mobile */
+.confirmation-summary[data-v-41934929] {
+    padding: 1rem; /* Smaller p-4 */
+}
+.confirmation-summary .summary-item[data-v-41934929] {
+    padding: 0.75rem; /* Smaller p-2 */
+}
+  
+  /* Adjust padding for navigation buttons container on mobile */
+.flex.flex-col.sm\:flex-row.items-center.py-3.sm\:py-5[data-v-41934929] {
+    padding-top: 0.75rem; /* py-3 equivalent */
+    padding-bottom: 0.75rem; /* py-3 equivalent */
+}
+}
+@media (min-width: 640px) and (max-width: 1023px) { /* sm to lg breakpoints */
+.header-section h1[data-v-41934929] {
+    font-size: 1.25rem; /* sm:text-xl */
+}
+.header-section p[data-v-41934929] {
+    font-size: 0.875rem; /* sm:text-sm */
+}
+}
+.is-preview .header-section h1[data-v-41934929] {
+  font-size: 20px !important;
+}
+.is-preview .header-section p[data-v-41934929] {
+  font-size: 14px !important;
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/ServiceFormClientLivePreview.vue?vue&type=style&index=0&id=1a9de8e3&scoped=true&lang=css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************/
+
+.preview-wrapper[data-v-1a9de8e3] {
+  /* Ensure this wrapper takes full height and width of its parent */
+  width: 100%;
+  height: 100%;
+  /* You can add any specific preview styling here, e.g., borders or background */
+  border-radius: 0.75rem; /* Rounded corners for the preview */
+  overflow: hidden; /* Hide any overflow from the child component */
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/ServiceFormDetails.vue?vue&type=style&index=0&id=50dfb2b4&scoped=true&lang=css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+
+/* Add any specific styling for ServiceFormDetails here if needed */
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/appearance/ServiceFormCustomization.vue?vue&type=style&index=0&id=7fe3a776&scoped=true&lang=css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+
+/* Scoped styles for this component */
+.schedula-settings[data-v-7fe3a776] {
+  font-family: var(--admin-font-family);
+  background-color: var(--admin-page-bg-color);
+  color: var(--admin-text-color);
+}
+.section-title[data-v-7fe3a776] {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  color: var(--admin-text-color);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--admin-border-color);
+  display: flex;
+  align-items: center;
+}
+.section-subtitle[data-v-7fe3a776] {
+  font-size: 1rem; /* text-base */
+  font-weight: 600; /* font-semibold */
+  color: var(--admin-text-color);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--admin-border-color);
+  display: flex;
+  align-items: center;
+}
+.form-checkbox[data-v-7fe3a776] {
+  accent-color: var(--admin-link-indigo-bg);
+  width: 1.125em; /* Default browser checkbox size */
+  height: 1.125em; /* Default browser checkbox size */
+  border-color: var(--admin-input-border-color);
+  background-color: var(--admin-input-bg-color);
+}
+.schedula-form .form-select[data-v-7fe3a776], 
+.schedula-form .form-input[data-v-7fe3a776],
+.schedula-form input[type="text"][data-v-7fe3a776],
+.schedula-form input[type="color"][data-v-7fe3a776] {
+  width: 100% !important;
+  height: 32px !important;
+  line-height: 32px !important;
+  padding: 0 8px !important;
+  font-size: 13px !important;
+  border-radius: 4px !important;
+  vertical-align: middle !important;
+  border: 1px solid var(--admin-input-border-color);
+  background-color: var(--admin-input-bg-color);
+  color: var(--admin-input-text-color);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.schedula-form input[type="color"][data-v-7fe3a776] {
+  width: 60px !important;
+  padding: 2px 4px !important;
+}
+.form-select[data-v-7fe3a776]:focus, .form-input[data-v-7fe3a776]:focus {
+  border-color: var(--admin-link-indigo-bg);
+  box-shadow: 0 0 0 1px var(--admin-link-indigo-bg);
+  outline: none;
+}
+.checkbox-grid[data-v-7fe3a776] {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem; /* gap-3 */
+}
+@media (min-width: 768px) { /* md breakpoint */
+.checkbox-grid[data-v-7fe3a776] {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+.loading-container[data-v-7fe3a776], .error-container[data-v-7fe3a776] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background-color: var(--admin-card-bg-color);
+  border-radius: 0.5rem;
+  box-shadow: var(--admin-shadow);
+  color: var(--admin-text-color);
+}
+.loading-spinner[data-v-7fe3a776] {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.error-message[data-v-7fe3a776] {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+.retry-btn[data-v-7fe3a776] {
+  background-color: var(--admin-button-secondary-bg);
+  color: var(--admin-button-secondary-text);
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+.retry-btn[data-v-7fe3a776]:hover {
+  background-color: var(--admin-button-secondary-hover-bg);
+}
+
+/* Modal styles (Reset Confirmation & Label Editor) */
+.modal-overlay[data-v-7fe3a776] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--admin-modal-overlay-bg); /* Semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-dialog[data-v-7fe3a776] {
+  background-color: var(--admin-card-bg-color);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 500px;
+  z-index: 1000;
+}
+.modal-header[data-v-7fe3a776] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--admin-border-color);
+}
+.modal-title[data-v-7fe3a776] {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--admin-text-color);
+}
+.modal-close-button[data-v-7fe3a776] {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--admin-card-text-color);
+}
+.modal-body[data-v-7fe3a776] {
+  margin-bottom: 20px;
+  color: var(--admin-card-text-color);
+  font-size: 0.95rem;
+}
+.modal-footer[data-v-7fe3a776] {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.modal-cancel-button[data-v-7fe3a776], .modal-confirm-button[data-v-7fe3a776] {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.modal-cancel-button[data-v-7fe3a776] {
+  background-color: var(--admin-button-secondary-bg);
+  color: var(--admin-button-secondary-text);
+  border: 1px solid var(--admin-input-border-color);
+}
+.modal-cancel-button[data-v-7fe3a776]:hover {
+  background-color: var(--admin-button-secondary-hover-bg);
+}
+.modal-confirm-button[data-v-7fe3a776] {
+  background-color: var(--admin-suggestion-red-bg);
+  color: var(--admin-suggestion-red-text);
+  border: 1px solid var(--admin-input-border-color);
+}
+.modal-confirm-button[data-v-7fe3a776]:hover {
+  background-color: var(--admin-suggestion-red-hover-bg);
+}
+
+/* Transition styles */
+.modal-fade-enter-active[data-v-7fe3a776], .modal-fade-leave-active[data-v-7fe3a776] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-7fe3a776], .modal-fade-leave-to[data-v-7fe3a776] {
+  opacity: 0;
+}
+
+/* Further refinements for the preview area */
+.schedula-preview[data-v-7fe3a776] {
+  height: 100%;
+}
+.preview-title[data-v-7fe3a776] {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  color: var(--admin-text-color);
+  display: flex;
+  align-items: center;
+}
+.preview-wrapper[data-v-7fe3a776] {
+  /* This ensures the iframe container takes full height and width */
+  width: 100%;
+  height: 100%;
+  border-radius: inherit; /* Inherit border-radius from parent .flex-grow */
+  overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/common/BaseFormLayout.vue?vue&type=style&index=0&id=4cd76823&scoped=true&lang=css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+
+.success-message[data-v-4cd76823] {
+  background-color: var(--admin-badge-green-bg);
+  border: 1px solid var(--admin-badge-green-text);
+  color: var(--admin-badge-green-text);
+}
+.error-message[data-v-4cd76823] {
+  background-color: var(--admin-badge-red-bg);
+  border: 1px solid var(--admin-badge-red-text);
+  color: var(--admin-badge-red-text);
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/SettingsPage.vue?vue&type=style&index=0&id=2f085614&scoped=true&lang=css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+
+.header-container[data-v-2f085614] {
+  display: flex;
+  padding-left: 5mm;
+  align-items: center; /* Vertically centers items if needed */
+}
+
+/* Styles for input fields to ensure dark mode compatibility */
+.input-field[data-v-2f085614] {
+  background-color: var(--admin-input-bg-color);
+  color: var(--admin-input-text-color);
+  border-color: var(--admin-input-border-color);
+}
+.input-field[data-v-2f085614]:focus {
+  border-color: var(--admin-link-indigo-bg);
+  box-shadow: 0 0 0 1px var(--admin-link-indigo-bg);
+  outline: none;
+}
+
+
+/* Specific styles for the working hours/holidays cards */
+.day-schedule-card[data-v-2f085614] {
+  background-color: var(--admin-card-bg-color);
+  color: var(--admin-text-color);
+  border-color: var(--admin-border-color);
+}
+.day-schedule-card[data-v-2f085614]:hover {
+  background-color: var(--admin-input-bg-color); /* Lighter hover for dark mode */
+}
+.duplicate-button[data-v-2f085614] {
+  background-color: var(--admin-button-secondary-bg);
+  color: var(--admin-button-secondary-text);
+  border: 1px solid var(--admin-input-border-color);
+}
+.duplicate-button[data-v-2f085614]:hover {
+  background-color: var(--admin-button-secondary-hover-bg);
+}
+.dropdown-menu[data-v-2f085614] {
+  background-color: var(--admin-card-bg-color);
+  border-color: var(--admin-border-color);
+  color: var(--admin-text-color);
+}
+.dropdown-item[data-v-2f085614] {
+  color: var(--admin-text-color);
+}
+.dropdown-item[data-v-2f085614]:hover {
+  background-color: var(--admin-input-bg-color);
+}
+.break-label[data-v-2f085614] {
+  background-color: var(--admin-suggestion-yellow-bg);
+  color: var(--admin-suggestion-yellow-text);
+  border: 1px solid var(--admin-suggestion-yellow-border);
+}
+.break-remove-button[data-v-2f085614] {
+  background-color: var(--admin-suggestion-yellow-bg);
+  color: var(--admin-suggestion-yellow-text);
+}
+.break-remove-button[data-v-2f085614]:hover {
+  background-color: var(--admin-suggestion-yellow-hover-bg);
+}
+.preview-card[data-v-2f085614] {
+  background-color: var(--admin-input-bg-color);
+  border-color: var(--admin-input-border-color);
+  color: var(--admin-input-text-color);
+}
+.modal-content[data-v-2f085614] {
+  background-color: var(--admin-card-bg-color);
+  color: var(--admin-text-color);
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/payments/PaymentList.vue?vue&type=style&index=0&id=51ee30d2&scoped=true&lang=css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+
+.break-words[data-v-51ee30d2] {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Responsive table adjustments */
+@media (max-width: 639px) { /* Small screens (sm breakpoint in Tailwind is 640px) */
+table[data-v-51ee30d2], thead[data-v-51ee30d2], tbody[data-v-51ee30d2], th[data-v-51ee30d2], td[data-v-51ee30d2], tr[data-v-51ee30d2] {
+    display: block;
+}
+thead tr[data-v-51ee30d2] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+tr[data-v-51ee30d2] {
+    border: 1px solid var(--admin-border-color);
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem; /* rounded-lg */
+    overflow: hidden; /* Ensures border-radius applies */
+}
+td[data-v-51ee30d2] {
+    /* Behave like a "row" */
+    border: none;
+    border-bottom: 1px solid var(--admin-border-color);
+    position: relative;
+    padding-left: 50% !important; /* Adjust based on label width */
+    text-align: right;
+}
+td[data-v-51ee30d2]:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0px;
+    left: 6px;
+    width: 45%; /* Adjust to fit content */
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+    color: var(--admin-card-text-color);
+}
+
+  /* Hide the desktop cells */
+.sm\:table-cell.hidden[data-v-51ee30d2] {
+    display: none;
+}
+
+  /* Show the stacked cells */
+.block.sm\:hidden[data-v-51ee30d2] {
+    display: block;
+}
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/components/payments/PaymentReceiptModal.vue?vue&type=style&index=0&id=dd53a7ee&scoped=true&lang=css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+
+.modal-fade-enter-active[data-v-dd53a7ee],
+.modal-fade-leave-active[data-v-dd53a7ee] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-dd53a7ee],
+.modal-fade-leave-to[data-v-dd53a7ee] {
+  opacity: 0;
+}
+.modal-fade-enter-active .bg-white[data-v-dd53a7ee],
+.modal-fade-leave-active .bg-white[data-v-dd53a7ee] {
+  transition: transform 0.3s ease;
+}
+.modal-fade-enter-from .bg-white[data-v-dd53a7ee],
+.modal-fade-leave-to .bg-white[data-v-dd53a7ee] {
+  transform: translateY(20px) scale(0.98);
+}
+.receipt-content[data-v-dd53a7ee] {
+  font-family: 'Inter', sans-serif;
+  color: #374151;
+}
+.section-title[data-v-dd53a7ee] {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #4338ca;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+}
+.section-title i[data-v-dd53a7ee] {
+  color: #818cf8;
+}
+.section-content[data-v-dd53a7ee] {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.section-content p[data-v-dd53a7ee] {
+  margin-bottom: 0.25rem;
+}
+.section-content strong[data-v-dd53a7ee] {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/PaymentsPage.vue?vue&type=style&index=0&id=090c7e00&scoped=true&lang=css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+
+/* Modal transition styles (kept here for the delete confirmation modal) */
+.modal-fade-enter-active[data-v-090c7e00],
+.modal-fade-leave-active[data-v-090c7e00] {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from[data-v-090c7e00],
+.modal-fade-leave-to[data-v-090c7e00] {
+  opacity: 0;
+}
+
+/* Datepicker specific styles to ensure good contrast */
+/* These styles are often needed to override Flowbite's defaults for better visibility */
+.datepicker-grid .datepicker-cell.selected[data-v-090c7e00],
+.datepicker-grid .datepicker-cell.range-start[data-v-090c7e00],
+.datepicker-grid .datepicker-cell.range-end[data-v-090c7e00],
+.datepicker-grid .datepicker-cell.range-middle[data-v-090c7e00],
+.datepicker-grid .datepicker-cell.range-start.selected[data-v-090c7e00],
+.datepicker-grid .datepicker-cell.range-end.selected[data-v-090c7e00] {
+  color: var(--admin-card-text-color) !important;
+}
+
+/* Specific styles for selected/hovered cells to ensure good contrast */
+.datepicker-grid .datepicker-cell.selected[data-v-090c7e00],
+.datepicker-grid .datepicker-cell.range-start[data-v-090c7e00],
+.datepicker-grid .datepicker-cell.range-end[data-v-090c7e00] {
+  background-color: var(--admin-link-indigo-bg) !important; /* Using indigo for selected dates */
+  color: var(--admin-link-indigo-text) !important;
+}
+.datepicker-grid .datepicker-cell.range-middle[data-v-090c7e00] {
+  background-color: var(--admin-input-border-color) !important; /* Lighter border color for range middle */
+  color: var(--admin-card-text-color) !important;
+}
+.datepicker-grid .datepicker-cell[data-v-090c7e00]:hover:not(.selected):not(.range-middle) {
+  background-color: var(--admin-input-border-color) !important; /* Lighter border color for hover */
+}
+
+/* Hide the native date picker indicator for text inputs */
+/* This is crucial to remove the small calendar icon */
+input[type="text"][data-v-090c7e00]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+input[type="text"][data-v-090c7e00]::-moz-calendar-picker-indicator {
+  display: none;
+}
+input[type="text"][data-v-090c7e00]::-ms-calendar-picker-indicator {
+  display: none;
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/AgendaPage.vue?vue&type=style&index=0&id=fdcd6242&scoped=true&lang=css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+
+/* Smooth transitions and hover effects */
+.transition-all[data-v-fdcd6242] {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Custom scrollbar for modal content */
+.overflow-y-auto[data-v-fdcd6242]::-webkit-scrollbar {
+  width: 6px;
+}
+.overflow-y-auto[data-v-fdcd6242]::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+.overflow-y-auto[data-v-fdcd6242]::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+.overflow-y-auto[data-v-fdcd6242]::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Prevent text selection on calendar elements */
+.cursor-pointer[data-v-fdcd6242] {
+  user-select: none;
+}
+
+/* Animation for quick preview */
+@keyframes fadeIn-fdcd6242 {
+from { opacity: 0; transform: translateY(10px);
+}
+to { opacity: 1; transform: translateY(0);
+}
+}
+.fixed.z-50.bg-gray-900[data-v-fdcd6242] {
+  animation: fadeIn-fdcd6242 0.2s ease-out;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/admin/pages/GoProPage.vue?vue&type=style&index=0&id=68f812e0&scoped=true&lang=css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+
+/* Enhanced animations and effects */
+.content-card[data-v-68f812e0] {
+  transition: all 0.3s ease;
+}
+
+/* Responsive improvements */
+@media (max-width: 640px) {
+.group[data-v-68f812e0]:hover {
+    transform: scale(1.02);
+}
+}
+
+/* Custom hover effects */
+.group:hover .fas[data-v-68f812e0],
+.group:hover .fab[data-v-68f812e0] {
+  animation: bounce-68f812e0 0.6s ease-in-out;
+}
+@keyframes bounce-68f812e0 {
+0%, 100% { transform: translateY(0);
+}
+50% { transform: translateY(-2px);
+}
+}
+
+/*!************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/admin/style/global-admin.css ***!
+  \************************************************************************************/
+/*
+  These CSS variables are defined in the :style attribute of the root div
+  via the adminCustomStyles computed property from useAdminAppearance.js.
+  They are commented out here to prevent redundancy and ensure the dynamic
+  values are always used.
+*/
+/*
+:root {
+  --admin-page-bg-color: #f3f4f6;
+  --admin-text-color: #1f2937;
+  --admin-card-bg-color: #ffffff;
+  --admin-card-text-color: #374151;
+  --admin-border-color: #e5e7eb;
+  --admin-input-bg-color: #ffffff;
+  --admin-input-text-color: #374151;
+  --admin-input-border-color: #d1d5db;
+  --admin-font-family: 'Inter', sans-serif;
+}
+*/
+
+/* Apply the global font family, background, and text color to the entire admin app */
+#schesab-admin-app {
+  background-color: var(--admin-page-bg-color);
+  color: var(--admin-text-color);
+  font-family: var(--admin-font-family);
+}
+
+/* Base styles for the main container */
+#schesab-admin-app .min-h-screen {
+  /* background-color is now applied to #schesab-admin-app directly */
+}
+
+/* Sidebar Navigation */
+#schesab-admin-app .sidebar {
+  background-color: var(--admin-card-bg-color);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-right: none;
+}
+
+#schesab-admin-app .sidebar h2 {
+  color: var(--admin-text-color);
+}
+
+#schesab-admin-app .sidebar-link {
+  color: var(--admin-text-color);
+}
+
+/* Active sidebar link (always white text on blue background) */
+#schesab-admin-app .sidebar-link-active {
+  background-color: #2563eb; /* Tailwind blue-600 */
+  border-radius: 0.5rem; /* Tailwind rounded-md */
+  color: #ffffff; /* Always white */
+}
+
+/* Remove hover effect for sidebar links that are not active */
+#schesab-admin-app .sidebar-link:not(.sidebar-link-active):hover {
+  background-color: transparent;
+  color: var(--admin-text-color);
+}
+
+/* Main Content Card */
+#schesab-admin-app .content-card {
+  background-color: var(--admin-card-bg-color);
+  color: var(--admin-card-text-color);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Headings within content card */
+#schesab-admin-app h1,
+#schesab-admin-app h2,
+#schesab-admin-app h3,
+#schesab-admin-app h4,
+#schesab-admin-app h5,
+#schesab-admin-app h6 {
+  color: var(--admin-text-color);
+}
+
+/* Labels and secondary text */
+#schesab-admin-app label,
+  #schesab-admin-app .text-gray-700, /* Used by Vue's default for some labels */
+  #schesab-admin-app .text-secondary {
+  /* Custom class for descriptions */
+  color: var(--admin-card-text-color);
+}
+
+/* Input Fields */
+#schesab-admin-app .input-field {
+  background-color: var(--admin-input-bg-color);
+  color: var(--admin-input-text-color);
+  border-color: var(--admin-input-border-color);
+  border-radius: 0.5rem; /* Fixed to Tailwind rounded-md */
+}
+
+#schesab-admin-app .input-field:focus {
+  outline: none;
+  border-color: #2563eb; /* Tailwind blue-600 */
+  box-shadow: 0 0 0 1px #2563eb; /* Tailwind blue-600 */
+}
+
+#schesab-admin-app .checkbox-field {
+  background-color: var(--admin-input-bg-color);
+  border-color: var(--admin-input-border-color);
+  color: #2563eb; /* Tailwind blue-600 */
+}
+
+/* Status messages */
+#schesab-admin-app .error-message {
+  background-color: #fee2e2; /* bg-red-100 */
+  border-color: #fca5a5; /* border-red-400 */
+  color: #b91c1c; /* text-red-700 */
+}
+
+/* Specific styles for Working Hours and Holidays elements */
+#schesab-admin-app .day-schedule-card {
+  background-color: var(--admin-card-bg-color);
+  border-color: var(--admin-border-color);
+  border-radius: 0.5rem; /* Fixed to Tailwind rounded-md */
+}
+#schesab-admin-app .day-schedule-card:hover {
+  background-color: var(
+    --admin-input-border-color
+  ); /* Lighter hover for card */
+  color: var(--admin-card-text-color); /* Keep text readable on hover */
+}
+
+#schesab-admin-app .duplicate-button {
+  background-color: var(
+    --admin-input-bg-color
+  ); /* Match input field background */
+  color: var(--admin-input-text-color); /* Match input field text */
+  border-color: var(--admin-input-border-color); /* Match input field border */
+  border-radius: 0.5rem; /* Fixed to Tailwind rounded-md */
+}
+#schesab-admin-app .duplicate-button:hover:not(:disabled) {
+  background-color: var(--admin-border-color); /* Slightly darker hover */
+}
+
+#schesab-admin-app .dropdown-menu {
+  background-color: var(--admin-card-bg-color);
+  border-color: var(--admin-border-color);
+  color: var(--admin-card-text-color);
+  border-radius: 0.5rem; /* Fixed to Tailwind rounded-md */
+}
+#schesab-admin-app .dropdown-item:hover {
+  background-color: var(
+    --admin-input-border-color
+  ); /* Light hover for dropdown items */
+  color: var(--admin-card-text-color);
+}
+
+#schesab-admin-app .break-label {
+  background-color: #fed7aa; /* bg-orange-100 */
+  color: #c2410c; /* text-orange-800 */
+  border: 1px solid #fdba74; /* border-orange-300 */
+  border-radius: 9999px; /* Tailwind rounded-full */
+}
+
+#schesab-admin-app .break-remove-button {
+  background-color: #fb923c; /* bg-orange-400 */
+  color: #ffffff;
+  border-radius: 9999px; /* Tailwind rounded-full */
+}
+#schesab-admin-app .break-remove-button:hover {
+  background-color: #f97316; /* hover:bg-orange-500 */
+}
+
+#schesab-admin-app .preview-card {
+  background-color: #e0f2fe; /* Tailwind blue-50 */
+  border-color: #93c5fd; /* Tailwind blue-200 */
+  color: #1d4ed8; /* Text color for blue */
+  border-radius: 0.5rem; /* Fixed to Tailwind rounded-md */
+}
+
+#schesab-admin-app .modal-content {
+  background-color: var(--admin-card-bg-color);
+  color: var(--admin-card-text-color);
+  border-radius: 0.5rem; /* Fixed to Tailwind rounded-lg */
+}
+#schesab-admin-app .modal-content h4 {
+  color: var(--admin-text-color);
+}
+
+#schesab-admin-app .delete-button {
+  background-color: transparent; /* No specific background by default */
+  color: #ef4444; /* text-red-500 */
+}
+#schesab-admin-app .delete-button:hover {
+  background-color: #fee2e2; /* bg-red-50 */
+  color: #b91c1c; /* text-red-700 */
+}
+
+/* Datepicker specific styles */
+#schesab-admin-app .datepicker-dropdown,
+#schesab-admin-app .datepicker-picker,
+#schesab-admin-app .datepicker-panel,
+#schesab-admin-app .datepicker-view,
+#schesab-admin-app .datepicker-view .days-of-week,
+#schesab-admin-app .datepicker-view .days,
+#schesab-admin-app .datepicker-view .week,
+#schesab-admin-app .datepicker-view .month,
+#schesab-admin-app .datepicker-view .year {
+  background-color: #ffffff !important;
+  color: #374151 !important;
+}
+
+/* Ensure the picker itself has solid WHITE background */
+#schesab-admin-app .datepicker-dropdown .datepicker-picker,
+#schesab-admin-app .datepicker-dropdown .datepicker-picker * {
+  background-color: #ffffff !important;
+  border: none !important;
+}
+
+/* Header and footer styling */
+#schesab-admin-app .datepicker-header,
+#schesab-admin-app .datepicker-footer {
+  background-color: #ffffff !important;
+  border-color: #e5e7eb !important;
+  color: #374151 !important;
+}
+
+/* Grid container - ensure solid WHITE background */
+#schesab-admin-app .datepicker-grid,
+#schesab-admin-app .datepicker-view .days,
+#schesab-admin-app .datepicker-view .days .dow,
+#schesab-admin-app .datepicker-view .days .day {
+  background-color: #ffffff !important;
+}
+
+/* Text elements and controls */
+#schesab-admin-app .datepicker-controls .datepicker-title,
+#schesab-admin-app .datepicker-controls .datepicker-view-selected,
+#schesab-admin-app .datepicker-controls .button,
+#schesab-admin-app .datepicker-controls .button:hover,
+#schesab-admin-app .datepicker-grid .datepicker-cell,
+#schesab-admin-app .datepicker-grid .datepicker-cell.focused {
+  color: #374151 !important;
+  background-color: transparent !important;
+}
+
+/* Selected dates */
+#schesab-admin-app .datepicker-grid .datepicker-cell.selected,
+#schesab-admin-app .datepicker-grid .datepicker-cell.range-start,
+#schesab-admin-app .datepicker-grid .datepicker-cell.range-end,
+#schesab-admin-app .datepicker-grid .datepicker-cell.range-start.selected,
+#schesab-admin-app .datepicker-grid .datepicker-cell.range-end.selected {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+}
+
+/* Range middle styling */
+#schesab-admin-app .datepicker-grid .datepicker-cell.range-middle {
+  background-color: #d1d5db !important;
+  color: #374151 !important;
+}
+
+/* Hover effects */
+#schesab-admin-app
+  .datepicker-grid
+  .datepicker-cell:hover:not(.selected):not(.range-middle):not(
+    .range-start
+  ):not(.range-end) {
+  background-color: #f3f4f6 !important;
+  color: #374151 !important;
+}
+
+/* Hide calendar picker indicators */
+#schesab-admin-app input[type='text']::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+#schesab-admin-app input[type='text']::-moz-calendar-picker-indicator {
+  display: none !important;
+}
+
+#schesab-admin-app input[type='text']::-ms-calendar-picker-indicator {
+  display: none !important;
+}
+
+#schesab-admin-app input[type='text']::-webkit-calendar-picker-indicator {
+  filter: none !important;
+}
+
+/* --- Start Flowbite Datepicker Specific Fixes for Transparency --- */
+/* Target the main Flowbite datepicker wrapper for a solid background */
+#schesab-admin-app .datepicker-dropdown {
+  background-color: var(--admin-card-bg-color) !important;
+  border: 1px solid var(--admin-border-color) !important;
+  color: var(--admin-card-text-color) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  border-radius: 0.5rem !important; /* Add rounded corners */
+  opacity: 1 !important; /* Explicitly set opacity to 1 to counteract any inherited transparency */
+  /* Ensure all direct children that are part of the main display also have a solid background */
+  & > *:not(.datepicker-controls) {
+    /* Target main content areas, excluding controls that are separate */
+    background-color: var(--admin-card-bg-color) !important;
+  }
+}
+
+/* Ensure the inner picker element and its main views also have a solid background */
+#schesab-admin-app .datepicker-dropdown .datepicker-picker,
+  #schesab-admin-app .datepicker-dropdown .datepicker-views,
+  #schesab-admin-app .datepicker-dropdown .datepicker-view, /* Important: this targets the actual day/month/year view container */
+  #schesab-admin-app .datepicker-dropdown .days, /* For the days grid */
+  #schesab-admin-app .datepicker-dropdown .months, /* For the months grid */
+  #schesab-admin-app .datepicker-dropdown .years {
+  /* For the years grid */
+  background-color: var(--admin-card-bg-color) !important;
+  border: none !important; /* Remove any border that might interfere with background */
+}
+
+/* Apply solid background to header, footer, and grid areas for all views */
+#schesab-admin-app .datepicker-dropdown .datepicker-header,
+#schesab-admin-app .datepicker-dropdown .datepicker-footer,
+#schesab-admin-app .datepicker-dropdown .datepicker-grid {
+  background-color: var(--admin-card-bg-color) !important;
+  border-color: var(
+    --admin-border-color
+  ) !important; /* Maintain border color if needed */
+}
+
+/* Ensure cells and controls also inherit or have correct colors */
+#schesab-admin-app .datepicker-dropdown .datepicker-cell,
+#schesab-admin-app .datepicker-dropdown .datepicker-cell:not(.disabled):hover {
+  color: var(--admin-card-text-color) !important;
+  background-color: transparent !important; /* Keep cell backgrounds transparent until selected/hovered */
+}
+
+#schesab-admin-app .datepicker-dropdown .datepicker-cell.selected,
+#schesab-admin-app .datepicker-dropdown .datepicker-cell.range-start,
+#schesab-admin-app .datepicker-dropdown .datepicker-cell.range-end {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+}
+
+#schesab-admin-app .datepicker-dropdown .datepicker-cell.range {
+  background-color: rgba(
+    37,
+    99,
+    235,
+    0.1
+  ) !important; /* Keep range background slightly transparent blue */
+}
+
+#schesab-admin-app .datepicker-dropdown .datepicker-controls .button {
+  color: var(--admin-card-text-color) !important;
+}
+
+/* Dark Mode Overrides for Flowbite Datepicker (more targeted) */
+#schesab-admin-app .dark-mode .datepicker-dropdown,
+#schesab-admin-app .dark-mode .datepicker-dropdown .datepicker-picker,
+#schesab-admin-app .dark-mode .datepicker-dropdown .datepicker-views,
+#schesab-admin-app .dark-mode .datepicker-dropdown .datepicker-view,
+#schesab-admin-app .dark-mode .datepicker-dropdown .days,
+#schesab-admin-app .dark-mode .datepicker-dropdown .months,
+#schesab-admin-app .dark-mode .datepicker-dropdown .years,
+#schesab-admin-app .dark-mode .datepicker-dropdown .datepicker-header,
+#schesab-admin-app .dark-mode .datepicker-dropdown .datepicker-footer,
+#schesab-admin-app .dark-mode .datepicker-dropdown .datepicker-grid {
+  background-color: var(
+    --admin-card-bg-color
+  ) !important; /* Ensure solid background in dark mode */
+  border-color: var(
+    --admin-border-color
+  ) !important; /* Maintain border color if needed */
+  color: var(--admin-card-text-color) !important; /* Ensure text visibility */
+}
+
+#schesab-admin-app .dark-mode .datepicker-grid .datepicker-cell.selected,
+#schesab-admin-app .dark-mode .datepicker-grid .datepicker-cell.range-start,
+#schesab-admin-app .dark-mode .datepicker-grid .datepicker-cell.range-end {
+  background-color: var(
+    --admin-link-indigo-bg
+  ) !important; /* Using indigo for selected dates in dark mode */
+  color: #ffffff !important;
+}
+
+#schesab-admin-app .dark-mode .datepicker-grid .datepicker-cell.range-middle {
+  background-color: var(
+    --admin-input-border-color
+  ) !important; /* Lighter border color for range middle in dark mode */
+  color: var(--admin-card-text-color) !important;
+}
+
+#schesab-admin-app
+  .dark-mode
+  .datepicker-grid
+  .datepicker-cell:hover:not(.selected):not(.range-middle) {
+  background-color: var(
+    --admin-input-border-color
+  ) !important; /* Lighter hover for normal cells in dark mode */
+}
+
+#schesab-admin-app
+  .dark-mode
+  input[type='text']::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+/* --- End Flowbite Datepicker Specific Fixes for Transparency --- */
+
+/* Dark Mode Overrides */
+#schesab-admin-app .dark-mode {
+  background-color: var(--admin-page-bg-color);
+  color: var(--admin-text-color);
+}
+
+#schesab-admin-app .dark-mode .sidebar {
+  background-color: var(--admin-card-bg-color);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2),
+    0 10px 10px -5px rgba(0, 0, 0, 0.08);
+  border-right-color: var(--admin-border-color);
+}
+
+#schesab-admin-app .dark-mode .sidebar h2 {
+  color: var(--admin-text-color);
+}
+
+#schesab-admin-app .dark-mode .sidebar-link {
+  color: var(--admin-text-color);
+}
+
+#schesab-admin-app .dark-mode .sidebar-link:not(.sidebar-link-active):hover {
+  background-color: transparent;
+  color: var(--admin-text-color);
+}
+
+#schesab-admin-app .dark-mode .content-card {
+  background-color: var(--admin-card-bg-color);
+  color: var(--admin-card-text-color);
+}
+
+#schesab-admin-app .dark-mode h1,
+#schesab-admin-app .dark-mode h2,
+#schesab-admin-app .dark-mode h3,
+#schesab-admin-app .dark-mode h4,
+#schesab-admin-app .dark-mode h5,
+#schesab-admin-app .dark-mode h6 {
+  color: var(--admin-text-color);
+}
+
+#schesab-admin-app .dark-mode label,
+#schesab-admin-app .dark-mode .text-gray-700 {
+  color: var(--admin-card-text-color);
+}
+
+#schesab-admin-app .dark-mode .text-secondary {
+  color: var(--admin-text-color);
+}
+
+#schesab-admin-app .dark-mode .input-field {
+  background-color: var(--admin-input-bg-color);
+  color: var(--admin-input-text-color);
+  border-color: var(--admin-input-border-color);
+}
+
+#schesab-admin-app .dark-mode .input-field:focus {
+  border-color: #2563eb; /* Fixed blue */
+  box-shadow: 0 0 0 1px #2563eb; /* Fixed blue */
+}
+
+#schesab-admin-app .dark-mode .checkbox-field {
+  background-color: var(--admin-input-bg-color);
+  border-color: var(--admin-input-border-color);
+  color: #2563eb; /* Fixed blue */
+}
+
+#schesab-admin-app .dark-mode .error-message {
+  background-color: #4b0000;
+  border-color: #8b0000;
+  color: #ffcccc;
+}
+
+#schesab-admin-app .dark-mode .day-schedule-card {
+  background-color: var(--admin-card-bg-color);
+  border-color: var(--admin-border-color);
+}
+#schesab-admin-app .dark-mode .day-schedule-card:hover {
+  background-color: var(--admin-input-border-color); /* Darker hover for card */
+  color: var(--admin-card-text-color);
+}
+
+#schesab-admin-app .dark-mode .duplicate-button {
+  background-color: var(--admin-input-bg-color);
+  color: var(--admin-input-text-color);
+  border-color: var(--admin-input-border-color);
+}
+#schesab-admin-app .dark-mode .duplicate-button:hover:not(:disabled) {
+  background-color: var(--admin-border-color);
+}
+
+#schesab-admin-app .dark-mode .dropdown-menu {
+  background-color: var(--admin-card-bg-color);
+  border-color: var(--admin-border-color);
+  color: var(--admin-card-text-color);
+}
+#schesab-admin-app .dark-mode .dropdown-item:hover {
+  background-color: var(--admin-input-border-color);
+  color: var(--admin-card-text-color);
+}
+
+#schesab-admin-app .dark-mode .break-label {
+  background-color: #8b4513;
+  color: #ffead0;
+  border-color: #cd7f32;
+}
+
+#schesab-admin-app .dark-mode .break-remove-button {
+  background-color: #cd7f32;
+  color: #ffffff;
+}
+#schesab-admin-app .dark-mode .break-remove-button:hover {
+  background-color: #a0522d;
+}
+
+#schesab-admin-app .dark-mode .preview-card {
+  background-color: #1e3a8a; /* Darker blue for dark mode */
+  border-color: #3b82f6; /* Lighter blue border */
+  color: #bfdbfe; /* Lighter text color */
+}
+
+#schesab-admin-app .dark-mode .modal-content {
+  background-color: var(--admin-card-bg-color);
+  color: var(--admin-card-text-color);
+}
+#schesab-admin-app .dark-mode .modal-content h4 {
+  color: var(--admin-text-color);
+}
+
+#schesab-admin-app .dark-mode .delete-button:hover {
+  background-color: #4b0000;
+  color: #ffcccc;
+}
+
+/* Dark mode specific datepicker overrides */
+/* Datepicker specific styles - using CSS variables */
+#schesab-admin-app .dark-mode .datepicker-picker,
+#schesab-admin-app .dark-mode .datepicker-dropdown {
+  background-color: var(--admin-card-bg-color) !important;
+  border-color: var(--admin-border-color) !important;
+  color: var(--admin-card-text-color) !important;
+}
+#schesab-admin-app .dark-mode .datepicker-header {
+  background-color: var(--admin-card-bg-color) !important;
+  border-bottom-color: var(--admin-border-color) !important;
+}
+#schesab-admin-app .dark-mode .datepicker-controls .datepicker-title,
+#schesab-admin-app .dark-mode .datepicker-controls .datepicker-view-selected,
+#schesab-admin-app .dark-mode .datepicker-controls .button,
+#schesab-admin-app .dark-mode .datepicker-controls .button:hover,
+#schesab-admin-app .dark-mode .datepicker-grid .datepicker-cell,
+#schesab-admin-app .dark-mode .datepicker-grid .datepicker-cell.focused,
+#schesab-admin-app .dark-mode .datepicker-grid .datepicker-cell.range-middle {
+  color: var(--admin-card-text-color) !important;
+}
+#schesab-admin-app .dark-mode .datepicker-grid .datepicker-cell.selected,
+#schesab-admin-app .dark-mode .datepicker-grid .datepicker-cell.range-start,
+#schesab-admin-app .dark-mode .datepicker-grid .datepicker-cell.range-end {
+  background-color: var(
+    --admin-link-indigo-bg
+  ) !important; /* Using indigo for selected dates */
+  color: #ffffff !important;
+}
+#schesab-admin-app .dark-mode .datepicker-grid .datepicker-cell.range-middle {
+  background-color: var(
+    --admin-input-border-color
+  ) !important; /* Lighter border color for range middle */
+  color: var(--admin-card-text-color) !important;
+}
+#schesab-admin-app
+  .dark-mode
+  .datepicker-grid
+  .datepicker-cell:hover:not(.selected):not(.range-middle) {
+  background-color: var(--admin-input-border-color) !important;
+}
+#schesab-admin-app
+  .dark-mode
+  input[type='text']::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* Dark mode styles for pagination buttons */
+#schesab-admin-app.dark-mode .px-3.py-1\.5.rounded-md.border {
+  background-color: var(--admin-input-bg-color);
+  border-color: var(--admin-input-border-color);
+  color: var(--admin-input-text-color);
+}
+
+#schesab-admin-app.dark-mode
+  .px-3.py-1\.5.rounded-md.border:hover:not(:disabled) {
+  background-color: var(
+    --admin-border-color
+  ); /* A slightly darker hover for dark mode */
+}
+
+/* Custom styles for PrimeVue Toast to enforce "normal green" */
+/* IMPORTANT: These styles should be in a global CSS file, NOT scoped. */
+.p-toast-message.p-toast-message-success {
+  background: #4caf50 !important; /* A common "normal green" */
+  border-color: #4caf50 !important;
+  color: white !important; /* Ensure text is readable on green */
+}
+
+/* Ensure the success icon inside the toast is also white for contrast */
+.p-toast-message.p-toast-message-success .p-toast-message-icon {
+  color: white !important;
+}
+
+/* Make the close button white as well */
+.p-toast-message.p-toast-message-success .p-toast-icon-close {
+  color: white !important;
+}
+
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/admin/scss/admin.scss ***!
+  \********************************************************************************************************************/
+.notice,
+.notice1 {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .schedula-header {
+    width: calc(100% - 160px) !important;
+  }
+}
+.folded .schedula-header {
+  width: calc(100% - 0px) !important;
+}
+
+.schedula-hd-container {
+  width: calc(100% - 100px) !important;
+}
+
+.schedula-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.schedula-main {
+  flex: 1;
+  margin-top: 0;
+  padding: 8px;
+}
+
+/* Global styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* WordPress admin bar adjustment */
+body.admin-bar header {
+  top: 32px !important;
+}
+
+body.admin-bar .schedula-main {
+  margin-top: 52px;
+}

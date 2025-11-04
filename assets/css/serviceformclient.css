@@ -1,0 +1,514 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/frontend/components/common/BasePhoneInput.vue?vue&type=style&index=0&id=841a0ce8&scoped=true&lang=css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+
+.vue-tel-input[data-v-841a0ce8] {
+  background-color: var(--vti-bg-color, #fff) !important; 
+  color: var(--vti-text-color, #000) !important; 
+  border-color: var(--vti-border-color, #ccc) !important;
+}
+.vue-tel-input .vti__input[data-v-841a0ce8] {
+  background-color: var(--vti-bg-color, #fff) !important;
+  color: var(--vti-text-color, #000) !important;
+  border-color: var(--vti-border-color, #ccc) !important;
+}
+.vue-tel-input .vti__dropdown[data-v-841a0ce8] {
+  background-color: var(--vti-bg-color, #fff) !important;
+  color: var(--vti-text-color, #000) !important;
+  border-color: var(--vti-border-color, #ccc) !important;
+}
+.vue-tel-input .vti__dropdown-list[data-v-841a0ce8] {
+  background-color: var(--vti-bg-color, #fff) !important;
+  color: var(--vti-text-color, #000) !important;
+  border-color: var(--vti-border-color, #ccc) !important;
+}
+.vue-tel-input .vti__dropdown-item[data-v-841a0ce8] {
+  color: var(--vti-text-color, #000) !important;
+}
+.vue-tel-input .vti__selected-flag[data-v-841a0ce8] {
+  background-color: var(--vti-bg-color, #fff) !important;
+}
+.vue-tel-input.vue-tel-input[data-v-841a0ce8] {
+  border: 1px solid var(--vti-border-color, #ccc) !important;
+}
+.vue-tel-input .vti__input[data-v-841a0ce8],
+.vue-tel-input .vti__dropdown[data-v-841a0ce8] {
+  border: none !important;
+}
+.vue-tel-input[data-v-841a0ce8] {
+  padding: 0 !important;
+}
+.vue-tel-input .vti__input[data-v-841a0ce8] {
+  padding: var(--841a0ce8-props\.style\.padding) !important; 
+  height: var(--841a0ce8-props\.style\.height) !important; 
+  line-height: var(--841a0ce8-props\.style\.lineHeight) !important;
+}
+.vue-tel-input .vti__dropdown[data-v-841a0ce8] {
+  padding: var(--841a0ce8-props\.style\.padding) !important;
+}
+.vue-tel-input .vti__dropdown-arrow[data-v-841a0ce8] {
+  border-top-color: var(--vti-text-color, #000) !important;
+}
+
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/frontend/components/reservation/ServiceFormClient.vue?vue&type=style&index=0&id=50a47088&scoped=true&lang=css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+
+/* Global styles applied via CSS variables from useAppearanceSettings */
+/* These are default values, they will be overridden by inline styles from computed properties */
+/* Ensure these are in sync with useAppearanceSettings.js */
+[data-v-50a47088]:root {
+  /* Use CSS variables from useAppearanceSettings.js for global theme */
+  /* These are NOT default values, they are the actual values applied by the composable */
+  font-family: var(--font-family-form, 'Inter', sans-serif);
+  font-size: var(--base-font-size-form, 1rem);
+  --primary-color: var(--primary-color);
+  --background-color: var(--background-color);
+  --text-color: var(--text-color);
+  --header-background-color: var(--header-background-color);
+  --header-text-color: var(--header-text-color);
+  --border-radius-form: var(--border-radius-form);
+  --shadow-form: var(--shadow-form);
+}
+.schedula {
+&[data-v-50a47088] {
+
+  /* Base container for the whole form */
+
+  /* Main form container (the "card") */
+  /* Apply rounded corners and shadows directly from CSS variables */
+
+  /* Main Form Content Area - NO internal scrolling */
+
+  /* Adjust desktop-progress for better spacing */
+
+  /* Form Group Styles (labels, inputs, selects, textareas) */
+
+  /* Remove all focus outlines and rings */
+
+  /* Styles for editable labels in preview mode */
+
+  /* For WebKit browsers like Chrome and Safari */
+
+  /* For Firefox */
+
+  /* For IE10+ */
+
+  /* For Edge */
+
+  /* Checkbox/Radio Group */
+
+  /* Color Picker Specifics */
+
+  /* Buttons */
+
+  /* This applies to all buttons globally, including nav buttons */
+
+  /* Prevent theme from affecting disabled date hovers */
+
+  /* Force disabled calendar dates to be grey */
+
+  /* Force other month dates to be grey */
+
+
+  /* Cards (e.g., info-card, detail-card, confirmation-summary) */
+
+  /* Aspect Ratio for Service Preview Image */
+
+  /* Time Slot Buttons & Calendar Dates */
+  /* No scaling or strong shadows on hover/active for mobile */
+
+  /* Responsive adjustments for smaller screens (Tailwind breakpoints) */
+
+  /* New styles for select and textarea to match inputStyles */
+
+  /* Ensure the select arrow color matches text color */
+
+  /* Force grid container consistency */
+
+  /* Override the default arrow color with the text color */
+  }
+.wp-reservation-form[data-v-50a47088] {
+    background-color: transparent !important;
+    font-family: var(--font-family-form) !important; /* Apply font family */
+    font-size: var(--base-font-size-form) !important; /* Apply base font size */
+    color: var(--text-color) !important;
+    /* min-h-screen is already applied via Tailwind in template */
+    /* transition-all duration-300 is already applied via Tailwind in template */
+}
+.relative.rounded-lg.overflow-hidden.shadow-lg.w-full.max-w-xl.mx-auto.flex.flex-col[data-v-50a47088] {
+    border-radius: var(--border-radius-form) !important; /* Apply rounded corners */
+    box-shadow: var(--shadow-form) !important; /* Apply shadows */
+    height: auto !important;
+    max-height: none !important;
+}
+.form-body[data-v-50a47088] {
+    /* Styles are applied via inline styles from computed properties */
+    flex-grow: 1 !important; /* Allows it to take available space */
+    overflow-y: visible !important; /* Prevents internal scrolling */
+    -webkit-overflow-scrolling: auto !important; /* Revert to default scrolling behavior */
+}
+.desktop-progress[data-v-50a47088] {
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    padding-top: 1rem; /* py-4 */
+    padding-bottom: 1rem; /* py-4 */
+}
+@media (min-width: 640px) {
+&[data-v-50a47088] { /* sm breakpoint */
+    }
+.desktop-progress[data-v-50a47088] {
+      padding-left: 1.5rem; /* sm:px-6 */
+      padding-right: 1.5rem; /* sm:px-6 */
+      padding-top: 1.25rem; /* sm:py-5 */
+      padding-bottom: 1.25rem; /* sm:py-5 */
+}
+}
+@media (min-width: 1024px) {
+&[data-v-50a47088] { /* lg breakpoint */
+    }
+.desktop-progress[data-v-50a47088] {
+      padding-left: 1.5rem; /* lg:px-6 */
+      padding-right: 1.5rem; /* lg:px-6 */
+}
+}
+.is-preview .desktop-progress[data-v-50a47088] {
+    padding-left: 0.75rem !important; /* Slightly reduced for preview */
+    padding-right: 0.75rem !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+}
+.is-preview .desktop-progress .ml-2[data-v-50a47088] {
+    margin-left: 0.375rem !important; /* Tighter margin for preview */
+}
+.is-preview .desktop-progress .flex-1[data-v-50a47088] {
+    flex: 1 1 0% !important;
+    margin-left: 0.375rem !important;
+    margin-right: 0.375rem !important;
+}
+.is-preview .desktop-progress .text-xs[data-v-50a47088] {
+    font-size: 0.65rem !important; /* Match subtitle size */
+    white-space: normal !important;
+    word-break: break-word !important;
+}
+.form-group[data-v-50a47088] {
+    margin-bottom: 0.75rem;
+}
+.form-label[data-v-50a47088] {
+    /* Styles applied via inline styles from computed properties */
+    color: inherit;
+}
+.form-input[data-v-50a47088],
+  .form-select[data-v-50a47088],
+  .form-textarea[data-v-50a47088] {
+    border-radius: var(--border-radius-form); /* Apply rounded corners */
+    font-size: var(--base-font-size-form); /* Apply base font size */
+    /* Padding adjusted in JS computed property: inputStyles */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+.form-input[data-v-50a47088]:focus,
+  .form-select[data-v-50a47088]:focus,
+  .form-textarea[data-v-50a47088]:focus,
+  button[data-v-50a47088]:focus,
+  .form-checkbox[data-v-50a47088]:focus,
+  .form-radio[data-v-50a47088]:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: inherit !important;
+    --tw-ring-color: transparent !important;
+}
+.preview-editable-label[data-v-50a47088] {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 0.75rem; /* Smaller font size */
+}
+.preview-editable-label[data-v-50a47088]:hover {
+    opacity: 1;
+}
+.form-textarea[data-v-50a47088]:focus,
+  button[data-v-50a47088]:focus,
+  input[data-v-50a47088]:focus,
+  select[data-v-50a47088]:focus,
+  textarea[data-v-50a47088]:focus,
+  [tabindex][data-v-50a47088]:focus,
+  a[data-v-50a47088]:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    --tw-ring-color: transparent !important;
+    --tw-ring-offset-shadow: none !important;
+    --tw-ring-shadow: none !important;
+    border-color: inherit !important;
+}
+[data-v-50a47088]:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+[data-v-50a47088]::-moz-focus-inner {
+    border: 0 !important;
+}
+[data-v-50a47088]:-ms-input-placeholder {
+    color: #9CA3AF !important;
+}
+[data-v-50a47088]::-ms-input-placeholder {
+    color: #9CA3AF !important;
+}
+.form-help-text[data-v-50a47088] {
+    /* Tailwind classes handle this */
+    color: inherit;
+}
+.checkbox-group[data-v-50a47088] {
+    /* Tailwind classes handle this */
+    display: flex;
+    flex-direction: column;
+}
+.form-checkbox[data-v-50a47088],
+  .form-radio[data-v-50a47088] {
+    accent-color: var(--primary-color);
+}
+.color-picker-group[data-v-50a47088] {
+    /* Tailwind classes handle this */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.color-input[data-v-50a47088] {
+    /* Custom styles for color input */
+    width: 2.5rem; /* w-10 */
+    height: 2.5rem; /* h-10 */
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    border-radius: 0.375rem; /* rounded-md */
+    cursor: pointer;
+    padding: 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.color-input[data-v-50a47088]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+.color-input[data-v-50a47088]::-webkit-color-swatch {
+    border: none;
+    border-radius: 0.25rem; /* slightly less rounded than wrapper */
+}
+.inline-flex.items-center[data-v-50a47088] {
+    /* Common styles for all buttons, specific styles via :style */
+    display: inline-flex;
+    align-items: center;
+}
+button[data-v-50a47088]:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-form); /* Apply shadows */
+}
+button[data-v-50a47088]:active:not(:disabled) {
+    transform: translateY(0);
+}
+.time-slot[data-v-50a47088]:hover:not(.selected):not(:disabled),
+  .time-slot-btn[data-v-50a47088]:hover:not(.selected):not(:disabled),
+  .calendar-date[data-v-50a47088]:hover:not(.selected):not(:disabled) {
+    background-color: var(--50a47088-settings\.colors\.primary) !important;
+    color: var(--50a47088-settings\.colors\.headerText) !important;
+    border-color: var(--50a47088-settings\.colors\.primary) !important;
+}
+.calendar-date.disabled[data-v-50a47088]:hover,
+  .calendar-date[disabled][data-v-50a47088]:hover,
+  .calendar-date.isOtherMonth[data-v-50a47088]:hover {
+    color: #9CA3AF !important;
+    background-color: transparent !important;
+    cursor: not-allowed !important;
+    opacity: 0.5 !important;
+}
+.calendar-date.selected[data-v-50a47088],
+  .time-slot.selected[data-v-50a47088],
+  .time-slot-btn.selected[data-v-50a47088] {
+    background-color: var(--50a47088-settings\.colors\.primary) !important;
+    color: var(--50a47088-settings\.colors\.headerText) !important;
+    border-color: var(--50a47088-settings\.colors\.primary) !important;
+}
+.calendar-date.disabled[data-v-50a47088],
+  .calendar-date[disabled][data-v-50a47088] {
+    color: #9CA3AF !important;
+    background-color: transparent !important;
+    cursor: not-allowed !important;
+    opacity: 0.5 !important;
+}
+.calendar-date.isOtherMonth[data-v-50a47088] {
+    color: #9CA3AF !important;
+    background-color: transparent !important;
+    cursor: not-allowed !important;
+    opacity: 0.5 !important;
+}
+.info-card[data-v-50a47088], .detail-card[data-v-50a47088], .confirmation-summary[data-v-50a47088] {
+    /* Styles applied via inline styles from computed properties */
+    border-radius: var(--border-radius-form); /* Apply rounded corners */
+    box-shadow: var(--shadow-form); /* Apply shadows */
+}
+.relative.rounded-lg.overflow-hidden.shadow-lg > div[style*="padding-bottom"][data-v-50a47088] {
+    position: relative;
+    width: 100%;
+}
+.relative.rounded-lg.overflow-hidden.shadow-lg img[data-v-50a47088] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 639px) {
+&[data-v-50a47088] { /* sm breakpoint */
+
+    /* Ensure selected state still looks good on mobile without scaling */
+    }
+.calendar-date[data-v-50a47088],
+    .time-slot-btn[data-v-50a47088],
+    .time-slot[data-v-50a47088] {
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out !important; /* Keep subtle color transition */
+      transform: scale(1.0) !important; /* Prevent scaling on mobile */
+      box-shadow: none !important; /* Remove shadows on mobile */
+}
+.calendar-date.selected[data-v-50a47088],
+    .time-slot-btn.selected[data-v-50a47088],
+    .time-slot.selected[data-v-50a47088] {
+      transform: scale(1.0) !important; /* Override selected scaling for mobile */
+      box-shadow: none !important; /* Override selected shadow for mobile */
+}
+}
+@media (max-width: 639px) {
+&[data-v-50a47088] { /* sm breakpoint */
+    /* Calendar date height reduction on smaller screens */
+
+    /* Adjust padding for the form body on mobile for compactness */
+    
+    /* Adjust padding for confirmation summary and its items on mobile */
+    
+    /* Adjust padding for navigation buttons container on mobile */
+    }
+.header-section h1[data-v-50a47088] {
+      font-size: 1.125rem; /* text-lg */
+}
+.header-section p[data-v-50a47088] {
+      font-size: 0.75rem; /* text-xs */
+}
+.calendar-date[data-v-50a47088] {
+      height: 2.5rem; /* h-10 */
+}
+.form-body[data-v-50a47088] {
+      padding-left: 1rem; /* Smaller px-4 */
+      padding-right: 1rem; /* Smaller px-4 */
+      padding-top: 1rem; /* Smaller py-4 */
+      padding-bottom: 1rem; /* Smaller py-4 */
+}
+.confirmation-summary[data-v-50a47088] {
+      padding: 1rem; /* Smaller p-4 */
+}
+.confirmation-summary .summary-item[data-v-50a47088] {
+      padding: 0.75rem; /* Smaller p-2 */
+}
+.flex.flex-col.sm\:flex-row.items-center.py-3.sm\:py-5[data-v-50a47088] {
+      padding-top: 0.75rem; /* py-3 equivalent */
+      padding-bottom: 0.75rem; /* py-3 equivalent */
+}
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+&[data-v-50a47088] { /* sm to lg breakpoints */
+    }
+.header-section h1[data-v-50a47088] {
+      font-size: 1.25rem; /* sm:text-xl */
+}
+.header-section p[data-v-50a47088] {
+      font-size: 0.875rem; /* sm:text-sm */
+}
+}
+.is-preview .header-section h1[data-v-50a47088] {
+    font-size: 20px !important;
+}
+.is-preview .header-section p[data-v-50a47088] {
+    font-size: 14px !important;
+}
+.schedula-service-form-container[data-v-50a47088] {
+    background-color: transparent !important;
+}
+select[data-v-50a47088],
+  textarea[data-v-50a47088] {
+    background-color: var(--50a47088-inputStyles\.backgroundColor) !important;
+    color: var(--50a47088-inputStyles\.color) !important;
+    border-color: var(--50a47088-inputStyles\.borderColor) !important; /* Also apply border color */
+}
+select[data-v-50a47088] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1.5em 1.5em;
+}
+.step-content .schedula-grid.schedula-grid-cols-1.lg\:schedula-grid-cols-2[data-v-50a47088] {
+    min-height: 500px !important;
+    max-height: 500px !important;
+}
+select[data-v-50a47088] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 20 20%27 fill=%27none%27 stroke=%27%23666%27 stroke-width=%271.5%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M6 8l4 4 4-4%27/%3E%3C/svg%3E");
+}
+}
+
+
+/*!***********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/frontend/scss/serviceformclient.scss ***!
+  \***********************************************************************************************************************************/
+/* Custom Styles for Schedula Service Form Client (Non-Scoped) */
+/*
+   This file provides global styles for the [schesab_service_form] shortcode container.
+   It ensures the form container is properly styled and prevents theme interference.
+   Component-specific styles remain in ServiceFormClient.vue's <style scoped> block.
+*/
+[id^=schedula-service-form-] {
+  display: block;
+  box-sizing: border-box;
+  padding: 1rem;
+  font-family: "Inter", sans-serif;
+}
+[id^=schedula-service-form-] h1,
+[id^=schedula-service-form-] h2,
+[id^=schedula-service-form-] h3,
+[id^=schedula-service-form-] h4,
+[id^=schedula-service-form-] p,
+[id^=schedula-service-form-] label,
+[id^=schedula-service-form-] input,
+[id^=schedula-service-form-] select,
+[id^=schedula-service-form-] textarea,
+[id^=schedula-service-form-] button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+[id^=schedula-service-form-] input,
+[id^=schedula-service-form-] select,
+[id^=schedula-service-form-] textarea {
+  font-size: 14px;
+  line-height: 1.5;
+}
+[id^=schedula-service-form-] button {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.schedula-service-form-container {
+  background-color: transparent;
+  border-radius: 0.5rem;
+  min-height: 300px;
+}
+
+#schedula-service-form-client-js-extra {
+  display: none !important;
+}
+
+.schedula-navigation-btn {
+  margin: 0 !important;
+}
+
+.schedula-payment-option-label {
+  padding: 0.5rem !important;
+}

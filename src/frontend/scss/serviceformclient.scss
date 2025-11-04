@@ -1,0 +1,62 @@
+/* Custom Styles for Schedula Service Form Client (Non-Scoped) */
+
+/*
+   This file provides global styles for the [schesab_service_form] shortcode container.
+   It ensures the form container is properly styled and prevents theme interference.
+   Component-specific styles remain in ServiceFormClient.vue's <style scoped> block.
+*/
+
+// Ensure the form container is centered and constrained
+[id^='schedula-service-form-'] {
+  display: block;
+  box-sizing: border-box;
+  padding: 1rem; // Add padding for spacing
+  font-family: 'Inter', sans-serif; // Apply font directly to container
+
+  // Reset styles to prevent theme interference
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  label,
+  input,
+  select,
+  textarea,
+  button {
+    box-sizing: border-box;
+    margin: 0; // Reset margins to avoid theme overrides
+    padding: 0; // Reset padding
+  }
+
+  // Ensure form inputs have a consistent base appearance
+  input,
+  select,
+  textarea {
+    font-size: 14px; // Consistent base font size
+    line-height: 1.5; // Improve readability
+  }
+
+  // Ensure buttons have a consistent base style
+  button {
+    cursor: pointer;
+    font-size: 14px;
+  }
+}
+
+// Optional: Add a fallback background to make the form container visible during debugging
+.schedula-service-form-container {
+  background-color: transparent; // Tailwind gray-50, subtle background
+  border-radius: 0.5rem; // Match ServiceFormClient.vue's .form-wrapper
+  min-height: 300px; // Ensure visibility if Vue fails to mount
+}
+
+#schedula-service-form-client-js-extra {
+  display: none !important;
+}
+.schedula-navigation-btn {
+  margin: 0 !important;
+}
+.schedula-payment-option-label {
+  padding: 0.5rem !important;
+}

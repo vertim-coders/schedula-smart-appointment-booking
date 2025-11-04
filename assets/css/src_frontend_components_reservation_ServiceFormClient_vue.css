@@ -1,0 +1,128 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/frontend/components/reservation/ServiceFormClient.vue?vue&type=style&index=0&id=50a47088&scoped=true&lang=css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+
+  /*
+    These styles are for the client-facing service form.
+    They use CSS variables provided by useAppearanceSettings and Tailwind classes.
+  */
+.wp-service-form-client[data-v-50a47088] {
+    font-family: var(--schedula-font-family, 'Inter, sans-serif');
+    background-color: var(--schedula-background-color, #f8fafc);
+    color: var(--schedula-text-color, #1a202c);
+    /* padding and min-height are often controlled by the embedding page/shortcode context */
+    /* min-height: 100vh; */
+    /* padding: 20px; */
+}
+.container-responsive[data-v-50a47088] {
+@apply px-2 sm:px-4 lg:px-8 py-2 sm:py-4 lg:py-6;
+}
+.form-wrapper[data-v-50a47088] {
+    /* No fixed max-width here, it comes from the formContainerStyles computed property */
+@apply bg-white rounded-lg shadow-sm sm:shadow-lg sm:rounded-xl lg:rounded-2xl overflow-hidden;
+}
+.header-section[data-v-50a47088] {
+    background-color: var(--schedula-primary-color);
+    color: var(--schedula-header-text-color);
+}
+.form-body[data-v-50a47088] {
+    background-color: var(--schedula-background-color);
+}
+.form-step-content[data-v-50a47088] {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 1rem; /* pt-4 */
+    padding-bottom: 1rem; /* pb-4 */
+    /* Consider min-height for consistent step heights, but may be overridden by content */
+    /* min-height: 400px; */
+}
+.details-grid[data-v-50a47088] {
+@apply grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6;
+}
+  
+  /* Form field styling for native inputs */
+input[type="text"][data-v-50a47088],
+  input[type="email"][data-v-50a47088],
+  input[type="tel"][data-v-50a47088],
+  input[type="number"][data-v-50a47088],
+  select[data-v-50a47088],
+  textarea[data-v-50a47088] {
+    /* Base Tailwind classes for input consistency */
+@apply w-full border rounded-md shadow-sm transition-all duration-200;
+    /* Apply styles from useAppearanceSettings */
+    border-color: var(--schedula-text-color-rgb, 26, 32, 44) 33; /* Use RGB for opacity */
+    background-color: var(--schedula-background-color);
+    color: var(--schedula-text-color);
+    padding: var(--schedula-input-padding);
+    font-size: var(--schedula-base-font-size);
+    border-radius: var(--schedula-border-radius);
+}
+input[data-v-50a47088]:focus, select[data-v-50a47088]:focus, textarea[data-v-50a47088]:focus {
+    outline: none;
+    border-color: var(--schedula-primary-color);
+    box-shadow: 0 0 0 3px rgba(var(--schedula-primary-color-rgb, 59, 130, 246), 0.5);
+}
+.form-radio[data-v-50a47088], .form-checkbox[data-v-50a47088] {
+    accent-color: var(--schedula-primary-color);
+    width: 1rem; /* Default size for checkboxes/radios */
+    height: 1rem;
+}
+.time-slot-btn[data-v-50a47088] {
+    /* Styles derived from button styles in useAppearanceSettings */
+    border: 1px solid; /* Add explicit border */
+    border-color: var(--schedula-text-color-rgb, 26, 32, 44) 33;
+    border-radius: var(--schedula-border-radius);
+    padding: var(--schedula-input-padding);
+    font-size: calc(var(--schedula-base-font-size) * 0.9);
+    transition: all 0.2s ease-in-out;
+    background-color: var(--schedula-background-color);
+    color: var(--schedula-text-color);
+}
+.time-slot-btn.selected[data-v-50a47088] {
+    background-color: var(--schedula-primary-color);
+    color: var(--schedula-header-text-color); /* White text on primary color */
+    border-color: var(--schedula-primary-color);
+    box-shadow: var(--schedula-shadow);
+}
+.time-slot-btn[data-v-50a47088]:hover:not(.selected) {
+    background-color: rgba(var(--schedula-primary-color-rgb, 59, 130, 246), 0.1); /* Light primary tint on hover */
+}
+.navigation-buttons button[data-v-50a47088] {
+    border-radius: var(--schedula-border-radius);
+    font-size: var(--schedula-base-font-size);
+    padding: var(--schedula-input-padding);
+}
+.prev-button[data-v-50a47088] {
+    background-color: var(--schedula-background-color);
+    color: var(--schedula-text-color);
+    border: 1px solid rgba(var(--schedula-text-color-rgb, 26, 32, 44), 0.2);
+}
+.prev-button[data-v-50a47088]:hover {
+    background-color: rgba(var(--schedula-text-color-rgb, 26, 32, 44), 0.05);
+}
+.next-button[data-v-50a47088] {
+    background-color: var(--schedula-primary-color);
+    color: var(--schedula-header-text-color);
+}
+.next-button[data-v-50a47088]:hover {
+    /* Using a CSS function here to darken the primary color */
+    /* This requires a SCSS preprocessor or JavaScript for dynamic values */
+    /* For plain CSS with Tailwind, you might need to pick a darker shade explicitly */
+    filter: brightness(85%); /* A simple CSS filter alternative for darkening */
+}
+.next-button[data-v-50a47088]:disabled {
+    background-color: #cbd5e1; /* Tailwind gray-300 */
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+  
+  /* Remove default date picker icon */
+input[type="date"][data-v-50a47088]::-webkit-calendar-picker-indicator { display: none;
+}
+input[type="date"][data-v-50a47088]::-moz-calendar-picker-indicator { display: none;
+}
+input[type="date"][data-v-50a47088]::-ms-calendar-picker-indicator { display: none;
+}
+  
+  
